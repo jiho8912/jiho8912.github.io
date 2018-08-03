@@ -1,0 +1,106 @@
+
+input, textarea, button {-webkit-appearance:none; -moz-appearance:none; appearance:none; box-sizing:border-box; }
+input, textarea, button, select {-webkit-border-radius:0; -moz-border-radius:0; -o-border-radius:0; border-radius:0; box-sizing:border-box; outline: none; }
+
+
+/* 검색영역 */
+#booksearch input[type="text"] { padding:0 6px;}
+#booksearch select {-webkit-appearance:none;}
+
+.sch_area {
+	position:relative;
+	left:0;
+	top:0;
+	font-size:11px;
+}
+
+.sch_area input[type="text"] {
+	line-height:28px;
+}
+
+.sel_box {
+	display:block;
+	position:absolute;
+	left:0;
+	top:0;
+	z-index:2;
+	width:90px;
+	height:34px;
+	border:1px solid #aaa;
+	border-radius:3px;
+	overflow:hidden;
+	box-sizing:border-box;
+}
+
+.sel_box select {
+	width:112px;
+	height:32px;
+	border:0;
+	margin:0;
+	padding:4px 4px 4px 10px;
+	font-size:14px;
+	background-color:#fff;
+	background-image:url('../images/sel_arr_dw.png');
+	filter: progid:DXImageTransform.Microsoft.AlphaImageLoader( src='../images/sel_arr_dw.png', sizingMethod='scale');
+	-ms-filter: "progid:DXImageTransform.Microsoft.AlphaImageLoader( src='../images/sel_arr_dw.png', sizingMethod='scale')"; 
+	background-size:7px 5px;
+	background-repeat:no-repeat;
+	background-position:right 30px center;
+
+}
+
+.inp_box {
+	display:block;
+	position:relative;
+	padding-left:95px;
+}
+
+.inp_box .inp_sch {
+	width:100%;
+	height:34px;
+	border:1px solid #aaa;
+	border-radius:3px;
+	vertical-align:top;
+	font-size:14px;
+}
+
+.inp_box .inp_btn {
+	display:block; 
+	position:absolute; 
+	right:0; 
+	top:0; 
+	width:34px; 
+	height:34px;
+	background-image:url("../images/input_sch_icon.png"); 
+	filter: progid:DXImageTransform.Microsoft.AlphaImageLoader( src='../images/input_sch_icon.png', sizingMethod='scale');
+	-ms-filter: "progid:DXImageTransform.Microsoft.AlphaImageLoader( src='../images/input_sch_icon.png', sizingMethod='scale')"; 
+	background-size:cover;
+	background-repeat:no-repeat;
+	background-position:center center;
+
+	cursor:pointer;
+}
+.inp_box .inp_btn input[type="button"] {
+	display:block;
+	border:0;
+	background:none;
+}
+
+
+/* 도서리스트 */
+.book_list {}
+.book_list > li {padding:12px 0; border-top:1px solid #edeeef; letter-spacing:-1px; }
+.book_list > li:first-child {border-top:none;}
+.book_list > li h3 {margin-bottom:8px; line-height:18px; font-size:15px; font-weight:normal; color:#222; }
+.book_list > li p {height:18px; line-height:18px; font-size:13px; color:#656668;}
+.book_list > li span {margin-right:7px; font-weight:normal; }
+.book_list > li span:after {content:"|"; color:#aaa; font-weight:normal;}
+.book_list > li span:last-child:after {content:""}
+.book_list > li  i { font-style:normal; font-weight:normal; padding-right:10px; color:#a4a6a9;}
+
+/* 페이징 */
+.paging {border-top:3px solid #aaa; padding-top:15px; text-align:center; font-size:0;}
+.paging > a {display:inline-block; min-width:30px; height:30px; line-height:30px; margin:0 2px; border:1px solid #aaa; border-radius:2px; font-size:13px; text-align:center; color:#888; box-sizing:border-box; vertical-align:top;}
+.paging > .prev,
+.paging > .next {padding:0 8px; }
+.paging > a.on {border:0; color:#eee; background:#555; cursor:default; }
