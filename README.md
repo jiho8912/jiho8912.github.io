@@ -1,1 +1,4 @@
-# jiho-Blog
+---
+layout: post
+title: jiho Blog
+---
