@@ -65,7 +65,7 @@ class Excel extends CI_Controller {
 		}
 
 		$data['addUrl'] = $paging['addLink'];
-		$paging['base_url'] = '/plugin/excel/?'.$paging['addLink'].''; //페이지 주소
+		$paging['base_url'] = '/plugin/excel?'.$paging['addLink'].''; //페이지 주소
 
 		list($paging['recordCount'], $data['result']) = $this->admin_excel_m->select_booklist($paging);//게시판 리스트 가져오기
 
