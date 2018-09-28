@@ -43,12 +43,5 @@
 			<?if(@$url == 'calender'){?>
 				active
 			<?}?>"> - 달력 플러그인</a>
-
-		<a href="/admin/instargram/admin_instargram_v" class="list-group-item
-			<?if(@$url == 'instargram'){?>
-				active
-			<?}?>"> - 인스타그램 플러그인</a>
-
-
 	</div>
 </div>
