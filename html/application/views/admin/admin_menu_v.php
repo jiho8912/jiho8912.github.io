@@ -50,12 +50,57 @@
 					$("#categoryForm .showyn option[value='Y']").prop('selected', true);
 				}
 			})
+
 			.jstree({
 				"core" : {				
 					"check_callback" : true,
 					"data" : <?=$category_list?> // 카테고리 로드
 				},
 				 "plugins" : ["checkbox","dnd"]
+			})
+
+			.bind('move_node.jstree', function (e, data) {
+				var node = data.node;
+				if(node.parent == '#'){
+					alert("최상단으로 이동할수없습니다.");
+					$(".category_list").jstree("refresh");
+					return false;
+				}
+
+				if(node.parents.length > 4 || (node.parents.length > 3 && node.children.length >1)){
+					alert("더이상 하위카테고리를 만들수없습니다.");
+					$(".category_list").jstree("refresh");
+					return false;
+				}
+
+				var categoryData = {};
+
+				var no = data.node.id.split('j');
+				var parent = data.parent.split('j');
+				var old_parent = data.old_parent.split('j');
+
+				categoryData.no = no[1];
+				categoryData.parent = parent[1];
+				categoryData.old_parent = old_parent[1];
+				categoryData.position = data.position;
+				categoryData.old_position = data.old_position;
+
+				console.log(categoryData);
+
+				
+				$.ajax({
+					url : 'updateCategory'
+					,method : 'post'
+					,data : categoryData
+					,success: function(res){
+						if(res){
+							alert('정상적으로 변경되었습니다.');
+						}else{
+							alert('시스템오류');			
+						}
+					}
+				});
+				
 			});
 
 		// 설정 저장
@@ -108,6 +153,18 @@
 			}
 		});
 
+		/*
+		// 카테고리 변경 적용
+		$(".btn-update").click(function(){
+			var ctree = $category.jstree(true);
+			get_settings = ctree.get_settings();
+			console.log(get_settings);
+			//if(confirm("변경된 사항을 적용하시겠습니까?")){
+				
+			//}
+		});
+		*/
+
 		// 서브카테고리 추가
 		$(".btn-addsub").click(function(){
 
@@ -158,7 +215,14 @@
 				<div class="btn-group pull-right" style = "margin-top:10px;">
 					<div class="btn-group">				
 						<div class="right">
-							<a href="#" class="btn-del btn btn-mini btn-danger">선택한 카테고리를 삭제</a>
+							<a href="#" class="btn-del btn btn-mini btn-danger">삭제</a>
+						</div>
+					</div>
+				</div>
+				<div class="btn-group pull-right" style = "margin-top:10px; margin-right:5px;">
+					<div class="btn-group">				
+						<div class="center">
+							<a href="#" class="btn-update btn btn-mini btn-success">적용</a>
 						</div>
 					</div>
 				</div>

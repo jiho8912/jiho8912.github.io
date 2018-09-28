@@ -37,8 +37,10 @@ class Admin_menu_m extends CI_Model {
 		if ($parent_no >= 0) $this->db->where('a.parent_no', $parent_no);
 
 		if ($depth) $this->db->where('a.depth', $depth);
+		$this->db->order_by('a.position', 'asc');
 
 		$result = $this->db->get()->result_array();
+		//debug($this->db->last_query());
 
 		return $result;
 	}
@@ -149,6 +151,26 @@ class Admin_menu_m extends CI_Model {
 		}
 		return $this->db->query($q)->result_array();
 
+
+	}
+
+	function updateCategory($upData, $no){	
+		$this->db->trans_start();
+
+		$this->db->where('no', $no);
+		$this->db->update('menu_category', $upData);
+
+		$this->db->trans_complete();
+
+		debug($this->db->last_query());
+
+		if($this->db->trans_status() === FALSE)
+		{
+			$this->db->trans_rollback();
+			return false;
+		}else{
+			return true;
+		}
 
 	}
 

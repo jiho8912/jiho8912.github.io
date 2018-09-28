@@ -25,6 +25,7 @@ class Main extends CI_Controller {
 		}
 
 		//좌표구하기
+		/*
 		$addr =urlencode($data['addr'].' '.$data['addr2']);
 		$xml_contents=$this->getgooglemapXml2('address='.$addr.'&sensor=true');
 		$xml=simplexml_load_string($xml_contents, 'SimpleXMLElement', LIBXML_NOCDATA);
@@ -42,7 +43,7 @@ class Main extends CI_Controller {
 		
 		$data['positionX'] = $position['lat'];
 		$data['positionY'] = $position['lng'];
-
+		*/
 		//print_R($position);
 
 		//좌표구하기
@@ -79,6 +80,7 @@ class Main extends CI_Controller {
 
 		// 카테고리 리스트
 		$data['category_list'] = $this->admin_menu_m->select_category_tree();
+		//debug($data['category_list']);
 		//메인 로테이션 이미지 불러오기
 		$data['main_back_img'] = $this->admin_m->select_background_img();
 

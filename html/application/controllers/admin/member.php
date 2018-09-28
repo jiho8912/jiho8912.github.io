@@ -98,7 +98,7 @@ class Member extends CI_Controller {
 		}
 
 		$data['addUrl'] = $paging['addLink'];
-		$paging['base_url'] = '/admin/menu/admin_member_v/'.'?'.$paging['addLink'].''; //페이지 주소
+		$paging['base_url'] = '/admin/member/admin_member_v/'.'?'.$paging['addLink'].''; //페이지 주소
 
 		list($paging['recordCount'], $data['mb_list']) = $this->member_m->select_mb_list($paging);//게시판 리스트 가져오기
 

@@ -280,7 +280,7 @@ $(document).ready(function() {
 	//구글 api 시작
 	var map = new google.maps.Map(document.getElementById("map_canvas"), {
 	scaleControl: false});
-	map.setCenter(new google.maps.LatLng(<?=$positionX?>, <?=$positionY?>));
+	map.setCenter(new google.maps.LatLng(37.7137403, 127.04798630000005));
 	map.setZoom(16);
 	map.setMapTypeId(google.maps.MapTypeId.ROADMAP); 
 

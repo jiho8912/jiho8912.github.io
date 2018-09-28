@@ -216,5 +216,22 @@ class Menu extends CI_Controller {
 		}
 	}
 
+	function updateCategory(){
+		$params = $this->input->post();
+
+		$upData = array();
+		$upData['parent_no'] = $params['parent'];
+		$upData['position'] = $params['position'];
+
+		$no = $params['no'];
+		$res = $this->admin_menu_m->updateCategory($upData, $no);
+		
+		if($res){
+			echo true;
+		}else{
+			echo false;
+		}
+	}
+
 }
 

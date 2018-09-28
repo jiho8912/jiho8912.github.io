@@ -48,14 +48,14 @@
 $active_group = 'default';
 $active_record = TRUE;
 
-$db['default']['hostname'] = 'localhost';
-$db['default']['username'] = 'jiho8912';
-$db['default']['password'] = 'wlgh6464';
+$db['default']['hostname'] = 'jiho.cfhkrjfcmimw.ap-northeast-2.rds.amazonaws.com';
+$db['default']['username'] = 'jiho';
+$db['default']['password'] = 'password';
 $db['default']['database'] = 'jiho8912';
-$db['default']['dbdriver'] = 'mysql';
+$db['default']['dbdriver'] = 'mysqli';
 $db['default']['dbprefix'] = ''; // db테이블 공통네임스페이스
-$db['default']['pconnect'] = TRUE;
-$db['default']['db_debug'] = TRUE;
+$db['default']['pconnect'] = false;
+$db['default']['db_debug'] = true;
 $db['default']['cache_on'] = FALSE;
 $db['default']['cachedir'] = '';
 $db['default']['char_set'] = 'utf8';
