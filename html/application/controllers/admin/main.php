@@ -212,14 +212,14 @@ class Main extends CI_Controller {
 		foreach($files as $files_list){
 			if(file_exists('upload/main/'.$files_list['original_name'])){ // 파일이 있는지 체크 
 				if(unlink('upload/main/'.$files_list['original_name'])){ // 파일삭제 완료 후 
-					$this->admin_m->delete_admin_files($no); //admin_files에서 해당 db 삭제됨 
+					$this->admin_m->delete_admin_files($no); //admin_files에서 해당 db 삭제됨
+                    $this->board_m->alert('삭제 되었습니다.', '/admin/main/admin_main_v');
 				}else{
 					$this->board_m->alert('이미지 삭제중 오류가 발생하였습니다.');
 				}
 			}
+            $this->board_m->alert('이미지 삭제중 오류가 발생하였습니다.');
 		}
-
-		$this->board_m->alert('삭제 되었습니다.', '/admin/main/admin_main_v');
 	}
 
 	/*------------------------------------[function]-------------------------------------
