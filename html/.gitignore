@@ -8,4 +8,4 @@ application/logs/*
 !application/logs/index.html
 !application/logs/.htaccess
 
-application/views/plugin/exceljs/exceljs_v.php
+/application/views/plugin/exceljs/exceljs_v.php
