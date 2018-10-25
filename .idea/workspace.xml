@@ -2,8 +2,12 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="ff5fcec0-56b4-4d8e-b19c-d2f884e4fd61" name="Default Changelist" comment="업데이트">
+      <change afterPath="$PROJECT_DIR$/html/application/controllers/plugin/test.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/html/application/views/plugin/test/test.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/deployment.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/deployment.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/webServers.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/webServers.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/html/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/html/.gitignore" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/html/application/config/config.php" beforeDir="false" afterPath="$PROJECT_DIR$/html/application/config/config.php" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -45,14 +49,14 @@
     <session id="-1602964055">
       <usages-collector id="statistics.lifecycle.project">
         <counts>
-          <entry key="project.closed" value="4" />
-          <entry key="project.open.time.0" value="3" />
-          <entry key="project.open.time.1" value="2" />
-          <entry key="project.open.time.4" value="1" />
+          <entry key="project.closed" value="10" />
+          <entry key="project.open.time.0" value="6" />
+          <entry key="project.open.time.1" value="3" />
+          <entry key="project.open.time.4" value="3" />
           <entry key="project.open.time.5" value="1" />
           <entry key="project.open.time.6" value="1" />
           <entry key="project.open.time.7" value="1" />
-          <entry key="project.opened" value="9" />
+          <entry key="project.opened" value="15" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.extensions.open">
@@ -63,14 +67,14 @@
           <entry key="csv" value="1" />
           <entry key="default" value="1" />
           <entry key="gitignore" value="4" />
-          <entry key="htaccess" value="7" />
+          <entry key="htaccess" value="9" />
           <entry key="html" value="4" />
           <entry key="ini" value="3" />
           <entry key="jpg" value="1" />
           <entry key="js" value="9" />
           <entry key="json" value="1" />
           <entry key="log" value="9" />
-          <entry key="php" value="93" />
+          <entry key="php" value="117" />
           <entry key="sql" value="4" />
           <entry key="ts" value="1" />
           <entry key="xml" value="1" />
@@ -86,14 +90,14 @@
           <entry key="Ini" value="3" />
           <entry key="JSON" value="1" />
           <entry key="JavaScript" value="9" />
-          <entry key="PHP" value="93" />
+          <entry key="PHP" value="117" />
           <entry key="PLAIN_TEXT" value="21" />
           <entry key="SQL" value="2" />
           <entry key="Scratch" value="2" />
           <entry key="SmartyConfig" value="2" />
           <entry key="TypeScript" value="1" />
           <entry key="XML" value="1" />
-          <entry key="htaccess" value="7" />
+          <entry key="htaccess" value="9" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.extensions.edit">
@@ -105,7 +109,7 @@
           <entry key="html" value="20" />
           <entry key="ini" value="13" />
           <entry key="js" value="3" />
-          <entry key="php" value="1231" />
+          <entry key="php" value="1375" />
           <entry key="txt" value="14" />
         </counts>
       </usages-collector>
@@ -114,7 +118,7 @@
           <entry key="HTML" value="20" />
           <entry key="Ini" value="13" />
           <entry key="JavaScript" value="3" />
-          <entry key="PHP" value="1231" />
+          <entry key="PHP" value="1375" />
           <entry key="PLAIN_TEXT" value="46" />
           <entry key="htaccess" value="16" />
         </counts>
@@ -122,21 +126,12 @@
     </session>
   </component>
   <component name="FileEditorManager">
-    <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/html/application/views/plugin/exceljs/exceljs_v.php">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="184">
-              <caret line="8" column="3" selection-start-line="8" selection-start-column="3" selection-end-line="8" selection-end-column="3" />
-            </state>
-          </provider>
-        </entry>
-      </file>
+    <leaf>
       <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/html/.gitignore">
+        <entry file="file://$PROJECT_DIR$/html/application/config/config.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="207">
-              <caret line="9" lean-forward="true" selection-start-line="9" selection-end-line="9" />
+            <state relative-caret-position="92">
+              <caret line="16" column="23" selection-start-line="16" selection-start-column="23" selection-end-line="16" selection-end-column="23" />
             </state>
           </provider>
         </entry>
@@ -145,9 +140,6 @@
   </component>
   <component name="FindInProjectRecents">
     <findStrings>
-      <find>Error</find>
-      <find>on</find>
-      <find>tag</find>
       <find>mysql</find>
       <find>e_all</find>
       <find>dbdriver</find>
@@ -175,6 +167,9 @@
       <find>admin_category_list</find>
       <find>xls</find>
       <find>csv</find>
+      <find>211.52.72.36</find>
+      <find>uri_protocol</find>
+      <find>split</find>
     </findStrings>
   </component>
   <component name="Git.Settings">
@@ -184,16 +179,6 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/html/system/core/CodeIgniter.php" />
-        <option value="$PROJECT_DIR$/../php-7.0.32-nts-Win32-VC14-x64/php.ini" />
-        <option value="&lt;282b00ee-34b3-41b9-bf15-0c519590f343&gt;/html/application/config/database.php" />
-        <option value="$PROJECT_DIR$/html/application/logs/log-2018-09-20.php" />
-        <option value="$PROJECT_DIR$/html/application/config/config.php" />
-        <option value="$PROJECT_DIR$/html/system/database/drivers/mysqli/mysqli_driver.php" />
-        <option value="$PROJECT_DIR$/html/application/controllers/main.php" />
-        <option value="$PROJECT_DIR$/../php-5.4.14-nts-Win32-VC9-x86/php.ini" />
-        <option value="&lt;282b00ee-34b3-41b9-bf15-0c519590f343&gt;/html/index.php" />
-        <option value="&lt;b53ca6b6-c715-4f73-97d2-10ac61ae401f&gt;/var/www/html/index.nginx-debian.html" />
         <option value="&lt;b53ca6b6-c715-4f73-97d2-10ac61ae401f&gt;/etc/nginx/nginx.conf" />
         <option value="&lt;b53ca6b6-c715-4f73-97d2-10ac61ae401f&gt;/etc/nginx/sites-available/default" />
         <option value="&lt;b53ca6b6-c715-4f73-97d2-10ac61ae401f&gt;/var/www/html/application/views/head.php" />
@@ -228,8 +213,23 @@
         <option value="$PROJECT_DIR$/html/application/views/admin/admin_header_v.php" />
         <option value="$PROJECT_DIR$/html/application/views/admin/admin_left_menu_v.php" />
         <option value="$PROJECT_DIR$/html/application/views/admin/admin_reg_schedule_v.php" />
-        <option value="$PROJECT_DIR$/html/application/views/plugin/exceljs/exceljs_v.php" />
         <option value="$PROJECT_DIR$/html/.gitignore" />
+        <option value="$PROJECT_DIR$/html/application/views/plugin/exceljs/exceljs_v.php" />
+        <option value="$PROJECT_DIR$/html/test.php" />
+        <option value="$PROJECT_DIR$/html/application/controllers/plugin/test.php" />
+        <option value="$PROJECT_DIR$/html/application/views/plugin/test/test.php" />
+        <option value="&lt;b53ca6b6-c715-4f73-97d2-10ac61ae401f&gt;/www/jiho/html/application/config/database.php" />
+        <option value="&lt;b53ca6b6-c715-4f73-97d2-10ac61ae401f&gt;/www/alamoTest/html/common/classes/Constants.php" />
+        <option value="&lt;b53ca6b6-c715-4f73-97d2-10ac61ae401f&gt;/www/alamoTest/html/common/cfg/config.php" />
+        <option value="&lt;b53ca6b6-c715-4f73-97d2-10ac61ae401f&gt;/www/alamoTest/html/action_front.php" />
+        <option value="&lt;b53ca6b6-c715-4f73-97d2-10ac61ae401f&gt;/www/alamoTest/html/common/php/reader.php" />
+        <option value="&lt;b53ca6b6-c715-4f73-97d2-10ac61ae401f&gt;/www/jiho/html/application/.htaccess" />
+        <option value="&lt;b53ca6b6-c715-4f73-97d2-10ac61ae401f&gt;/www/jiho/html/application/config/config.php" />
+        <option value="&lt;b53ca6b6-c715-4f73-97d2-10ac61ae401f&gt;/www/jiho/html/.htaccess" />
+        <option value="&lt;b53ca6b6-c715-4f73-97d2-10ac61ae401f&gt;/www/jiho/html/index.php" />
+        <option value="&lt;b53ca6b6-c715-4f73-97d2-10ac61ae401f&gt;/www/alamoTest/html/index.php" />
+        <option value="&lt;b53ca6b6-c715-4f73-97d2-10ac61ae401f&gt;/www/alamoTest/html/common/php/LoginUtil.php" />
+        <option value="$PROJECT_DIR$/html/application/config/config.php" />
       </list>
     </option>
   </component>
@@ -241,8 +241,7 @@
   </component>
   <component name="PhpWorkspaceProjectConfiguration" interpreter_name="PHP" />
   <component name="ProjectFrameBounds" extendedState="6">
-    <option name="x" value="1912" />
-    <option name="y" value="-8" />
+    <option name="x" value="1920" />
     <option name="width" value="1936" />
     <option name="height" value="1056" />
   </component>
@@ -255,7 +254,6 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -279,92 +277,28 @@
               <item name="jiho8912.github.io" type="462c0819:PsiDirectoryNode" />
               <item name="html" type="462c0819:PsiDirectoryNode" />
               <item name="application" type="462c0819:PsiDirectoryNode" />
-              <item name="controllers" type="462c0819:PsiDirectoryNode" />
+              <item name="config" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="jiho8912.github.io" type="b2602c69:ProjectViewProjectNode" />
-              <item name="jiho8912.github.io" type="462c0819:PsiDirectoryNode" />
-              <item name="html" type="462c0819:PsiDirectoryNode" />
-              <item name="application" type="462c0819:PsiDirectoryNode" />
-              <item name="controllers" type="462c0819:PsiDirectoryNode" />
-              <item name="admin" type="462c0819:PsiDirectoryNode" />
+              <item name="External Libraries" type="bcb0276e:PhpExternalLibrariesNodePatcher$PatchedExternalLibrariesNode" />
             </path>
             <path>
               <item name="jiho8912.github.io" type="b2602c69:ProjectViewProjectNode" />
-              <item name="jiho8912.github.io" type="462c0819:PsiDirectoryNode" />
-              <item name="html" type="462c0819:PsiDirectoryNode" />
-              <item name="application" type="462c0819:PsiDirectoryNode" />
-              <item name="models" type="462c0819:PsiDirectoryNode" />
+              <item name="External Libraries" type="bcb0276e:PhpExternalLibrariesNodePatcher$PatchedExternalLibrariesNode" />
+              <item name="PHP Runtime" type="20ee2d1f:SyntheticLibraryElementNode" />
             </path>
             <path>
               <item name="jiho8912.github.io" type="b2602c69:ProjectViewProjectNode" />
-              <item name="jiho8912.github.io" type="462c0819:PsiDirectoryNode" />
-              <item name="html" type="462c0819:PsiDirectoryNode" />
-              <item name="application" type="462c0819:PsiDirectoryNode" />
-              <item name="models" type="462c0819:PsiDirectoryNode" />
-              <item name="admin" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="jiho8912.github.io" type="b2602c69:ProjectViewProjectNode" />
-              <item name="jiho8912.github.io" type="462c0819:PsiDirectoryNode" />
-              <item name="html" type="462c0819:PsiDirectoryNode" />
-              <item name="application" type="462c0819:PsiDirectoryNode" />
-              <item name="views" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="jiho8912.github.io" type="b2602c69:ProjectViewProjectNode" />
-              <item name="jiho8912.github.io" type="462c0819:PsiDirectoryNode" />
-              <item name="html" type="462c0819:PsiDirectoryNode" />
-              <item name="application" type="462c0819:PsiDirectoryNode" />
-              <item name="views" type="462c0819:PsiDirectoryNode" />
-              <item name="admin" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="jiho8912.github.io" type="b2602c69:ProjectViewProjectNode" />
-              <item name="jiho8912.github.io" type="462c0819:PsiDirectoryNode" />
-              <item name="html" type="462c0819:PsiDirectoryNode" />
-              <item name="application" type="462c0819:PsiDirectoryNode" />
-              <item name="views" type="462c0819:PsiDirectoryNode" />
-              <item name="plugin" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="jiho8912.github.io" type="b2602c69:ProjectViewProjectNode" />
-              <item name="jiho8912.github.io" type="462c0819:PsiDirectoryNode" />
-              <item name="html" type="462c0819:PsiDirectoryNode" />
-              <item name="application" type="462c0819:PsiDirectoryNode" />
-              <item name="views" type="462c0819:PsiDirectoryNode" />
-              <item name="plugin" type="462c0819:PsiDirectoryNode" />
-              <item name="exceljs" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="jiho8912.github.io" type="b2602c69:ProjectViewProjectNode" />
-              <item name="jiho8912.github.io" type="462c0819:PsiDirectoryNode" />
-              <item name="html" type="462c0819:PsiDirectoryNode" />
-              <item name="font" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="jiho8912.github.io" type="b2602c69:ProjectViewProjectNode" />
-              <item name="jiho8912.github.io" type="462c0819:PsiDirectoryNode" />
-              <item name="html" type="462c0819:PsiDirectoryNode" />
-              <item name="js" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="jiho8912.github.io" type="b2602c69:ProjectViewProjectNode" />
-              <item name="jiho8912.github.io" type="462c0819:PsiDirectoryNode" />
-              <item name="html" type="462c0819:PsiDirectoryNode" />
-              <item name="upload" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="jiho8912.github.io" type="b2602c69:ProjectViewProjectNode" />
-              <item name="jiho8912.github.io" type="462c0819:PsiDirectoryNode" />
-              <item name="html" type="462c0819:PsiDirectoryNode" />
-              <item name="upload" type="462c0819:PsiDirectoryNode" />
-              <item name="excel" type="462c0819:PsiDirectoryNode" />
+              <item name="External Libraries" type="bcb0276e:PhpExternalLibrariesNodePatcher$PatchedExternalLibrariesNode" />
+              <item name="PHP Runtime" type="20ee2d1f:SyntheticLibraryElementNode" />
+              <item name="regex" type="462c0819:PsiDirectoryNode" />
             </path>
           </expand>
           <select />
         </subPane>
       </pane>
+      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -380,10 +314,10 @@
     <property name="settings.editor.selected.configurable" value="reference.webide.settings.project.settings.php" />
   </component>
   <component name="RecentsManager">
-    <key name="MoveFile.RECENT_KEYS">
+    <key name="CopyFile.RECENT_KEYS">
       <recent name="D:\jiho\jiho8912.github.io\html\upload\excel" />
     </key>
-    <key name="CopyFile.RECENT_KEYS">
+    <key name="MoveFile.RECENT_KEYS">
       <recent name="D:\jiho\jiho8912.github.io\html\upload\excel" />
     </key>
   </component>
@@ -399,10 +333,27 @@
       </list>
     </option>
   </component>
-  <component name="RunManager">
+  <component name="RunManager" selected="PHP Built-in Web Server.Unnamed">
+    <configuration name="test.html" type="JavascriptDebugType" factoryName="JavaScript Debug" temporary="true" nameIsGenerated="true" uri="http://112.175.184.86/html/test.html">
+      <method v="2" />
+    </configuration>
     <configuration name="Unnamed" type="PhpBuiltInWebServerConfigurationType" factoryName="PHP Built-in Web Server" document_root="$PROJECT_DIR$/html" host="211.52.72.36">
       <method v="2" />
     </configuration>
+    <configuration name="exceljs_v.php" type="PhpLocalRunConfigurationType" factoryName="PHP Console" temporary="true" path="$PROJECT_DIR$/html/application/views/plugin/exceljs/exceljs_v.php">
+      <method v="2" />
+    </configuration>
+    <list>
+      <item itemvalue="PHP Built-in Web Server.Unnamed" />
+      <item itemvalue="PHP Script.exceljs_v.php" />
+      <item itemvalue="JavaScript Debug.test.html" />
+    </list>
+    <recent_temporary>
+      <list>
+        <item itemvalue="JavaScript Debug.test.html" />
+        <item itemvalue="PHP Script.exceljs_v.php" />
+      </list>
+    </recent_temporary>
   </component>
   <component name="SvnConfiguration">
     <configuration />
@@ -422,7 +373,13 @@
       <workItem from="1538365906394" duration="266000" />
       <workItem from="1538374828157" duration="1202000" />
       <workItem from="1538444347486" duration="414000" />
-      <workItem from="1538619326783" duration="60000" />
+      <workItem from="1538619326783" duration="5168000" />
+      <workItem from="1539234036790" duration="2421000" />
+      <workItem from="1539309876129" duration="7209000" />
+      <workItem from="1539585463652" duration="1721000" />
+      <workItem from="1539587644394" duration="1261000" />
+      <workItem from="1539589518518" duration="5000" />
+      <workItem from="1540454199988" duration="50000" />
     </task>
     <task id="LOCAL-00001" summary="업데이트">
       <created>1538100632817</created>
@@ -494,24 +451,45 @@
       <option name="project" value="LOCAL" />
       <updated>1538444478020</updated>
     </task>
-    <option name="localTasksCounter" value="11" />
+    <task id="LOCAL-00011" summary="업데이트">
+      <created>1538619392097</created>
+      <option name="number" value="00011" />
+      <option name="presentableId" value="LOCAL-00011" />
+      <option name="project" value="LOCAL" />
+      <updated>1538619392097</updated>
+    </task>
+    <task id="LOCAL-00012" summary="업데이트">
+      <created>1538619402103</created>
+      <option name="number" value="00012" />
+      <option name="presentableId" value="LOCAL-00012" />
+      <option name="project" value="LOCAL" />
+      <updated>1538619402103</updated>
+    </task>
+    <task id="LOCAL-00013" summary="업데이트">
+      <created>1538619409893</created>
+      <option name="number" value="00013" />
+      <option name="presentableId" value="LOCAL-00013" />
+      <option name="project" value="LOCAL" />
+      <updated>1538619409893</updated>
+    </task>
+    <option name="localTasksCounter" value="14" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="62419000" />
+    <option name="totallyTimeSpent" value="80194000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="1912" y="-8" width="1936" height="1056" extended-state="6" />
     <editor active="true" />
     <layout>
-      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.23081024" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.2468017" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Favorites" order="2" side_tool="true" />
-      <window_info anchor="bottom" id="File Transfer" order="0" sideWeight="0.49946696" visible="true" weight="0.1834962" />
+      <window_info anchor="bottom" id="File Transfer" order="0" sideWeight="0.49946696" weight="0.1834962" />
       <window_info anchor="bottom" id="Message" order="1" />
       <window_info anchor="bottom" id="Find" order="2" />
-      <window_info anchor="bottom" id="Run" order="3" weight="0.21606949" />
-      <window_info anchor="bottom" id="Debug" order="4" weight="0.4" />
+      <window_info anchor="bottom" id="Run" order="3" visible="true" weight="0.21606949" />
+      <window_info anchor="bottom" id="Debug" order="4" weight="0.3995657" />
       <window_info anchor="bottom" id="Cvs" order="5" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="6" weight="0.4" />
       <window_info anchor="bottom" id="TODO" order="7" />
@@ -538,44 +516,6 @@
     <option name="LAST_COMMIT_MESSAGE" value="업데이트" />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/html/application/config/config.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-4055">
-          <caret line="168" column="31" selection-start-line="168" selection-start-column="28" selection-end-line="168" selection-end-column="31" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/../php-5.4.14-nts-Win32-VC9-x86/php.ini">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="408">
-          <caret line="462" column="97" lean-forward="true" selection-start-line="462" selection-start-column="18" selection-end-line="462" selection-end-column="97" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/html/application/controllers/main.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="299">
-          <caret line="82" column="35" lean-forward="true" selection-start-line="82" selection-start-column="35" selection-end-line="82" selection-end-column="36" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/html/system/database/drivers/mysqli/mysqli_driver.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="97">
-          <caret line="72" column="20" selection-start-line="72" selection-start-column="20" selection-end-line="72" selection-end-column="20" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/html/application/config/autoload.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="361">
-          <caret line="103" column="19" lean-forward="true" selection-start-line="103" selection-start-column="19" selection-end-line="103" selection-end-column="19" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$USER_HOME$/Downloads/index (3).php" />
-    <entry file="file://$USER_HOME$/Downloads/index (1).php" />
-    <entry file="file://$USER_HOME$/Downloads/다운로드 (3)" />
     <entry file="file://$PROJECT_DIR$/html/application/libraries/PHPExcel/Shared/Font.php">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="611">
@@ -618,20 +558,6 @@
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/html/application/controllers/admin/exceljs.php" />
-    <entry file="file://$PROJECT_DIR$/html/application/views/plugin/excel/excel_v.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="347">
-          <caret line="45" lean-forward="true" selection-end-line="54" selection-end-column="9" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/html/application/views/plugin/git/git.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state>
-          <caret selection-end-line="2" selection-end-column="4" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/html/index.php">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="223">
@@ -690,13 +616,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="138">
           <caret line="6" column="20" lean-forward="true" selection-start-line="6" selection-start-column="20" selection-end-line="6" selection-end-column="20" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/html/application/controllers/plugin/exceljs.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="736">
-          <caret line="32" lean-forward="true" selection-start-line="32" selection-end-line="32" />
         </state>
       </provider>
     </entry>
@@ -812,24 +731,89 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="825">
           <caret line="78" column="19" selection-start-line="78" selection-start-column="16" selection-end-line="78" selection-end-column="19" />
-          <folding>
-            <element signature="e#6971#11191#0" />
-            <element signature="e#11314#71057#0" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/html/application/views/plugin/exceljs/exceljs_v.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="184">
-          <caret line="8" column="3" selection-start-line="8" selection-start-column="3" selection-end-line="8" selection-end-column="3" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/html/.gitignore">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="207">
-          <caret line="9" lean-forward="true" selection-start-line="9" selection-end-line="9" />
+          <caret line="9" selection-start-line="9" selection-end-line="9" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/html/application/views/plugin/exceljs/exceljs_v.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="230">
+          <caret line="10" selection-start-line="10" selection-end-line="27" selection-end-column="9" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/html/test.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="230">
+          <caret line="10" column="8" selection-start-line="10" selection-start-column="8" selection-end-line="10" selection-end-column="8" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/html/application/controllers/plugin/exceljs.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="368">
+          <caret line="16" column="26" selection-start-line="16" selection-start-column="26" selection-end-line="16" selection-end-column="26" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/html/application/controllers/plugin/test.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="575">
+          <caret line="25" column="58" selection-start-line="25" selection-start-column="58" selection-end-line="25" selection-end-column="58" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/html/application/controllers/plugin/calender.php">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/html/application/views/plugin/excel/excel_v.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1104">
+          <caret line="48" selection-start-line="48" selection-end-line="48" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/html/application/controllers/plugin/shop.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="253">
+          <caret line="11" column="42" selection-end-line="37" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/html/application/views/plugin/git/git.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="46">
+          <caret line="2" column="4" selection-start-line="2" selection-start-column="4" selection-end-line="2" selection-end-column="4" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/html/application/controllers/board.php">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/html/application/views/plugin/test/test.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="207">
+          <caret line="9" column="38" lean-forward="true" selection-start-line="9" selection-start-column="38" selection-end-line="9" selection-end-column="38" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$APPLICATION_HOME_DIR$/plugins/php/lib/php.jar!/stubs/regex/ereg.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-767">
+          <caret line="166" column="13" lean-forward="true" selection-start-line="166" selection-start-column="13" selection-end-line="166" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/html/application/config/config.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="92">
+          <caret line="16" column="23" selection-start-line="16" selection-start-column="23" selection-end-line="16" selection-end-column="23" />
         </state>
       </provider>
     </entry>

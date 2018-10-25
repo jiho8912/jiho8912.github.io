@@ -14,7 +14,7 @@
 | path to your installation.
 |
 */
-$config['base_url']	= 'http://jiho8912.dothome.co.kr/';
+$config['base_url']	= '';
 
 /*
 |--------------------------------------------------------------------------

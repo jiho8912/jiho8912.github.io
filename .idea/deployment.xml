@@ -9,14 +9,14 @@
           </mappings>
         </serverdata>
       </paths>
-      <paths name="13.125.188.72">
+      <paths name="13.209.246.230(지호aws테스트)">
         <serverdata>
           <mappings>
             <mapping local="$PROJECT_DIR$" web="/" />
           </mappings>
         </serverdata>
       </paths>
-      <paths name="54.92.27.148">
+      <paths name="54.92.27.148(스테이지서버)">
         <serverdata>
           <mappings>
             <mapping local="$PROJECT_DIR$" web="/" />

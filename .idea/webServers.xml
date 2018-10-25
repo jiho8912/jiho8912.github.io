@@ -10,8 +10,8 @@
           <option name="port" value="21" />
         </fileTransfer>
       </webServer>
-      <webServer id="b53ca6b6-c715-4f73-97d2-10ac61ae401f" name="13.125.188.72" url="http://13.125.188.72">
-        <fileTransfer host="13.125.188.72" port="22" privateKey="D:\jiho\인수인계\pem,ppk 파일\jihoTest.ppk" rootFolder="/var/www/" accessType="SFTP" keyPair="true">
+      <webServer id="b53ca6b6-c715-4f73-97d2-10ac61ae401f" name="13.209.246.230(지호aws테스트)" url="http://13.209.246.230">
+        <fileTransfer host="13.209.246.230" port="22" privateKey="D:\jiho\인수인계\pem,ppk 파일\jihoTest.ppk" rootFolder="/var" accessType="SFTP" keyPair="true">
           <advancedOptions>
             <advancedOptions dataProtectionLevel="Private" shareSSLContext="true" />
           </advancedOptions>
