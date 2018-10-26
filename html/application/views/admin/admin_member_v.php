@@ -52,7 +52,7 @@ body{font-size:12px !important;}
 	<div style="margin-top:30px !important;">
 
 		<!--회원검색-->
-		<form name="searchForm" method="post" action="/admin/member/admin_member_update">
+		<form name="searchForm" method="post" action="/admin/member/admin_member_v">
 			<div class="clearfix">
 				<select name="searchKey" id="searchKey" class="form-control input-sm auto pull-left">
 					<option value="mb_id">아이디</option>
@@ -198,8 +198,8 @@ $(document).ready(function() {
     $('#update_mb_data').validate({
         onkeyup: false,
         rules: {
-            mb_password: { required:false, minlength:3 },
-			mb_password_re: { required:false, equalTo:'#mb_password'},
+            mb_password: { required:true, minlength:3 },
+			mb_password_re: { required:true, equalTo:'#mb_password'},
             mb_name: { required:true,  minlength:2, hangul:true },
             mb_email: { required:true, },
         },

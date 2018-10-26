@@ -1,16 +1,16 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <config>
 <tab1>16</tab1>
-<tab2>15</tab2>
-<tab3>20</tab3>
-<tab4>15</tab4>
+<tab2>16</tab2>
+<tab3>16</tab3>
+<tab4>16</tab4>
 <tab5>20</tab5>
 <tab_limit>3</tab_limit>
 <google_apikey>AIzaSyBKMzpSL11QR6ibQ3zPp7WJQCL8_pXv13c</google_apikey>
 <tokenvalue>624545223.320e45f.099fc1f6f29e42b9a7a05fdf3d48a515</tokenvalue>
 <listcount>9</listcount>
 <rowcount>3</rowcount>
-<image_space>4</image_space>
+<image_space>3</image_space>
 <addr>경기 의정부시 호원동 450-2</addr>
 <addr2></addr2>
 </config>

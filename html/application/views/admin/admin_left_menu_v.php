@@ -25,8 +25,8 @@
 				active
 			<?}?>"> - 회원관리</a>
 
-		<a href="" class="list-group-item
-			<?if(@$url == 'board_d'){?>
+		<a href="/admin/visitor/admin_visitor_v" class="list-group-item
+			<?if(@$url == 'visitor'){?>
 				active
 			<?}?>"> - 방문자통계</a>
 

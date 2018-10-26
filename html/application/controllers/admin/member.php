@@ -67,7 +67,7 @@ class Member extends CI_Controller {
 			if($searchKey){
 				$paging['searchKey'] = $data['searchKey'] = $urlArray['searchKey'] = $searchKey;
 			}
-		}
+        }
 
 		if(@$urlArray['searchValue']){
 			$paging['searchValue'] = $data['searchValue'] =  @$urlArray['searchValue'];
@@ -159,7 +159,7 @@ class Member extends CI_Controller {
 	public function admin_member_update()
 	{
 		$config = array(
-			//array('field'=>'mb_password', 'label'=>'비밀번호', 'rules'=>'trim|required|max_length[20]'),
+			array('field'=>'mb_password', 'label'=>'비밀번호', 'rules'=>'trim|required|max_length[20]'),
 			array('field'=>'mb_name', 'label'=>'이름', 'rules'=>'trim|required|max_length[10]'),
 			array('field'=>'mb_email', 'label'=>'이메일', 'rules'=>'trim|required|max_length[50]|valid_email'),
 		);
