@@ -221,9 +221,10 @@ class Menu extends CI_Controller {
 
 		$upData = array();
 		$upData['parent_no'] = $params['parent'];
+        $upData['old_parent'] = $params['old_parent'];
 		$upData['position'] = $params['position'];
-
 		$no = $params['no'];
+
 		$res = $this->admin_menu_m->updateCategory($upData, $no);
 		
 		if($res){

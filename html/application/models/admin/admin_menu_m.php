@@ -13,6 +13,7 @@ class Admin_menu_m extends CI_Model {
 	
 		$this->db->select('*');
 		$this->db->from('menu_category');
+        $this->db->order_by('position', 'asc');
 		/*
 		$this->db->where('type', $type);
 		*/
@@ -154,19 +155,34 @@ class Admin_menu_m extends CI_Model {
 
 	}
 
-	function updateCategory($upData, $no){	
+	function updateCategory($upData, $no){
 		$this->db->trans_start();
 
-		$this->db->where('no', $no);
-		$this->db->update('menu_category', $upData);
+		foreach($upData['position'] as $key => $val){
+            $this->db->where('no', $val);
+            $this->db->set('position', $key);
+            $this->db->update('menu_category');
+            //debug($this->db->last_query());
+		}
 
-		$this->db->trans_complete();
+		if($upData['parent_no'] != $upData['old_parent']){
+            if($upData['parent_no'] == 'Root'){
+                $upData['parent_no'] = 0;
+            }
+			if($upData['old_parent'] == 'Root'){
+                $upData['old_parent'] = 0;
+            }
+            $this->db->where('no', $no);
+            $this->db->where('parent_no', $upData['old_parent']);
+            $this->db->set('parent_no', $upData['parent_no']);
+            $this->db->update('menu_category');
+            //debug($this->db->last_query());
+		}
 
-		debug($this->db->last_query());
+        $this->db->trans_complete();
 
 		if($this->db->trans_status() === FALSE)
 		{
-			$this->db->trans_rollback();
 			return false;
 		}else{
 			return true;

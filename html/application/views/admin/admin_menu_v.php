@@ -9,13 +9,12 @@
 		$.jstree.defaults.checkbox.three_state = false; // 선택한 것만 체크
 		$.jstree.defaults.checkbox.whole_node = false; // 선택한 것만 활성화
 
-		$category = $(".category_list")
-			.on('changed.jstree', function (e, data) {
+		$category = $(".category_list").on('changed.jstree', function (e, data) {
 				var sel = data.instance.get_node(data.selected[0]);
 
 				if(sel){
 					var selName = sel.text;
-					var selNo = sel.id == "jRoot" ? 0 : parseInt(sel.id.replace("j",""));;
+					var selNo = sel.id == "jRoot" ? 0 : parseInt(sel.id.replace("j",""));
 					var selShowYN = sel.li_attr.showyn;
 					var selDepth = sel.parents.length - 1;
 
@@ -77,17 +76,25 @@
 
 				var no = data.node.id.split('j');
 				var parent = data.parent.split('j');
-				var old_parent = data.old_parent.split('j');
+                var old_parent = data.old_parent.split('j');
 
 				categoryData.no = no[1];
 				categoryData.parent = parent[1];
-				categoryData.old_parent = old_parent[1];
-				categoryData.position = data.position;
-				categoryData.old_position = data.old_position;
+                categoryData.old_parent = old_parent[1];
 
-				console.log(categoryData);
+				categoryData.position = data.instance._model.data[data.parent].children;
 
-				
+                var newPostion = {};
+
+                $.each(categoryData.position, function(index, value){
+                    var pno = value.split('j');
+                    newPostion[index] = pno[1];
+
+                });
+                categoryData.position = newPostion;
+
+				console.log(data);
+
 				$.ajax({
 					url : 'updateCategory'
 					,method : 'post'
