@@ -11,6 +11,16 @@
 	<script src="/js/jquery-1.10.1.min.js"></script>
 	<script src="/js/jquery.bpopup.min.js"></script>
 	<script src="/static/bootstrap/js/bootstrap.js"></script>
+
+    <!-- 자동 include -->
+    <?	foreach($headerInfo['CSS'] as $css_file) print '<link href="'.$css_file.'?v=1" rel="stylesheet">';?>
+    <?	foreach($headerInfo['JS'] as $js_file) print '<script src="'.$js_file.'?v='.date('mdHis').'" ></script>';?>
+
+    <? # SweetAlert2 ?>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/core-js/2.4.1/core.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/limonte-sweetalert2/6.10.1/sweetalert2.all.min.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/limonte-sweetalert2/6.10.1/sweetalert2.min.css" />
+
 <script>
 $(document).ready(function() {
 	//이미지 리사이징
@@ -55,7 +65,7 @@ $(document).ready(function() {
 			$(this).css("color","black");
 		}, function(){
 			if(!$(this).hasClass("active-board")){
-				$(this).css("color","gray"); 
+				$(this).css("color","gray");
 			}
 		});
 	});
@@ -136,7 +146,7 @@ padding: 2px 4px 2px 4px !important;}
 				<?}else{?>
 					<li>
 						<a href="/member/join_v">
-							<span class="glyphicon glyphicon-user"></span> 
+							<span class="glyphicon glyphicon-user"></span>
 								Sign Up
 						</a>
 					</li>

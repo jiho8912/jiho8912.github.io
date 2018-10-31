@@ -1,47 +1,59 @@
-<div class="col-md-3" style ="padding-right:80px;">
-	<p class="lead"></p>
-	<div class="list-group">
-		<a href="/admin/management" class="list-group-item
-			<?if(@$url == 'management'){?>
+<div class="col-md-3" style="padding-right:80px;">
+    <p class="lead"></p>
+    <div class="list-group">
+        <a href="/admin/management" class="list-group-item
+			<? if (@$url == 'management') { ?>
 				active
-			<?}?>">관리자메인</a><br>
+			<? } ?>">관리자메인</a><br>
 
-		<a href="" class="list-group-item">
-			<span style = "font-size:15px;">기본설정</span>
-		</a>
+        <a href="" class="list-group-item">
+            <span style="font-size:15px;">기본설정</span>
+        </a>
 
-		<a href="/admin/main/admin_main_v" class="list-group-item
-			<?if(@$url == 'main'){?>
+        <a href="/admin/main/admin_main_v" class="list-group-item
+			<? if (@$url == 'main') { ?>
 				active
-			<?}?>"> - 메인설정</a>
+			<? } ?>"> - 메인설정</a>
 
-		<a href="/admin/menu/admin_menu_v" class="list-group-item
-			<?if(@$url == 'menu'){?>
+        <a href="/admin/menu/admin_menu_v" class="list-group-item
+			<? if (@$url == 'menu') { ?>
 				active
-			<?}?>"> - 메뉴관리</a>
+			<? } ?>"> - 메뉴관리</a>
 
-		<a href="/admin/member/admin_member_v" class="list-group-item
-			<?if(@$url == 'member'){?>
+        <a href="/admin/member/admin_member_v" class="list-group-item
+			<? if (@$url == 'member') { ?>
 				active
-			<?}?>"> - 회원관리</a>
+			<? } ?>"> - 회원관리</a>
 
-		<a href="/admin/visitor/admin_visitor_v" class="list-group-item
-			<?if(@$url == 'visitor'){?>
+        <a href="/admin/visitor/admin_visitor_v" class="list-group-item
+			<? if (@$url == 'visitor') { ?>
 				active
-			<?}?>"> - 방문자통계</a>
+			<? } ?>"> - 방문자통계</a>
 
-		<a href="" class="list-group-item">
-			<span style = "font-size:15px;">플러그인</span>
-		</a>
+        <a href="" class="list-group-item">
+            <span style="font-size:15px;">플러그인</span>
+        </a>
 
-		<a href="/admin/excel/admin_excel_v" class="list-group-item
-			<?if(@$url == 'excel'){?>
+        <a href="/admin/excel/admin_excel_v" class="list-group-item
+			<? if (@$url == 'excel') { ?>
 				active
-			<?}?>"> - 엑셀 플러그인</a>
+			<? } ?>"> - 엑셀 플러그인
+        </a>
 
-		<a href="/admin/calender/admin_calender_v" class="list-group-item
-			<?if(@$url == 'calender'){?>
+        <a href="/admin/calender/admin_calender_v" class="list-group-item
+			<? if (@$url == 'calender') { ?>
 				active
-			<?}?>"> - 달력 플러그인</a>
-	</div>
+			<? } ?>"> - 달력 플러그인
+        </a>
+
+        <a href="" class="list-group-item">
+            <span style="font-size:15px;">쇼핑몰</span>
+        </a>
+        
+        <a href="/admin/shop/admin_category_list_v" class="list-group-item
+			<? if (@$url == 'shop') { ?>
+				active
+			<? } ?>"> - 카테고리 관리
+        </a>
+    </div>
 </div>

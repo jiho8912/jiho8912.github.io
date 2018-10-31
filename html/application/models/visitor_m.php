@@ -1,4 +1,5 @@
 <?
+
 class Visitor_m extends CI_Model
 {
 
@@ -8,19 +9,19 @@ class Visitor_m extends CI_Model
         $this->load->database();
     }
 
-    function select_visitor_list($paging = false){
+    function select_visitor_list($paging = false)
+    {
 
         $this->db->select('SQL_CALC_FOUND_ROWS *', false);
         $this->db->from('user_log');
         $this->db->order_by('no', 'desc');
 
-        if(!@$paging['off_set']) $paging['off_set'] = 0;
-        if(@$paging['per_page'])
-        {
-            $this->db->limit($paging['per_page'],$paging['off_set']);
+        if (!@$paging['off_set']) $paging['off_set'] = 0;
+        if (@$paging['per_page']) {
+            $this->db->limit($paging['per_page'], $paging['off_set']);
         }
 
-        if(@$paging['searchValue']){
+        if (@$paging['searchValue']) {
             $this->db->like($paging['searchKey'], @$paging['searchValue']);
         }
 
@@ -35,9 +36,28 @@ class Visitor_m extends CI_Model
         return array($totalCount, $result);
     }
 
+    function select_current_visitor_list()
+    {
+        $sql = "SELECT a.session_id,a.ip_address,a.user_agent,a.current_page,a.last_activity,b.user_data FROM user_log AS a
+            JOIN ci_sessions AS b
+            ON a.session_id = b.session_id
+            WHERE NO IN
+            (SELECT MAX(NO)
+                FROM user_log AS a
+                JOIN ci_sessions AS b
+                ON a.session_id = b.session_id
+                GROUP BY a.session_id
+                ORDER BY a.no DESC)
+            ORDER BY b.last_activity desc
+        ";
+        $query = $this->db->query($sql);
+        $result = $query->result_array();
+        return $result;
+    }
 
 
-    function insertVisitor(){
+    function insertVisitor()
+    {
         $session_id = $this->session->userdata['session_id'];
 
         $this->db->trans_start();

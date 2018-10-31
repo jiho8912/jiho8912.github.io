@@ -66,7 +66,7 @@ class Visitor extends CI_Controller {
             $paging['page'] = 1;
         }
 
-        $paging['per_page'] = 50; //한페이지당 표시할 개수
+        $paging['per_page'] = 10; //한페이지당 표시할 개수
         $paging['off_set'] = $paging['per_page'] * ($paging['page']-1);//페이징 offset 가져오기
         unset($urlArray['page']);
         $paging['addLink'] = "";
@@ -93,6 +93,8 @@ class Visitor extends CI_Controller {
 
         //회원상세정보 가져오기
         $admin_id = $this->member_m->select_mb_detail($this->session->userdata('mb_id'));
+
+        $data['current_visitor_list'] = $this->visitor_m->select_current_visitor_list();
 
         //로그인 안했을경우
         if(!$this->session->userdata('mb_id')){;
