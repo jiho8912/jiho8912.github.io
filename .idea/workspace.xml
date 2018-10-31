@@ -71,7 +71,7 @@
           <entry key="js" value="10" />
           <entry key="json" value="1" />
           <entry key="log" value="9" />
-          <entry key="php" value="187" />
+          <entry key="php" value="193" />
           <entry key="sql" value="4" />
           <entry key="ts" value="1" />
           <entry key="xml" value="2" />
@@ -87,7 +87,7 @@
           <entry key="Ini" value="3" />
           <entry key="JSON" value="1" />
           <entry key="JavaScript" value="10" />
-          <entry key="PHP" value="187" />
+          <entry key="PHP" value="193" />
           <entry key="PLAIN_TEXT" value="21" />
           <entry key="SQL" value="2" />
           <entry key="Scratch" value="2" />
@@ -106,7 +106,7 @@
           <entry key="html" value="20" />
           <entry key="ini" value="13" />
           <entry key="js" value="3" />
-          <entry key="php" value="4539" />
+          <entry key="php" value="4544" />
           <entry key="txt" value="35" />
         </counts>
       </usages-collector>
@@ -115,7 +115,7 @@
           <entry key="HTML" value="20" />
           <entry key="Ini" value="13" />
           <entry key="JavaScript" value="3" />
-          <entry key="PHP" value="4539" />
+          <entry key="PHP" value="4544" />
           <entry key="PLAIN_TEXT" value="67" />
           <entry key="htaccess" value="16" />
         </counts>
@@ -146,8 +146,8 @@
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/html/application/views/plugin/shop/stdpay/INIStdPaySample/INIStdPayRequest.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="437">
-              <caret line="19" column="43" selection-start-line="19" selection-start-column="43" selection-end-line="19" selection-end-column="43" />
+            <state relative-caret-position="23">
+              <caret line="1" column="9" selection-start-line="1" selection-start-column="9" selection-end-line="1" selection-end-column="9" />
             </state>
           </provider>
         </entry>
@@ -239,7 +239,6 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="&lt;b53ca6b6-c715-4f73-97d2-10ac61ae401f&gt;/alamo/public_html/common/classes/AlamoFront.php" />
         <option value="&lt;b53ca6b6-c715-4f73-97d2-10ac61ae401f&gt;/alamo/public_html/index.php" />
         <option value="&lt;b53ca6b6-c715-4f73-97d2-10ac61ae401f&gt;/alamo/public_html/common/classes/Constants.php" />
         <option value="&lt;b53ca6b6-c715-4f73-97d2-10ac61ae401f&gt;/alamo/public_html/common/templates/alamo/inc/metaData.php" />
@@ -290,6 +289,7 @@
         <option value="$PROJECT_DIR$/html/application/controllers/admin/visitor.php" />
         <option value="$PROJECT_DIR$/html/application/models/visitor_m.php" />
         <option value="$PROJECT_DIR$/html/application/views/admin/admin_visitor_v.php" />
+        <option value="$PROJECT_DIR$/html/application/views/plugin/shop/stdpay/INIStdPaySample/INIStdPayRequest.php" />
       </list>
     </option>
   </component>
@@ -494,12 +494,12 @@
     <property name="settings.editor.selected.configurable" value="reference.webide.settings.project.settings.php" />
   </component>
   <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="D:\jiho\jiho8912.github.io\html\upload\excel" />
+    </key>
     <key name="MoveFile.RECENT_KEYS">
       <recent name="D:\jiho\jiho8912.github.io\html\application\libraries" />
       <recent name="D:\jiho\jiho8912.github.io\html\application\views\admin" />
-      <recent name="D:\jiho\jiho8912.github.io\html\upload\excel" />
-    </key>
-    <key name="CopyFile.RECENT_KEYS">
       <recent name="D:\jiho\jiho8912.github.io\html\upload\excel" />
     </key>
   </component>
@@ -676,7 +676,7 @@
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="111143000" />
+    <option name="totallyTimeSpent" value="111148000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="1912" y="-8" width="1936" height="1056" extended-state="6" />
@@ -1047,8 +1047,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/html/application/views/plugin/shop/stdpay/INIStdPaySample/INIStdPayRequest.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="437">
-          <caret line="19" column="43" selection-start-line="19" selection-start-column="43" selection-end-line="19" selection-end-column="43" />
+        <state relative-caret-position="23">
+          <caret line="1" column="9" selection-start-line="1" selection-start-column="9" selection-end-line="1" selection-end-column="9" />
         </state>
       </provider>
     </entry>

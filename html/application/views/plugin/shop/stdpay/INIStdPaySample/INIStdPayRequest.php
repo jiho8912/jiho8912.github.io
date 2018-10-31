@@ -1,5 +1,6 @@
 <?php
-echo phpinfo();
+echo 123;
+
 require_once(plugin_dir . '/shop/stdpay/libs/INIStdPayUtil.php');
 require_once(plugin_dir . '/shop/stdpay/libs/sha256.inc.php');
 $SignatureUtil = new INIStdPayUtil();
