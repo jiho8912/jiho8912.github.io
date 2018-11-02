@@ -543,6 +543,10 @@
                     // payViewType을 popup으로 해서 결제를 하셨을 경우
                     // 내부처리후 스크립트를 이용해 opener의 화면 전환처리를 하세요
                     //throw new Exception("강제 Exception");
+                    
+                    // 본사 api 연동 실패시 강제 거래 취소
+                    //throw new Exception("본사 api 실패");
+                    
                 } catch (Exception $e) {
                     //    $s = $e->getMessage() . ' (오류코드:' . $e->getCode() . ')';
                     //####################################

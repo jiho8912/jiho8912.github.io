@@ -28,6 +28,23 @@ class MY_Controller extends CI_Controller
     }
 
     // 관리자 페이지 설정
+    function setViewUser($viewPath, $data)
+    {
+        $urlArray = $this->seg_exp['query_string'];
+        $board_data['limit'] = 5; //메인 노출 게시판 표시할 리스트개수
+        $data['select_main_new_data'] = $this->board_m->select_new_content($board_data);//최근 게시물 가져오기
+        $data['select_new_reply'] = $this->board_m->select_new_reply($board_data);//최근 댓글물 가져오기
+        $data['category_list'] = $this->admin_menu_m->select_category_tree();
+
+        $this->_makeHeaderInfo();
+        $data['headerInfo'] = $this->headerInfo;
+
+        $this->load->view('head',$data); // 헤더
+        $this->load->view($viewPath);
+        $this->load->view('footer'); // 푸터
+    }
+
+    // 관리자 페이지 설정
     function setViewAdmin($viewPath, $data)
     {
         $data['url'] = $this->uri->segment(2);
