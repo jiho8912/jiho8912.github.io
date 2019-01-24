@@ -23,6 +23,11 @@ class Shop extends MY_Controller {
         $this->setViewUser('plugin/shop/stdpay/INIStdPaySample/INIStdPayRequest',$data);
     }
 
+    public function PgTest_M()
+    {
+        $this->setViewUser('plugin/shop/stdpay/INIStdPaySample/INIpayMobile_Sample',$data);
+    }
+
 	function close(){
         $this->setViewUser('plugin/shop/stdpay/INIStdPaySample/close',$data);
     }
