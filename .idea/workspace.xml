@@ -2,7 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="ff5fcec0-56b4-4d8e-b19c-d2f884e4fd61" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/html/application/views/index.php" beforeDir="false" afterPath="$PROJECT_DIR$/html/application/views/index.php" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -74,7 +74,7 @@
           <entry key="json" value="1" />
           <entry key="log" value="11" />
           <entry key="pem" value="1" />
-          <entry key="php" value="267" />
+          <entry key="php" value="269" />
           <entry key="sql" value="4" />
           <entry key="ts" value="1" />
           <entry key="txt" value="1" />
@@ -93,7 +93,7 @@
           <entry key="JSON" value="1" />
           <entry key="JavaScript" value="10" />
           <entry key="Log" value="2" />
-          <entry key="PHP" value="267" />
+          <entry key="PHP" value="269" />
           <entry key="PLAIN_TEXT" value="25" />
           <entry key="SQL" value="2" />
           <entry key="Scratch" value="2" />
@@ -112,7 +112,7 @@
           <entry key="html" value="31" />
           <entry key="ini" value="13" />
           <entry key="js" value="3" />
-          <entry key="php" value="5251" />
+          <entry key="php" value="5283" />
           <entry key="txt" value="40" />
           <entry key="vmoptions" value="3" />
         </counts>
@@ -122,7 +122,7 @@
           <entry key="HTML" value="31" />
           <entry key="Ini" value="13" />
           <entry key="JavaScript" value="3" />
-          <entry key="PHP" value="5251" />
+          <entry key="PHP" value="5283" />
           <entry key="PLAIN_TEXT" value="75" />
           <entry key="htaccess" value="16" />
         </counts>
@@ -146,16 +146,16 @@
         <entry file="file://$PROJECT_DIR$/html/application/views/index.php">
           <provider selected="true" editor-type-id="text-editor">
             <state>
-              <caret column="7" selection-start-column="7" selection-end-column="7" />
+              <caret column="19" selection-start-column="19" selection-end-column="19" />
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="true" current-in-tab="false">
-        <entry file="remoteDeploymentFS://&lt;b53ca6b6-c715-4f73-97d2-10ac61ae401f&gt;/www/jiho/jiho8912.github.io/html/application/views/index.php">
+        <entry file="remoteDeploymentFS://&lt;b53ca6b6-c715-4f73-97d2-10ac61ae401f&gt;/www/jiho/html/application/views/index.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state>
-              <caret column="18" selection-start-column="18" selection-end-column="18" />
+            <state relative-caret-position="207">
+              <caret line="9" column="34" lean-forward="true" selection-start-line="9" selection-start-column="34" selection-end-line="9" selection-end-column="34" />
             </state>
           </provider>
         </entry>
@@ -418,7 +418,7 @@
       <workItem from="1543453769307" duration="540000" />
       <workItem from="1546563093730" duration="1913000" />
       <workItem from="1548293341327" duration="7506000" />
-      <workItem from="1548378502777" duration="4048000" />
+      <workItem from="1548378502777" duration="6934000" />
     </task>
     <task id="LOCAL-00001" summary="업데이트">
       <created>1538100632817</created>
@@ -574,11 +574,18 @@
       <option name="project" value="LOCAL" />
       <updated>1548382812431</updated>
     </task>
-    <option name="localTasksCounter" value="23" />
+    <task id="LOCAL-00023" summary="업데이트">
+      <created>1548383454470</created>
+      <option name="number" value="00023" />
+      <option name="presentableId" value="LOCAL-00023" />
+      <option name="project" value="LOCAL" />
+      <updated>1548383454470</updated>
+    </task>
+    <option name="localTasksCounter" value="24" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="158554000" />
+    <option name="totallyTimeSpent" value="161440000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="1912" y="-8" width="1936" height="1056" extended-state="6" />
@@ -897,7 +904,7 @@
     <entry file="file://$PROJECT_DIR$/html/application/views/index.php">
       <provider selected="true" editor-type-id="text-editor">
         <state>
-          <caret column="7" selection-start-column="7" selection-end-column="7" />
+          <caret column="19" selection-start-column="19" selection-end-column="19" />
         </state>
       </provider>
     </entry>
