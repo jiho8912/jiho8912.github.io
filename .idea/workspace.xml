@@ -1,7 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="ff5fcec0-56b4-4d8e-b19c-d2f884e4fd61" name="Default Changelist" comment="">
+    <list default="true" id="ff5fcec0-56b4-4d8e-b19c-d2f884e4fd61" name="Default Changelist" comment="업데이트">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/html/application/views/index.php" beforeDir="false" afterPath="$PROJECT_DIR$/html/application/views/index.php" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -112,7 +113,7 @@
           <entry key="html" value="31" />
           <entry key="ini" value="13" />
           <entry key="js" value="3" />
-          <entry key="php" value="5283" />
+          <entry key="php" value="5284" />
           <entry key="txt" value="40" />
           <entry key="vmoptions" value="3" />
         </counts>
@@ -122,7 +123,7 @@
           <entry key="HTML" value="31" />
           <entry key="Ini" value="13" />
           <entry key="JavaScript" value="3" />
-          <entry key="PHP" value="5283" />
+          <entry key="PHP" value="5284" />
           <entry key="PLAIN_TEXT" value="75" />
           <entry key="htaccess" value="16" />
         </counts>
@@ -145,8 +146,8 @@
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/html/application/views/index.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state>
-              <caret column="19" selection-start-column="19" selection-end-column="19" />
+            <state relative-caret-position="69">
+              <caret line="3" column="39" selection-start-line="3" selection-start-column="39" selection-end-line="3" selection-end-column="39" />
             </state>
           </provider>
         </entry>
@@ -418,7 +419,7 @@
       <workItem from="1543453769307" duration="540000" />
       <workItem from="1546563093730" duration="1913000" />
       <workItem from="1548293341327" duration="7506000" />
-      <workItem from="1548378502777" duration="6934000" />
+      <workItem from="1548378502777" duration="7135000" />
     </task>
     <task id="LOCAL-00001" summary="업데이트">
       <created>1538100632817</created>
@@ -581,11 +582,25 @@
       <option name="project" value="LOCAL" />
       <updated>1548383454470</updated>
     </task>
-    <option name="localTasksCounter" value="24" />
+    <task id="LOCAL-00024" summary="업데이트">
+      <created>1548390577795</created>
+      <option name="number" value="00024" />
+      <option name="presentableId" value="LOCAL-00024" />
+      <option name="project" value="LOCAL" />
+      <updated>1548390577795</updated>
+    </task>
+    <task id="LOCAL-00025" summary="업데이트">
+      <created>1548390663625</created>
+      <option name="number" value="00025" />
+      <option name="presentableId" value="LOCAL-00025" />
+      <option name="project" value="LOCAL" />
+      <updated>1548390663625</updated>
+    </task>
+    <option name="localTasksCounter" value="26" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="161440000" />
+    <option name="totallyTimeSpent" value="161641000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="1912" y="-8" width="1936" height="1056" extended-state="6" />
@@ -903,8 +918,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/html/application/views/index.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state>
-          <caret column="19" selection-start-column="19" selection-end-column="19" />
+        <state relative-caret-position="69">
+          <caret line="3" column="39" selection-start-line="3" selection-start-column="39" selection-end-line="3" selection-end-column="39" />
         </state>
       </provider>
     </entry>

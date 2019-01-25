@@ -1,4 +1,3 @@
-<?echo phpinfo();?>
 <div class="row carousel-holder">
 	<div class="col-md-12" style = "margin-bottom:10px;">
 		<div id="carousel-example-generic" class="carousel slide" data-ride="carousel">
