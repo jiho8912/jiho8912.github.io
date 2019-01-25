@@ -175,11 +175,11 @@
 
             if (type == "add") {
                 dialogText = "카테고리를 등록중 입니다.";
-                url = "/admin/Shop_category/add";
+                url = "/admin/shop_category/add";
             }
             else if (type == "update") {
                 dialogText = "카테고리를 수정중 입니다.";
-                url = "/admin/Shop_category/update";
+                url = "/admin/shop_category/update";
                 params.categorySeq = categoryModal.data("categorySeq");
             }
 
@@ -263,7 +263,7 @@
 
                         $.ajax({
                             method: "post",
-                            url: "/admin/Shop_category/getSubCategoryList",
+                            url: "/admin/shop_category/getSubCategoryList",
                             contentType: "application/json",
                             data: JSON.stringify(params),
                             success: function (process) {
