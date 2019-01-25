@@ -1,10 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="ff5fcec0-56b4-4d8e-b19c-d2f884e4fd61" name="Default Changelist" comment="업데이트">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/html/application/views/index.php" beforeDir="false" afterPath="$PROJECT_DIR$/html/application/views/index.php" afterDir="false" />
-    </list>
+    <list default="true" id="ff5fcec0-56b4-4d8e-b19c-d2f884e4fd61" name="Default Changelist" comment="" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -67,7 +64,7 @@
           <entry key="csv" value="1" />
           <entry key="default" value="1" />
           <entry key="gitignore" value="4" />
-          <entry key="htaccess" value="10" />
+          <entry key="htaccess" value="14" />
           <entry key="html" value="8" />
           <entry key="ini" value="5" />
           <entry key="jpg" value="1" />
@@ -75,7 +72,7 @@
           <entry key="json" value="1" />
           <entry key="log" value="11" />
           <entry key="pem" value="1" />
-          <entry key="php" value="269" />
+          <entry key="php" value="286" />
           <entry key="sql" value="4" />
           <entry key="ts" value="1" />
           <entry key="txt" value="1" />
@@ -94,14 +91,14 @@
           <entry key="JSON" value="1" />
           <entry key="JavaScript" value="10" />
           <entry key="Log" value="2" />
-          <entry key="PHP" value="269" />
+          <entry key="PHP" value="286" />
           <entry key="PLAIN_TEXT" value="25" />
           <entry key="SQL" value="2" />
           <entry key="Scratch" value="2" />
           <entry key="SmartyConfig" value="2" />
           <entry key="TypeScript" value="1" />
           <entry key="XML" value="2" />
-          <entry key="htaccess" value="10" />
+          <entry key="htaccess" value="14" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.extensions.edit">
@@ -109,11 +106,11 @@
           <entry key="csv" value="16" />
           <entry key="default" value="8" />
           <entry key="gitignore" value="8" />
-          <entry key="htaccess" value="16" />
+          <entry key="htaccess" value="17" />
           <entry key="html" value="31" />
           <entry key="ini" value="13" />
           <entry key="js" value="3" />
-          <entry key="php" value="5284" />
+          <entry key="php" value="5310" />
           <entry key="txt" value="40" />
           <entry key="vmoptions" value="3" />
         </counts>
@@ -123,9 +120,9 @@
           <entry key="HTML" value="31" />
           <entry key="Ini" value="13" />
           <entry key="JavaScript" value="3" />
-          <entry key="PHP" value="5284" />
+          <entry key="PHP" value="5310" />
           <entry key="PLAIN_TEXT" value="75" />
-          <entry key="htaccess" value="16" />
+          <entry key="htaccess" value="17" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.php.new.class">
@@ -143,30 +140,98 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/html/application/views/index.php">
+      <file pinned="true" current-in-tab="false">
+        <entry file="remoteDeploymentFS://&lt;b53ca6b6-c715-4f73-97d2-10ac61ae401f&gt;/www/jiho/html/application/controllers/plugin/exceljs.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="138">
+              <caret line="6" column="19" lean-forward="true" selection-start-line="6" selection-start-column="19" selection-end-line="6" selection-end-column="19" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="true" current-in-tab="true">
+        <entry file="remoteDeploymentFS://&lt;b53ca6b6-c715-4f73-97d2-10ac61ae401f&gt;/www/jiho/html/application/controllers/admin/shop_category.php">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="69">
-              <caret line="3" column="39" selection-start-line="3" selection-start-column="39" selection-end-line="3" selection-end-column="39" />
+              <caret line="3" column="43" lean-forward="true" selection-start-line="3" selection-start-column="43" selection-end-line="3" selection-end-column="43" />
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="true" current-in-tab="false">
-        <entry file="remoteDeploymentFS://&lt;b53ca6b6-c715-4f73-97d2-10ac61ae401f&gt;/www/jiho/html/application/views/index.php">
+        <entry file="remoteDeploymentFS://&lt;b53ca6b6-c715-4f73-97d2-10ac61ae401f&gt;/www/jiho/html/.htaccess">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="207">
-              <caret line="9" column="34" lean-forward="true" selection-start-line="9" selection-start-column="34" selection-end-line="9" selection-end-column="34" />
+            <state relative-caret-position="115">
+              <caret line="5" column="36" lean-forward="true" selection-start-line="5" selection-start-column="36" selection-end-line="5" selection-end-column="36" />
             </state>
           </provider>
+        </entry>
+      </file>
+      <file pinned="true" current-in-tab="false">
+        <entry file="remoteDeploymentFS://&lt;b53ca6b6-c715-4f73-97d2-10ac61ae401f&gt;/www/jiho/html/application/config/config.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="115">
+              <caret line="38" column="1" lean-forward="true" selection-start-line="38" selection-start-column="1" selection-end-line="38" selection-end-column="1" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="true" current-in-tab="false">
+        <entry file="remoteDeploymentFS://&lt;b53ca6b6-c715-4f73-97d2-10ac61ae401f&gt;/www/jiho/html/application/config/constants.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="326">
+              <caret line="29" column="37" lean-forward="true" selection-start-line="29" selection-start-column="37" selection-end-line="29" selection-end-column="37" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="true" current-in-tab="false">
+        <entry file="remoteDeploymentFS://&lt;b53ca6b6-c715-4f73-97d2-10ac61ae401f&gt;/www/jiho/html/application/config/database.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="-870" />
+          </provider>
+        </entry>
+      </file>
+      <file pinned="true" current-in-tab="false">
+        <entry file="remoteDeploymentFS://&lt;b53ca6b6-c715-4f73-97d2-10ac61ae401f&gt;/www/jiho/html/application/config/routes.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="-341" />
+          </provider>
+        </entry>
+      </file>
+      <file pinned="true" current-in-tab="false">
+        <entry file="remoteDeploymentFS://&lt;b53ca6b6-c715-4f73-97d2-10ac61ae401f&gt;/www/jiho/html/application/controllers/plugin/excel.php">
+          <provider selected="true" editor-type-id="text-editor" />
+        </entry>
+      </file>
+      <file pinned="true" current-in-tab="false">
+        <entry file="remoteDeploymentFS://&lt;b53ca6b6-c715-4f73-97d2-10ac61ae401f&gt;/www/jiho/html/application/controllers/plugin/calender.php">
+          <provider selected="true" editor-type-id="text-editor" />
+        </entry>
+      </file>
+      <file pinned="true" current-in-tab="false">
+        <entry file="remoteDeploymentFS://&lt;b53ca6b6-c715-4f73-97d2-10ac61ae401f&gt;/www/jiho/html/application/controllers/plugin/git.php">
+          <provider selected="true" editor-type-id="text-editor" />
+        </entry>
+      </file>
+      <file pinned="true" current-in-tab="false">
+        <entry file="remoteDeploymentFS://&lt;b53ca6b6-c715-4f73-97d2-10ac61ae401f&gt;/www/jiho/html/application/controllers/plugin/shop.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="23">
+              <caret line="1" lean-forward="true" selection-start-line="1" selection-end-line="1" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="true" current-in-tab="false">
+        <entry file="remoteDeploymentFS://&lt;b53ca6b6-c715-4f73-97d2-10ac61ae401f&gt;/www/jiho/html/application/controllers/plugin/test.php">
+          <provider selected="true" editor-type-id="text-editor" />
         </entry>
       </file>
     </leaf>
   </component>
   <component name="FindInProjectRecents">
     <findStrings>
-      <find>START TRANSACTION</find>
-      <find>RESULT DATA</find>
       <find>헛지랄</find>
       <find>5. 취소 결과</find>
       <find>$cancelResult</find>
@@ -195,6 +260,8 @@
       <find>curl</find>
       <find>pagination</find>
       <find>redis</find>
+      <find>Exceljs</find>
+      <find>uri_protocol</find>
     </findStrings>
     <replaceStrings>
       <replace>visitor_m</replace>
@@ -212,17 +279,12 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/html/.gitignore" />
-        <option value="$PROJECT_DIR$/html/application/views/plugin/exceljs/exceljs_v.php" />
-        <option value="$PROJECT_DIR$/html/test.php" />
         <option value="&lt;b53ca6b6-c715-4f73-97d2-10ac61ae401f&gt;/www/jiho/html/application/config/database.php" />
         <option value="&lt;b53ca6b6-c715-4f73-97d2-10ac61ae401f&gt;/www/alamoTest/html/common/classes/Constants.php" />
         <option value="&lt;b53ca6b6-c715-4f73-97d2-10ac61ae401f&gt;/www/alamoTest/html/common/cfg/config.php" />
         <option value="&lt;b53ca6b6-c715-4f73-97d2-10ac61ae401f&gt;/www/alamoTest/html/action_front.php" />
         <option value="&lt;b53ca6b6-c715-4f73-97d2-10ac61ae401f&gt;/www/alamoTest/html/common/php/reader.php" />
         <option value="&lt;b53ca6b6-c715-4f73-97d2-10ac61ae401f&gt;/www/jiho/html/application/.htaccess" />
-        <option value="&lt;b53ca6b6-c715-4f73-97d2-10ac61ae401f&gt;/www/jiho/html/application/config/config.php" />
-        <option value="&lt;b53ca6b6-c715-4f73-97d2-10ac61ae401f&gt;/www/jiho/html/.htaccess" />
         <option value="&lt;b53ca6b6-c715-4f73-97d2-10ac61ae401f&gt;/www/jiho/html/index.php" />
         <option value="&lt;b53ca6b6-c715-4f73-97d2-10ac61ae401f&gt;/www/alamoTest/html/index.php" />
         <option value="&lt;b53ca6b6-c715-4f73-97d2-10ac61ae401f&gt;/www/alamoTest/html/common/php/LoginUtil.php" />
@@ -263,6 +325,11 @@
         <option value="&lt;b53ca6b6-c715-4f73-97d2-10ac61ae401f&gt;/www/jiho/html/application/libraries/test.php" />
         <option value="&lt;b53ca6b6-c715-4f73-97d2-10ac61ae401f&gt;/www/jiho/html/application/controllers/plugin/test.php" />
         <option value="$PROJECT_DIR$/html/application/views/index.php" />
+        <option value="&lt;b53ca6b6-c715-4f73-97d2-10ac61ae401f&gt;/www/jiho/html/application/controllers/plugin/excel2.php" />
+        <option value="&lt;b53ca6b6-c715-4f73-97d2-10ac61ae401f&gt;/www/jiho/html/application/controllers/plugin/exceljs.php" />
+        <option value="&lt;b53ca6b6-c715-4f73-97d2-10ac61ae401f&gt;/www/jiho/html/application/config/config.php" />
+        <option value="&lt;b53ca6b6-c715-4f73-97d2-10ac61ae401f&gt;/www/jiho/html/application/controllers/admin/shop_category.php" />
+        <option value="&lt;b53ca6b6-c715-4f73-97d2-10ac61ae401f&gt;/www/jiho/html/.htaccess" />
       </list>
     </option>
   </component>
@@ -301,19 +368,6 @@
               <item name="jiho8912.github.io" type="462c0819:PsiDirectoryNode" />
               <item name="html" type="462c0819:PsiDirectoryNode" />
             </path>
-            <path>
-              <item name="jiho8912.github.io" type="b2602c69:ProjectViewProjectNode" />
-              <item name="jiho8912.github.io" type="462c0819:PsiDirectoryNode" />
-              <item name="html" type="462c0819:PsiDirectoryNode" />
-              <item name="application" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="jiho8912.github.io" type="b2602c69:ProjectViewProjectNode" />
-              <item name="jiho8912.github.io" type="462c0819:PsiDirectoryNode" />
-              <item name="html" type="462c0819:PsiDirectoryNode" />
-              <item name="application" type="462c0819:PsiDirectoryNode" />
-              <item name="views" type="462c0819:PsiDirectoryNode" />
-            </path>
           </expand>
           <select />
         </subPane>
@@ -333,15 +387,15 @@
     <property name="settings.editor.selected.configurable" value="reference.webide.settings.project.settings.php" />
   </component>
   <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="D:\jiho\jiho8912.github.io\html\application\libraries" />
+      <recent name="D:\jiho\jiho8912.github.io\html\application\views\plugin\shop\stdpay\INIStdPaySample" />
+      <recent name="D:\jiho\jiho8912.github.io\html\upload\excel" />
+    </key>
     <key name="MoveFile.RECENT_KEYS">
       <recent name="D:\jiho\jiho8912.github.io\html\application\views\plugin\shop\stdpay\INIStdPaySample" />
       <recent name="D:\jiho\jiho8912.github.io\html\application\libraries" />
       <recent name="D:\jiho\jiho8912.github.io\html\application\views\admin" />
-      <recent name="D:\jiho\jiho8912.github.io\html\upload\excel" />
-    </key>
-    <key name="CopyFile.RECENT_KEYS">
-      <recent name="D:\jiho\jiho8912.github.io\html\application\libraries" />
-      <recent name="D:\jiho\jiho8912.github.io\html\application\views\plugin\shop\stdpay\INIStdPaySample" />
       <recent name="D:\jiho\jiho8912.github.io\html\upload\excel" />
     </key>
   </component>
@@ -419,7 +473,7 @@
       <workItem from="1543453769307" duration="540000" />
       <workItem from="1546563093730" duration="1913000" />
       <workItem from="1548293341327" duration="7506000" />
-      <workItem from="1548378502777" duration="7135000" />
+      <workItem from="1548378502777" duration="9169000" />
     </task>
     <task id="LOCAL-00001" summary="업데이트">
       <created>1538100632817</created>
@@ -596,11 +650,18 @@
       <option name="project" value="LOCAL" />
       <updated>1548390663625</updated>
     </task>
-    <option name="localTasksCounter" value="26" />
+    <task id="LOCAL-00026" summary="업데이트">
+      <created>1548390765844</created>
+      <option name="number" value="00026" />
+      <option name="presentableId" value="LOCAL-00026" />
+      <option name="project" value="LOCAL" />
+      <updated>1548390765844</updated>
+    </task>
+    <option name="localTasksCounter" value="27" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="161641000" />
+    <option name="totallyTimeSpent" value="163675000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="1912" y="-8" width="1936" height="1056" extended-state="6" />
@@ -652,20 +713,6 @@
     <option name="LAST_COMMIT_MESSAGE" value="업데이트" />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/html/application/views/footer.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="322">
-          <caret line="242" column="14" lean-forward="true" selection-start-line="242" selection-start-column="14" selection-end-line="242" selection-end-column="14" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/html/enviroment.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="276">
-          <caret line="12" column="28" lean-forward="true" selection-start-line="12" selection-start-column="28" selection-end-line="12" selection-end-column="28" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/html/application/controllers/admin/visitor.php">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="1886">
@@ -779,9 +826,6 @@
       <provider selected="true" editor-type-id="LogFileEditorProvider">
         <state relative-caret-position="-2070" />
       </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/html/application/.htaccess">
-      <provider selected="true" editor-type-id="text-editor" />
     </entry>
     <entry file="file://$PROJECT_DIR$/html/application/views/plugin/shop/stdpay/key/pgcert.pem">
       <provider selected="true" editor-type-id="text-editor" />
@@ -918,8 +962,21 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/html/application/views/index.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="69">
-          <caret line="3" column="39" selection-start-line="3" selection-start-column="39" selection-end-line="3" selection-end-column="39" />
+        <state relative-caret-position="184">
+          <caret line="8" column="26" lean-forward="true" selection-start-line="8" selection-start-column="26" selection-end-line="8" selection-end-column="26" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/html/application/controllers/plugin/exceljs.php">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/html/application/.htaccess">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/html/.htaccess">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="115">
+          <caret line="5" column="36" lean-forward="true" selection-start-line="5" selection-start-column="36" selection-end-line="5" selection-end-column="36" />
         </state>
       </provider>
     </entry>
