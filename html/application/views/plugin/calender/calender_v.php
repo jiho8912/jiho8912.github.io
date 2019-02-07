@@ -8,7 +8,7 @@ $(document).ready(function(){
 		});
 	});
 });
-
+123
 //달력에서 날짜 선택
 function select_day(val)
 {
