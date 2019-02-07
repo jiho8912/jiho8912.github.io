@@ -32,7 +32,7 @@ define('Root_dir', dirname(FCPATH));
 define('Img_dir','/application/views/images');
 define('board_Img_dir','/application/views/board/images');
 define('plugin_dir','/application/views/plugin');
-define('CSS_DIR','/application/views/plugin');123
+define('CSS_DIR','/application/views/plugin');
 define('FOPEN_READ',							'rb');
 define('FOPEN_READ_WRITE',						'r+b');
 define('FOPEN_WRITE_CREATE_DESTRUCTIVE',		'wb'); // truncates existing file data, use with care
