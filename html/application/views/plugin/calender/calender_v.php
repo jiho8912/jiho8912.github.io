@@ -1,4 +1,4 @@
-<link rel="stylesheet" href="<?=plugin_dir?>/calender/css/calender.css" type="text/css" />
+<link rel="stylesheet" href="<?=CSS_DIR?>/calender/css/calender.css" type="text/css" />
 <script>
 $(document).ready(function(){
 	//해당달의 모든 날짜
