@@ -44,7 +44,7 @@ $sign = $SignatureUtil->makeSignature($params);
 
 /* 기타 */
 $siteDomain = "http://" . $_SERVER['HTTP_HOST'] . '/plugin/shop' //가맹점 도메인 입력
-// 페이지 URL에서 고정된 부분을 적는다. 
+// 페이지 URL에서 고정된 부분을 적는다.
 // Ex) returnURL이 http://localhost:8082/demo/INIpayStdSample/INIStdPayReturn.jsp 라면
 //                 http://localhost:8082/demo/INIpayStdSample 까지만 기입한다.
 ?>
@@ -75,7 +75,7 @@ $siteDomain = "http://" . $_SERVER['HTTP_HOST'] . '/plugin/shop' //가맹점 도
       연동시 유의 사항!!
       1) 테스트 URL(stgstdpay.inicis.com) - 샘플에 제공된 테스트 MID 전용으로 실제 가맹점 MID 사용 시 에러가 발생 할 수 있습니다.
       2) 상용 URL(stdpay.inicis.com) - 실제 가맹점 MID 로 테스트 및 오픈 시 해당 URL 변경하여 사용합니다.
-      3) 가맹점의 URL이 http: 인경우 js URL도 https://stgstdpay.inicis.com/stdjs/INIStdPay.js 로 변경합니다.	
+      3) 가맹점의 URL이 http: 인경우 js URL도 https://stgstdpay.inicis.com/stdjs/INIStdPay.js 로 변경합니다.
       4) 가맹점에서 사용하는 케릭터셋이 EUC-KR 일 경우 charset="UTF-8"로 UTF-8 일 경우 charset="UTF-8"로 설정합니다.
     -->
 
