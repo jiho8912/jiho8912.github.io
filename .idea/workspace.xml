@@ -1,11 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="ff5fcec0-56b4-4d8e-b19c-d2f884e4fd61" name="Default Changelist" comment="메뉴 변경 쿼리 업데이트">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/html/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/html/.gitignore" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/html/application/config/constants.php" beforeDir="false" afterPath="$PROJECT_DIR$/html/application/config/constants.php" afterDir="false" />
-    </list>
+    <list default="true" id="ff5fcec0-56b4-4d8e-b19c-d2f884e4fd61" name="Default Changelist" comment="gitignore 추가" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -75,7 +71,7 @@
           <entry key="json" value="1" />
           <entry key="log" value="10" />
           <entry key="pem" value="1" />
-          <entry key="php" value="274" />
+          <entry key="php" value="275" />
           <entry key="sql" value="4" />
           <entry key="ts" value="1" />
           <entry key="txt" value="1" />
@@ -94,7 +90,7 @@
           <entry key="JSON" value="1" />
           <entry key="JavaScript" value="10" />
           <entry key="Log" value="1" />
-          <entry key="PHP" value="274" />
+          <entry key="PHP" value="275" />
           <entry key="PLAIN_TEXT" value="26" />
           <entry key="SQL" value="2" />
           <entry key="Scratch" value="2" />
@@ -113,8 +109,8 @@
           <entry key="html" value="31" />
           <entry key="ini" value="13" />
           <entry key="js" value="3" />
-          <entry key="php" value="5123" />
-          <entry key="txt" value="35" />
+          <entry key="php" value="5128" />
+          <entry key="txt" value="50" />
           <entry key="vmoptions" value="3" />
         </counts>
       </usages-collector>
@@ -123,8 +119,8 @@
           <entry key="HTML" value="31" />
           <entry key="Ini" value="13" />
           <entry key="JavaScript" value="3" />
-          <entry key="PHP" value="5123" />
-          <entry key="PLAIN_TEXT" value="86" />
+          <entry key="PHP" value="5128" />
+          <entry key="PLAIN_TEXT" value="101" />
           <entry key="htaccess" value="16" />
         </counts>
       </usages-collector>
@@ -170,20 +166,20 @@
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="false">
+      <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/html/application/config/constants.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="460">
-              <caret line="20" column="2" lean-forward="true" selection-start-line="20" selection-start-column="2" selection-end-line="20" selection-end-column="2" />
+            <state relative-caret-position="265">
+              <caret line="28" lean-forward="true" selection-start-line="28" selection-end-line="28" />
             </state>
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="true">
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/html/.gitignore">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="230">
-              <caret line="10" column="32" lean-forward="true" selection-start-line="10" selection-start-column="32" selection-end-line="10" selection-end-column="32" />
+              <caret line="10" column="28" selection-start-line="10" selection-start-column="19" selection-end-line="10" selection-end-column="28" />
             </state>
           </provider>
         </entry>
@@ -320,8 +316,8 @@
         <option value="&lt;b53ca6b6-c715-4f73-97d2-10ac61ae401f&gt;/www/jiho/html/application/views/plugin/shop/stdpay/libs/INIStdPayUtil.php" />
         <option value="&lt;b53ca6b6-c715-4f73-97d2-10ac61ae401f&gt;/www/jiho/html/application/views/plugin/shop/stdpay/INIStdPaySample/INIStdPayRequest.php" />
         <option value="&lt;b53ca6b6-c715-4f73-97d2-10ac61ae401f&gt;/www/jiho/html/application/config/constants.php" />
-        <option value="$PROJECT_DIR$/html/application/config/constants.php" />
         <option value="$PROJECT_DIR$/html/.gitignore" />
+        <option value="$PROJECT_DIR$/html/application/config/constants.php" />
       </list>
     </option>
   </component>
@@ -486,7 +482,7 @@
   </component>
   <component name="PropertiesComponent">
     <property name="DatabaseDriversLRU" value="mysql" />
-    <property name="SearchEverywhereHistoryKey" value="cardNoInterestQuota&#9;null&#9;null&#10;INIStdPayUtil&#9;FILE&#9;file://D:/jiho/jiho8912.github.io/html/application/views/plugin/shop/stdpay/libs/INIStdPayUtil.php&#10;admin_main_v&#9;FILE&#9;file://D:/jiho/jiho8912.github.io/html/application/views/admin/admin_main_v.php&#10;admin_member_update&#9;null&#9;null&#10;member_m&#9;null&#9;null&#10;admin_member_v&#9;null&#9;null&#10;_clean_input_keys&#9;null&#9;null&#10;-&gt;select&#9;null&#9;null&#10;-&gt;update&#9;null&#9;null&#10;trans_complete&#9;null&#9;null&#10;db_debug&#9;null&#9;null&#10;_trans_status&#9;null&#9;null&#10;trans_rollback&#9;null&#9;null&#10;trans_status&#9;null&#9;null&#10;updateCategory&#9;null&#9;null&#10;select_admin_category_list&#9;null&#9;null&#10;admin_menu_v&#9;FILE&#9;file://D:/jiho/jiho8912.github.io/html/application/views/admin/admin_menu_v.php&#10;jexcel&#9;FILE&#9;file://D:/jiho/jiho8912.github.io/html/js/jquery.jexcel.js&#10;excel&#9;FILE&#9;file://D:/jiho/jiho8912.github.io/html/application/views/plugin/exceljs/exceljs_v.php&#10;select_category_tree&#9;null&#9;null&#10;excelup&#9;null&#9;null&#10;admin_excel_v&#9;FILE&#9;file://D:/jiho/jiho8912.github.io/html/application/views/admin/admin_excel_v.php&#10;background_img_del&#9;null&#9;null&#10;mysqli_driver&#9;FILE&#9;file://D:/jiho/jiho8912.github.io/html/system/database/drivers/mysqli/mysqli_driver.php&#10;DB_driver.php&#9;FILE&#9;file://D:/jiho/jiho8912.github.io/html/system/database/DB_driver.php" />
+    <property name="SearchEverywhereHistoryKey" value="constants&#9;FILE&#9;file://D:/jiho/jiho8912.github.io/html/application/config/constants.php&#10;cardNoInterestQuota&#9;null&#9;null&#10;INIStdPayUtil&#9;FILE&#9;file://D:/jiho/jiho8912.github.io/html/application/views/plugin/shop/stdpay/libs/INIStdPayUtil.php&#10;admin_main_v&#9;FILE&#9;file://D:/jiho/jiho8912.github.io/html/application/views/admin/admin_main_v.php&#10;admin_member_update&#9;null&#9;null&#10;member_m&#9;null&#9;null&#10;admin_member_v&#9;null&#9;null&#10;_clean_input_keys&#9;null&#9;null&#10;-&gt;select&#9;null&#9;null&#10;-&gt;update&#9;null&#9;null&#10;trans_complete&#9;null&#9;null&#10;db_debug&#9;null&#9;null&#10;_trans_status&#9;null&#9;null&#10;trans_rollback&#9;null&#9;null&#10;trans_status&#9;null&#9;null&#10;updateCategory&#9;null&#9;null&#10;select_admin_category_list&#9;null&#9;null&#10;admin_menu_v&#9;FILE&#9;file://D:/jiho/jiho8912.github.io/html/application/views/admin/admin_menu_v.php&#10;jexcel&#9;FILE&#9;file://D:/jiho/jiho8912.github.io/html/js/jquery.jexcel.js&#10;excel&#9;FILE&#9;file://D:/jiho/jiho8912.github.io/html/application/views/plugin/exceljs/exceljs_v.php&#10;select_category_tree&#9;null&#9;null&#10;excelup&#9;null&#9;null&#10;admin_excel_v&#9;FILE&#9;file://D:/jiho/jiho8912.github.io/html/application/views/admin/admin_excel_v.php&#10;background_img_del&#9;null&#9;null&#10;mysqli_driver&#9;FILE&#9;file://D:/jiho/jiho8912.github.io/html/system/database/drivers/mysqli/mysqli_driver.php&#10;DB_driver.php&#9;FILE&#9;file://D:/jiho/jiho8912.github.io/html/system/database/DB_driver.php" />
     <property name="WebServerToolWindowFactoryState" value="true" />
     <property name="WebServerToolWindowPanel.toolwindow.highlight.mappings" value="true" />
     <property name="WebServerToolWindowPanel.toolwindow.highlight.symlinks" value="true" />
@@ -584,7 +580,7 @@
       <workItem from="1542261605941" duration="2489000" />
       <workItem from="1543453769307" duration="540000" />
       <workItem from="1546563093730" duration="1913000" />
-      <workItem from="1549500230689" duration="1807000" />
+      <workItem from="1549500230689" duration="1892000" />
     </task>
     <task id="LOCAL-00001" summary="업데이트">
       <created>1538100632817</created>
@@ -698,11 +694,18 @@
       <option name="project" value="LOCAL" />
       <updated>1548399088919</updated>
     </task>
-    <option name="localTasksCounter" value="17" />
+    <task id="LOCAL-00017" summary="gitignore 추가">
+      <created>1549502082650</created>
+      <option name="number" value="00017" />
+      <option name="presentableId" value="LOCAL-00017" />
+      <option name="project" value="LOCAL" />
+      <updated>1549502082650</updated>
+    </task>
+    <option name="localTasksCounter" value="18" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="149391000" />
+    <option name="totallyTimeSpent" value="149476000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="1912" y="-8" width="1936" height="1056" extended-state="6" />
@@ -768,7 +771,8 @@
   <component name="VcsManagerConfiguration">
     <MESSAGE value="업데이트" />
     <MESSAGE value="메뉴 변경 쿼리 업데이트" />
-    <option name="LAST_COMMIT_MESSAGE" value="메뉴 변경 쿼리 업데이트" />
+    <MESSAGE value="gitignore 추가" />
+    <option name="LAST_COMMIT_MESSAGE" value="gitignore 추가" />
   </component>
   <component name="editorHistoryManager">
     <entry file="file://$PROJECT_DIR$/html/application/views/admin/admin_visitor_v.php">
@@ -1052,17 +1056,17 @@
     <entry file="file://$PROJECT_DIR$/html/application/config/database.php">
       <provider selected="true" editor-type-id="text-editor" />
     </entry>
-    <entry file="file://$PROJECT_DIR$/html/application/config/constants.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="460">
-          <caret line="20" column="2" lean-forward="true" selection-start-line="20" selection-start-column="2" selection-end-line="20" selection-end-column="2" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/html/.gitignore">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="230">
-          <caret line="10" column="32" lean-forward="true" selection-start-line="10" selection-start-column="32" selection-end-line="10" selection-end-column="32" />
+          <caret line="10" column="28" selection-start-line="10" selection-start-column="19" selection-end-line="10" selection-end-column="28" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/html/application/config/constants.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="265">
+          <caret line="28" lean-forward="true" selection-start-line="28" selection-end-line="28" />
         </state>
       </provider>
     </entry>
