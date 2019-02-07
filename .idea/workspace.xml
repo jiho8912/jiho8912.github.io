@@ -1,9 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="ff5fcec0-56b4-4d8e-b19c-d2f884e4fd61" name="Default Changelist" comment="업데이트">
-      <change beforePath="$PROJECT_DIR$/html/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/html/.gitignore" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/html/application/config/constants.php" beforeDir="false" afterPath="$PROJECT_DIR$/html/application/config/constants.php" afterDir="false" />
+    <list default="true" id="ff5fcec0-56b4-4d8e-b19c-d2f884e4fd61" name="Default Changelist" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -65,7 +64,7 @@
           <entry key="css" value="1" />
           <entry key="csv" value="1" />
           <entry key="default" value="1" />
-          <entry key="gitignore" value="6" />
+          <entry key="gitignore" value="7" />
           <entry key="htaccess" value="10" />
           <entry key="html" value="7" />
           <entry key="ini" value="4" />
@@ -94,7 +93,7 @@
           <entry key="JavaScript" value="10" />
           <entry key="Log" value="1" />
           <entry key="PHP" value="283" />
-          <entry key="PLAIN_TEXT" value="27" />
+          <entry key="PLAIN_TEXT" value="28" />
           <entry key="SQL" value="2" />
           <entry key="Scratch" value="2" />
           <entry key="SmartyConfig" value="2" />
@@ -113,7 +112,7 @@
           <entry key="html" value="31" />
           <entry key="ini" value="13" />
           <entry key="js" value="3" />
-          <entry key="php" value="5148" />
+          <entry key="php" value="5150" />
           <entry key="txt" value="55" />
           <entry key="vmoptions" value="3" />
         </counts>
@@ -123,7 +122,7 @@
           <entry key="HTML" value="31" />
           <entry key="Ini" value="13" />
           <entry key="JavaScript" value="3" />
-          <entry key="PHP" value="5148" />
+          <entry key="PHP" value="5150" />
           <entry key="PLAIN_TEXT" value="110" />
           <entry key="htaccess" value="16" />
         </counts>
@@ -143,16 +142,16 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file pinned="false" current-in-tab="false">
+      <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/html/application/config/constants.php">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="242">
-              <caret line="31" column="46" lean-forward="true" selection-start-line="31" selection-start-column="46" selection-end-line="31" selection-end-column="46" />
+              <caret line="31" column="47" selection-start-line="31" selection-start-column="47" selection-end-line="31" selection-end-column="47" />
             </state>
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="true">
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/html/.gitignore">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="230">
@@ -266,8 +265,8 @@
         <option value="&lt;b53ca6b6-c715-4f73-97d2-10ac61ae401f&gt;/www/jiho/html/application/config/constants.php" />
         <option value="$PROJECT_DIR$/html/application/views/admin/admin_calender_v.php" />
         <option value="$PROJECT_DIR$/html/application/views/plugin/calender/calender_v.php" />
-        <option value="$PROJECT_DIR$/html/application/config/constants.php" />
         <option value="$PROJECT_DIR$/html/.gitignore" />
+        <option value="$PROJECT_DIR$/html/application/config/constants.php" />
       </list>
     </option>
   </component>
@@ -631,7 +630,7 @@
       <workItem from="1542261605941" duration="2489000" />
       <workItem from="1543453769307" duration="540000" />
       <workItem from="1546563093730" duration="1913000" />
-      <workItem from="1549500230689" duration="4062000" />
+      <workItem from="1549500230689" duration="4267000" />
     </task>
     <task id="LOCAL-00001" summary="업데이트">
       <created>1538100632817</created>
@@ -801,17 +800,24 @@
       <option name="project" value="LOCAL" />
       <updated>1549504229758</updated>
     </task>
-    <option name="localTasksCounter" value="25" />
+    <task id="LOCAL-00025" summary="업데이트">
+      <created>1549504516503</created>
+      <option name="number" value="00025" />
+      <option name="presentableId" value="LOCAL-00025" />
+      <option name="project" value="LOCAL" />
+      <updated>1549504516503</updated>
+    </task>
+    <option name="localTasksCounter" value="26" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="151646000" />
+    <option name="totallyTimeSpent" value="151851000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="1912" y="-8" width="1936" height="1056" extended-state="6" />
     <editor active="true" />
     <layout>
-      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.19936034" />
+      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.19936034" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Favorites" order="2" side_tool="true" />
       <window_info anchor="bottom" id="File Transfer" order="0" sideWeight="0.49946696" weight="0.1834962" />
@@ -831,7 +837,7 @@
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
       <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
       <window_info anchor="right" id="Database" order="3" weight="0.32995737" />
-      <window_info anchor="right" id="Remote Host" order="4" visible="true" weight="0.23614073" />
+      <window_info active="true" anchor="right" id="Remote Host" order="4" visible="true" weight="0.23614073" />
     </layout>
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -1153,13 +1159,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/html/application/config/constants.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="242">
-          <caret line="31" column="46" lean-forward="true" selection-start-line="31" selection-start-column="46" selection-end-line="31" selection-end-column="46" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/html/.idea/workspace.xml">
       <provider selected="true" editor-type-id="text-editor" />
     </entry>
@@ -1167,6 +1166,13 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="230">
           <caret line="10" column="19" lean-forward="true" selection-start-line="10" selection-start-column="19" selection-end-line="10" selection-end-column="19" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/html/application/config/constants.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="242">
+          <caret line="31" column="47" selection-start-line="31" selection-start-column="47" selection-end-line="31" selection-end-column="47" />
         </state>
       </provider>
     </entry>
