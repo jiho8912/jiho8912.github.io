@@ -33,7 +33,26 @@ class Test extends CI_Controller {
 
     }
 
+    public function curlTest(){
+        $url = 'https://www.royalcaribbean.com/cruise-ships/symphony-of-the-seas/deck-plans/1820/03';
+        $url = 'https://optimus-qa.deemgroundapp.com/CarSVCAuthorization/Token/';
+        $ch = curl_init();
+        curl_setopt($ch, CURLOPT_URL, $url);
+        curl_setopt($ch, CURLOPT_HEADER, 1);
+        curl_setopt($ch, CURLOPT_RETURNTRANSFER, true);
+        curl_setopt($ch, CURLOPT_SSL_VERIFYPEER, 0);
+        curl_setopt($ch, CURLOPT_FOLLOWLOCATION, 1);
+        curl_setopt($ch, CURLOPT_SSL_VERIFYHOST, 2);
+        curl_setopt($ch, CURLOPT_HTTPHEADER, array(
+                'user-agent: Mozilla/5.0 (iPhone; CPU iPhone OS 11_0 like Mac OS X) AppleWebKit/604.1.38 (KHTML, like Gecko) Version/11.0 Mobile/15A372 Safari/604.1',
+            )
+        );
+        $ParsHtml = curl_exec($ch);
+        $info = curl_getinfo($ch);
 
-
+        print $ParsHtml;
+        debug($info);
+        debug($ParsHtml);
+    }
 }
 
