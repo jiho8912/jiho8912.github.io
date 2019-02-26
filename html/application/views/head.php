@@ -12,6 +12,7 @@
 	<script src="/js/jquery.bpopup.min.js"></script>
 	<script src="/static/bootstrap/js/bootstrap.js"></script>
 	<script src="https://maps.googleapis.com/maps/api/js?key=<?=@$google_apikey?>" type="text/javascript"></script>
+    <script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
 	<link href="http://code.google.com/apis/maps/documentation/javascript/examples/standard.css" rel="stylesheet" type="text/css" /> 
 	<meta content="IE=Edge" http-equiv="X-UA-Compatible">
 </head>

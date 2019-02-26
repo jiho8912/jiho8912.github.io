@@ -156,7 +156,7 @@ class HTTPRequest
    // download URL to string
    function get()
    {
-	
+		return false;
        $crlf = "\r\n";
                      
        // fetch

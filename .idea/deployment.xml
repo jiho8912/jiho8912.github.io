@@ -1,14 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
-  <component name="PublishConfigData" serverName="112.175.184.86" uploadOnCheckin="b53ca6b6-c715-4f73-97d2-10ac61ae401f">
+  <component name="PublishConfigData" uploadOnCheckin="b53ca6b6-c715-4f73-97d2-10ac61ae401f">
     <serverData>
-      <paths name="112.175.184.86">
-        <serverdata>
-          <mappings>
-            <mapping local="$PROJECT_DIR$" web="/" />
-          </mappings>
-        </serverdata>
-      </paths>
       <paths name="13.209.246.230(지호aws테스트)">
         <serverdata>
           <mappings>
