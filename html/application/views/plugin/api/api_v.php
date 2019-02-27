@@ -441,7 +441,9 @@
 			<h1 id="active_controller"><?= $active_controller ?></h1>
 			<?php foreach ($api_detail as $api_item): ?>
 				<div class="api-wrap <?= $api_item['method_name']; ?>">
-					<h2 class="method-name"><?= $api_item['method_name']; ?></h2>
+					<a href="<?= $api_item['help_url']; ?>" target="_blank">
+                        <h2 class="method-name"><?= $api_item['method_name']; ?></h2>
+                    </a>
 					<?php if ($api_item['description'] != '') { ?>
 					<blockquote>
 						<?= $api_item['description']; ?>

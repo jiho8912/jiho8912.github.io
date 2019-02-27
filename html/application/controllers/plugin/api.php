@@ -75,6 +75,7 @@ class api extends CI_Controller{
                     'header' => $this->setDeemHeader('CarSVCAuthorization'),
                     'call_type' => 'POST',
                     'description' => 'access token 생성',
+                    'help_url' => 'https://optimus-qa.deemgroundapp.com/CarSVCAuthorization/Help'
 				),
 				'CarSVCProvider' => array(
                     'method_name' => 'CarSVCProvider',
@@ -117,6 +118,7 @@ class api extends CI_Controller{
                     'header' => $this->setDeemHeader('CarSVCProvider'),
                     'call_type' => 'POST',
                     'description' => '요금검색(A Street to Street)',
+                    'help_url' => 'https://optimus-qa.deemgroundapp.com/CarSVCProvider/Help'
 				),
 				'CarSVCBooking_POST' => array(
                     'method_name' => 'CarSVCBooking_POST',
@@ -192,6 +194,7 @@ class api extends CI_Controller{
                     'header' => $this->setDeemHeader('CarSVCBooking'),
                     'call_type' => 'POST',
                     'description' => '예약하기',
+                    'help_url' => 'https://optimus-qa.deemgroundapp.com/CarSVCBooking/Help/Api/POST-Booking'
 				),
                 'CarSVCBooking_PUT' => array(
                     'method_name' => 'CarSVCBooking_PUT',
@@ -268,6 +271,7 @@ class api extends CI_Controller{
                     'header' => $this->setDeemHeader('CarSVCBooking'),
                     'call_type' => 'PUT',
                     'description' => '예약수정',
+                    'help_url' => 'https://optimus-qa.deemgroundapp.com/CarSVCBooking/Help/Api/PUT-Booking-reservationId'
                 ),
                 'CarSVCBooking_GET_STATUS' => array(
                     'method_name' => 'CarSVCBooking_GET_STATUS',
@@ -279,6 +283,7 @@ class api extends CI_Controller{
                     'header' => $this->setDeemHeader('CarSVCBooking'),
                     'call_type' => 'GET',
                     'description' => '예약,차량 상태확인',
+                    'help_url' => 'https://optimus-qa.deemgroundapp.com/CarSVCBooking/Help/Api/GET-Booking-reservationId-Status'
                 ),
                 'CarSVCBooking_DELETE' => array(
                     'method_name' => 'CarSVCBooking_DELETE',
@@ -289,6 +294,7 @@ class api extends CI_Controller{
                     'header' => $this->setDeemHeader('CarSVCBooking'),
                     'call_type' => 'DELETE',
                     'description' => '예약 취소',
+                    'help_url' => 'https://optimus-qa.deemgroundapp.com/CarSVCBooking/Help/Api/DELETE-Booking-reservationId'
                 ),
                 'CarSVCBooking_GET_DETAIL' => array(
                     'method_name' => 'CarSVCBooking_GET_DETAIL',
@@ -299,6 +305,7 @@ class api extends CI_Controller{
                     'header' => $this->setDeemHeader('CarSVCBooking'),
                     'call_type' => 'GET',
                     'description' => '예약세부정보확인',
+                    'help_url' => 'https://optimus-qa.deemgroundapp.com/CarSVCBooking/Help/Api/GET-Booking-reservationId'
                 ),
                 'CarSVCCustomer' => array(
                     'method_name' => 'CarSVCCustomer',
@@ -312,6 +319,7 @@ class api extends CI_Controller{
                     'header' => $this->setDeemHeader('CarSVCCustomer'),
                     'call_type' => 'GET',
                     'description' => '고객API',
+                    'help_url' => 'https://optimus-qa.deemgroundapp.com/carSVCCustomer/Help'
                 ),
 			),
             'ALAMO' => array(
@@ -389,6 +397,7 @@ class api extends CI_Controller{
                     'header' => $apiFunction['header'],
                     'call_type' => $apiFunction['call_type'],
                     'description' => $apiFunction['description'],
+                    'help_url' => $apiFunction['help_url']
                 ));
             }
         }
