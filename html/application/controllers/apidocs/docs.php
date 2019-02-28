@@ -3,7 +3,7 @@
 defined('BASEPATH') OR exit('No direct script access allowed');
 
 class Docs extends CI_Controller{
-	const CONTROLLER_DIR = './application/controllers';
+	const CONTROLLER_DIR = './application/controllers/apidocs';
 
 	public function __construct(){
 		parent::__construct();
@@ -11,14 +11,20 @@ class Docs extends CI_Controller{
 		$this->load->helper('url');
 	}
 
-	public function index($controller_name = null){
+	public function index(){
+		// redirect docs/view
+    	echo 	'<script>
+					window.location.href = "' . str_replace('?','',current_url()) . '/view"
+    		  	</script>';
+	}
+
+	public function view($controller_name = null){
 		$view_data = array(
-			'base_url' => preg_replace('/docs$/', '', explode('/docs', current_url())[0] . '/docs'),
+			'base_url' => preg_replace('/docs$/', '', explode('/docs', str_replace('?','',current_url()))[0] . '/docs'),
 			'api_list' => $this->_get_api_list(),
 		);
 		$view_data['active_controller'] = $controller_name != null ? $controller_name : key($view_data['api_list']);
 		$view_data['api_detail'] = $this->_get_api_detail($view_data['active_controller']);
-		// print_r($view_data);
 		
 		$this->load->view('/plugin/docs/docs', $view_data);
 	}
@@ -44,7 +50,7 @@ class Docs extends CI_Controller{
 			while (false !== ($entry = readdir($handle))) {
 				if ($entry != "." && $entry != ".." && strpos($entry, ".php") && !preg_match('/^(?:docs.php)$/i', $entry) && 
 					!preg_match('/^(?:welcome.php)$/i', $entry)) {
-					
+
 					$controller_name = explode('.php', $entry);
 					$controller_name = $controller_name[0];
 					$api_str = $this->_get_controller_source($controller_name);
@@ -59,7 +65,7 @@ class Docs extends CI_Controller{
 			}
 			closedir($handle);
 		}
-		
+
 		return $controller_arr;
 	}
 

@@ -9,4 +9,4 @@ application/logs/*
 !application/logs/.htaccess
 
 application/config/
-/html/.idea
+html/.idea/

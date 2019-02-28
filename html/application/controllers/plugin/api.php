@@ -83,7 +83,7 @@ class api extends CI_Controller{
                         'provider' => false
                     ),
                     'parameter' => array(
-                        'ServiceClass' => 'SEDAN',
+                        'ServiceClass' => 'SEDAN,LIMO,VAN,BUS,SUV,SHUTTLE,TAXI,SHARE',
                         'OnDemand' => false,
                         'PickUpLocation' => array(
                         	'IsMeetAndGreet' => false,

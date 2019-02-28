@@ -23,6 +23,23 @@
             opacity: 0.6;
             display: none;
         }
+
+        .code-wrap {
+            height: 440px;
+            overflow: auto;
+            cursor: pointer;
+        }
+
+        #clip_target {
+              position:   absolute;
+              top:        0;
+              left:       0;
+              width:      1px;
+              height:     1px;
+              margin:     0;
+              padding:    0;
+              border:     0;
+          }
     </style>
 
 	<!-- jQuery -->
@@ -83,6 +100,36 @@
 			    	})
 			    }
 			});
+
+			$('.code-wrap').click(function () {
+                var text = $(this).text();
+                $("#clip_target").text(text);
+                $("#clip_target").select();
+
+                try {
+                    var successful = document.execCommand('copy');
+
+                    if(successful) {
+                        swal({
+                            text: '복사되었습니다.',
+                            icon: "success"
+                        });
+                    }else{
+                        swal({
+                            text: 'fail',
+                            icon: "error"
+                        });
+                    }
+                }catch (err) {
+                    swal({
+                        text: '이 브라우저는 지원하지 않습니다.',
+                        icon: "error"
+                    });
+                }
+
+			    console.log(text);
+
+            });
 
 			$('ol li').click(function(event){
 				event.preventDefault();
@@ -409,6 +456,7 @@
 	</script>
 </head>
 <body>
+<textarea type="text" id="clip_target"></textarea>
 <div>
     <img id="loadingDiv">
 </div>
@@ -441,9 +489,15 @@
 			<h1 id="active_controller"><?= $active_controller ?></h1>
 			<?php foreach ($api_detail as $api_item): ?>
 				<div class="api-wrap <?= $api_item['method_name']; ?>">
-					<a href="<?= $api_item['help_url']; ?>" target="_blank">
-                        <h2 class="method-name"><?= $api_item['method_name']; ?></h2>
-                    </a>
+                    <h2 class="method-name">
+                        <?if($api_item['help_url']){?>
+                            <a href="<?= $api_item['help_url']; ?>" target="_blank">
+                                <?= $api_item['method_name']; ?>
+                            </a>
+                        <?}else{?>
+                            <?= $api_item['method_name']; ?>
+                        <?}?>
+                    </h2>
 					<?php if ($api_item['description'] != '') { ?>
 					<blockquote>
 						<?= $api_item['description']; ?>
@@ -573,12 +627,12 @@
 		<div class="footer-content-area row">
 			<div class="code-area request col-md-6">
 				<div class="description">api request</div>
-				<pre class="code-wrap">
+				<pre class="code-wrap" id="req">
 				</pre>
 			</div>
 			<div class="code-area response col-md-6">
 				<div class="description">response</div>
-				<pre class="code-wrap">
+				<pre class="code-wrap" id="res">
 				</pre>
 			</div>
 		</div>
@@ -589,10 +643,6 @@
 			$('.sidebar-menu-wrap').slimScroll({
 		        height: '100%'
 		    });
-		    $('.code-wrap').slimScroll({
-		    	height: '440px'
-		    });
-
 		});
 	</script>
 </body>
