@@ -171,7 +171,7 @@ class Member extends CI_Controller {
 		}else{
 			$mb_id = $this->input->post('mb_id');
 			$mb_info = array(
-				'mb_password' => $this->input->post('mb_password'),
+				'mb_password' => md5($this->input->post('mb_password')),
 				'mb_name' => $this->input->post('mb_name'),
 				'mb_hp' => $this->input->post('mb_hp'),
 				'mb_email' => $this->input->post('mb_email'),

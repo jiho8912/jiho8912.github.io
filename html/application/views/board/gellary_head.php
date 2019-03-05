@@ -26,35 +26,6 @@ $(window).bind('load', function () {
 });
 $(document).ready(function() {
 
-
-	$("#login_facebook").click(function () {
-
-		FB.login(function(response) {
-			var accessToken = response.authResponse.accessToken;
-			if (response.status === 'connected') {
-
-				FB.getLoginStatus(function(response) {
-					console.log(JSON.stringify(response));
-				});
-
-				FB.api('/me?fields=name,email', function(response) {
-					$.post("/member/sns_in",
-					{
-						ajax : true,
-						mb_id : response.id,
-						mb_name : response.name,
-						mb_email : response.email,
-					},
-
-					function(data){
-						alert(data.message);
-						if(data) window.location.reload();
-					});
-				});
-			}
-		},{scope: 'public_profile,email'});
-	});
-
 	$('.carousel').carousel({
 	 interval: 2500,
 	 wrap: true

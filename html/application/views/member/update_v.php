@@ -64,7 +64,7 @@
 			<hr>
 			
 			<p class="text-center">
-				<button type="submit" class="btn btn-lg btn-success">수정</button>
+				<button id="submit_check" type="submit" class="btn btn-lg btn-success">수정</button>
 			</p>
 		</fieldset>
 	</form>

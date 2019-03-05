@@ -41,6 +41,10 @@ define('FOPEN_WRITE_CREATE',					'ab');
 define('FOPEN_READ_WRITE_CREATE',				'a+b');
 define('FOPEN_WRITE_CREATE_STRICT',				'xb');
 define('FOPEN_READ_WRITE_CREATE_STRICT',		'x+b');
+define('NAVER_CLIENT_ID', 'IO1m4JaZnzAAmrPQ6q6j');
+define('NAVER_CLIENT_SECRET', 'W3siSrPP9C');
+define('NAVER_CALLBACK_URL', 'http://' . urlencode($_SERVER['HTTP_HOST'] . '/member/callback_url'));
+
 
 
 /* End of file constants.php */

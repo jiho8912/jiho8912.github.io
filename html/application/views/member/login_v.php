@@ -20,8 +20,19 @@
             <input type="password" id="mb_password" name="mb_password" class="form-control span3" maxlength="20">
             <button type="submit" class="btn btn-primary">로그인</button>
         </div>
-
     </div>
+
+    <div class="form-group">
+        <div class="col-md-9 text-center well-sm  clearfix">
+            <form id="sns_login" method="post">
+                <img src="<?= board_Img_dir ?>/icon/social_facebook.png" width="22" height="22" style="cursor: pointer;" id="login_facebook" scope="public_profile,email,user_birthday">
+                <img src="<?= board_Img_dir ?>/icon/social_naver.png" width="22" height="22" style="cursor: pointer;" id="login_naver" >
+                <img src="<?= board_Img_dir ?>/icon/social_kakao.png" width="22" height="22">
+                <img src="<?= board_Img_dir ?>/icon/social_google.png" width="22" height="22">
+            </form>
+        </div>
+    </div>
+
     <div class="form-group">
         <label class="col-md-3 control-label"></label>
         <div class="col-md-9">

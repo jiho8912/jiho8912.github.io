@@ -33,7 +33,7 @@ if (!function_exists('debug')) {
 함수명   - alert()
 내용	 - 경고메시지
 ------------------------------------------------------------------------------------*/
-function alert($msg = '', $url = '') {
+function alert($msg = '', $url = '', $type = false) {
     $CI =& get_instance();
     if (!$msg) {
         $msg = '올바른 방법으로 이용해 주십시오.';
@@ -41,12 +41,15 @@ function alert($msg = '', $url = '') {
     echo "<meta http-equiv=\"content-type\" content=\"text/html; charset=" . $CI->config->item('charset') . "\">";
     echo "<script type='text/javascript'>";
     echo "alert('" . $msg . "');";
-    if ($url) {
+
+    if($type){
+        echo "self.close()";
+    }else if($url){
         echo "location.replace('" . $url . "');";
-    }
-    else {
+    }else{
         echo "history.go(-1);";
     }
+
     echo "</script>";
     exit;
 }
@@ -377,4 +380,33 @@ function fromKeyCamelCasList($object, $separator = '_') {
     }
 
     return $object;
+}
+
+/**
+ * @param $url
+ * @param string $headers
+ * @param string $params
+ * @return array
+ */
+function curlCall($url, $headers = '', $params = ''){
+    $ch = curl_init();
+    curl_setopt($ch, CURLOPT_URL, $url);
+    curl_setopt($ch, CURLOPT_POST, false);
+    curl_setopt($ch, CURLOPT_SSL_VERIFYPEER, 0);
+    curl_setopt($ch, CURLOPT_FOLLOWLOCATION, 1);
+    curl_setopt($ch, CURLOPT_SSL_VERIFYHOST, 2);
+    curl_setopt($ch, CURLOPT_RETURNTRANSFER, true);
+    if($headers) {
+        curl_setopt($ch, CURLOPT_HTTPHEADER, $headers);
+    }
+    $response = curl_exec ($ch);
+    $status_code = curl_getinfo($ch, CURLINFO_HTTP_CODE);
+    curl_close ($ch);
+
+    $return_array = array(
+        'response' => $response,
+        'res_code' => $status_code
+    );
+
+    return $return_array;
 }

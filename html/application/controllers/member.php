@@ -76,7 +76,7 @@ class Member extends CI_Controller {
 
 		//비밀번호 확인
 		$pw = $this->member_m->select_member_pw($mb_id);
-		if($pw['mb_password'] != $mb_password)
+		if($pw['mb_password'] != md5($mb_password))
 		{
 			$this->member_m->alert('비밀번호를 확인해주세요.');
 		};
@@ -84,61 +84,119 @@ class Member extends CI_Controller {
 		$user_data = array(
 			'mb_id'=>$mb_id,
 			'mb_password'=>$mb_password,
-			);
+        );
 
 		$this->session->set_userdata($user_data);
 		$this->member_m->alert('로그인 되었습니다.','/');
 		exit;
 	}
 
+    /*------------------------------------[function]-------------------------------------
+    함수명   - sns_in_front()
+    내용	 - sns 로그인
+    ------------------------------------------------------------------------------------*/
+    public function sns_in_front()
+    {
+        $mb_id = $this->input->post('type') . '_' .$this->input->post('mb_id');
+        $mb_password = $this->input->post('mb_password');
+        $mb_name = $this->input->post('mb_name');
+        $mb_hp = $this->input->post('mb_hp');
+        $mb_email = $this->input->post('mb_email');
+
+        if(!$mb_id)
+        {
+            $this->admin_m->result_json(false, '아이디를 입력해주세요.');
+        }
+
+        //sns id로 가입
+        $is_id = $this->member_m->is('mb_id',$mb_id);
+
+        if($is_id == 0 ){
+
+            $reg_date = date("Y-m-d H:i:s");
+
+            $mb_info = array(
+                'mb_id' => $mb_id,
+                'mb_password' => $mb_password,
+                'mb_name' => $mb_name,
+                'mb_hp' => $mb_hp,
+                'mb_email' => $mb_email,
+                'reg_date' => $reg_date,
+            );
+
+            $insert_id = $this->member_m->insert_member_info($mb_info);
+
+            if($insert_id > 0)
+            {
+                //세션값 삽입
+                $this->session->set_userdata(array('mb_id'=>$mb_id));
+                $this->admin_m->result_json(true, '로그인되었습니다.');
+            }else{
+                $this->admin_m->result_json(false, '로그인에 실패하였습니다.');
+            }
+        }else{
+            //세션값 삽입
+            $this->session->set_userdata(array('mb_id'=>$mb_id));
+            $this->admin_m->result_json(true, '로그인되었습니다.');
+        }
+    }
 
 	/*------------------------------------[function]-------------------------------------
-	함수명   - sns_in()
+	함수명   - sns_in_backend()
 	내용	 - sns 로그인
 	------------------------------------------------------------------------------------*/
-	public function sns_in()
+	public function sns_in_backend($params = array())
 	{
-		if($this->input->post('mb_id'))
+        echo '<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />';
+
+        $mb_id = $params['type'] . '_' . $params['mb_id'];
+        $mb_password = $params['mb_password'];
+        $mb_name = $params['mb_name'];
+        $mb_hp = $params['mb_hp'];
+        $mb_email = $params['mb_email'];
+
+
+		if(!$mb_id)
 		{
-			$mb_id = $this->input->post('mb_id');
-		}else{
-			$this->admin_m->result_json(false, '아이디를 입력해주세요.');
+            echo '<script>alert("아이디값이 없습니다."); self.close();</script>';
 		}
 
-		//세션값 삽입
-		$user_data = array(
-			'mb_id'=>$mb_id,
-		);
+        //회원상세정보 가져오기
+        $data = $this->member_m->select_mb_detail($mb_id);
 
-			$this->session->set_userdata($user_data);
-
-		//sns id로 가입
-		$is_id = $this->member_m->is('mb_id',$mb_id);
-
-		if($is_id == 0 ){
+		if(!$data){
 
 			$reg_date = date("Y-m-d H:i:s");
 
 			$mb_info = array(
 				'mb_id' => $mb_id,
-				'mb_password' => $this->input->post('mb_password'),
-				'mb_name' => $this->input->post('mb_name'),
-				'mb_hp' => $this->input->post('mb_hp'),
-				'mb_email' => $this->input->post('mb_email'),
+				'mb_password' => $mb_password,
+				'mb_name' => $mb_name,
+				'mb_hp' => $mb_hp,
+				'mb_email' => $mb_email,
 				'reg_date' => $reg_date,
 			);
 
 			$insert_id = $this->member_m->insert_member_info($mb_info);
 			
 			if($insert_id > 0)
-			{	
-				$this->admin_m->result_json(false, '로그인되었습니다.');
+			{
+                //세션값 삽입
+                $this->session->set_userdata(array('mb_id'=>$mb_id));
+                echo '<script>alert("로그인 되었습니다.");</script>';
 			}else{
-				$this->admin_m->result_json(false, '로그인에 실패하였습니다.');
-			}
+                echo '<script>alert("로그인에 실패하였습니다.");</script>';
+            }
 		}else{
-			$this->admin_m->result_json(false, '로그인되었습니다.');
+
+            //세션값 삽입
+            $this->session->set_userdata(array('mb_id'=>$mb_id));
+            echo '<script>alert("로그인 되었습니다.");</script>';
 		}
+
+        echo '<script>opener.location.href = "/"; self.close();</script>';
+
+        //header("location:" . $this->session->userdata('return_url'));
 	}
 
 	/*------------------------------------[function]-------------------------------------
@@ -147,6 +205,24 @@ class Member extends CI_Controller {
 	------------------------------------------------------------------------------------*/
 	public function logout_v()
 	{
+	    // 네이버 연동 아이디일경우
+
+        if(strpos($this->session->userdata('mb_id'), 'naver') !== false){
+            $urlArray = array(
+                'grant_type' => 'delete',
+                'client_id' => NAVER_CLIENT_ID,
+                'client_secret' => NAVER_CLIENT_SECRET,
+                'access_token' => $this->session->userdata('access_token'),
+                'service_provider' => 'NAVER'
+            );
+
+            $naver_curl = 'https://nid.naver.com/oauth2.0/token';
+            $naver_curl = $naver_curl . '?' . http_build_query($urlArray);
+
+            curlCall($naver_curl);
+        }
+
+
 		$this->session->sess_destroy();
 		$this->member_m->alert('로그아웃 되었습니다.','/member/login_v');
 		exit;
@@ -210,11 +286,11 @@ class Member extends CI_Controller {
 		$reg_date = date("Y-m-d H:i:s");
 
 		$mb_info = array(
-			'mb_id' => $this->input->post('mb_id'),
-			'mb_password' => $this->input->post('mb_password'),
-			'mb_name' => $this->input->post('mb_name'),
+			'mb_id' => $mb_id,
+			'mb_password' => md5($mb_password),
+			'mb_name' => $mb_name,
 			'mb_hp' => $this->input->post('mb_hp'),
-			'mb_email' => $this->input->post('mb_email'),
+			'mb_email' => $mb_email,
 			'reg_date' => $reg_date,
 		);
 
@@ -266,9 +342,7 @@ class Member extends CI_Controller {
 		$reg_mb_email = $this->input->post('reg_mb_email');
 		$mb_id = $this->input->post('mb_id');
 
-		if($mb_id){
-			$mb_id = $mb_id;
-		}else{
+		if(!$mb_id){
 			$mb_id = $this->session->userdata('mb_id');
 		}
 
@@ -283,7 +357,11 @@ class Member extends CI_Controller {
 			$FALSE = '이메일 주소가 형식에 맞지 않습니다.';
 		else {
 			$row = $this->member_m->is('mb_email', $reg_mb_email);
-			if ($row > 0 and $data['mb_detail']['mb_email'] != $reg_mb_email){
+			// 기존 메일과 입력한메일이 같을경우 제외
+			if($data['mb_detail']['mb_email'] == $reg_mb_email){
+                $row = $row - 1;
+            }
+			if ($row > 0){
 				$FALSE = '이미 존재하는 이메일 주소입니다.';
 			}else{
 				$TRUE = '사용가능한 이메일 주소입니다.';
@@ -343,8 +421,20 @@ class Member extends CI_Controller {
 			$this->update_v();
 		}else{
 			$mb_id = $this->input->post('mb_id');
+
+            $data['mb_detail'] = $this->member_m->select_mb_detail($mb_id);
+
+            $row = $this->member_m->is('mb_email', $this->input->post('mb_email'));
+            // 기존 메일과 입력한메일이 같을경우 제외
+            if($data['mb_detail']['mb_email'] == $this->input->post('mb_email')){
+                $row = $row - 1;
+            }
+            if($row > 0){
+                alert('이미 존재하는 이메일 입니다.');
+            }
+
 			$mb_info = array(
-				'mb_password' => $this->input->post('mb_password'),
+				'mb_password' => md5($this->input->post('mb_password')),
 				'mb_name' => $this->input->post('mb_name'),
 				'mb_hp' => $this->input->post('mb_hp'),
 				'mb_email' => $this->input->post('mb_email'),
@@ -353,14 +443,97 @@ class Member extends CI_Controller {
 			$update_id = $this->member_m->update_member_info($mb_info,$mb_id);
 
 			if($update_id){
-				$this->member_m->alert('정상적으로 수정되었습니다.','/');
+                alert('정상적으로 수정되었습니다.','/');
 			}else{
-				$this->member_m->alert('회원정보 수정에 실패하였습니다.');
+                alert('회원정보 수정에 실패하였습니다.');
 			}
 			$this->load->view('head');
-			$this->load->view('member/update_v',$data);
+			$this->load->view('member/update_v');
 			$this->load->view('footer');
 		}
 	}
+
+    /**
+     * @return string
+     */
+    public function generate_state(){
+
+        // 상태 토큰으로 사용할 랜덤 문자열을 생성
+        $mt = microtime();
+        $rand = mt_rand();
+        $state = md5($mt . $rand);
+
+        // 세션 또는 별도의 저장 공간에 상태 토큰을 저장
+        $return_array = array(
+            'state' => $state,
+            'return_url' => $_SERVER['HTTP_REFERER']
+        );
+
+        $this->session->set_userdata($return_array);
+
+        echo $state;
+    }
+
+    public function callback_url(){
+
+        $return_code = $this->input->get('code');
+        $return_state = $this->input->get('state');
+        $state = $this->session->userdata('state');
+        if($state != $return_state){
+            alert('토큰값 불일치!', '',true);
+        }else{
+            $urlArray = array(
+                'grant_type' => 'authorization_code',
+                'client_id' => NAVER_CLIENT_ID,
+                'client_secret' => NAVER_CLIENT_SECRET,
+                'redirect_uri' => NAVER_CALLBACK_URL,
+                'code' => $return_code,
+                'state' => $return_state
+             );
+
+            $naver_curl = 'https://nid.naver.com/oauth2.0/token';
+            $naver_curl = $naver_curl . '?' . http_build_query($urlArray);
+
+            $result = curlCall($naver_curl);
+
+            if($result['res_code'] == 200){
+                $responseArr = json_decode($result['response'], true);
+                // 토큰값으로 네이버 회원정보 가져오기
+                $headers = array(
+                    'Host: openapi.naver.com',
+                    'Pragma: no-cache',
+                    'Accept: */*',
+                    sprintf('Authorization: Bearer %s', $responseArr['access_token'])
+                );
+                $this->session->set_userdata(array('access_token' => $responseArr['access_token']));
+                unset($response,$responseArr);
+
+                $url = 'https://openapi.naver.com/v1/nid/me';
+                $result = curlCall($url,$headers);
+
+                $responseArr = json_decode($result['response'], true);
+
+                if($result['res_code'] == 200) {
+                    $parmas = array(
+                        'mb_id' => $responseArr['response']['id'],
+                        'mb_name' => $responseArr['response']['name'],
+                        'mb_email' => $responseArr['response']['email'],
+                        'mb_password' => $this->session->userdata('access_token'),
+                        'type' => 'naver'
+                    );
+
+                    $this->sns_in_backend($parmas);
+                }else{
+                    alert('네이버 정보가져오기에 실패하였습니다.', '',true);
+                }
+            }else{
+                alert('토큰값을 가져오지못했습니다.', '',true);
+            }
+
+        }
+
+        //header("location:" . $this->session->userdata('return_url'));
+    }
+
 }
 

@@ -9,12 +9,14 @@
 	<link rel="stylesheet" href="/static/bootstrap/css/instargram.css">
 	<link rel="stylesheet" href="/static/main/css/style.css">
 	<script src="/js/jquery-1.10.1.min.js"></script>
+    <script src="/js/common.js"></script>
 	<script src="/js/jquery.bpopup.min.js"></script>
 	<script src="/static/bootstrap/js/bootstrap.js"></script>
 	<script src="https://maps.googleapis.com/maps/api/js?key=<?=@$google_apikey?>" type="text/javascript"></script>
     <script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
-	<link href="http://code.google.com/apis/maps/documentation/javascript/examples/standard.css" rel="stylesheet" type="text/css" /> 
-	<meta content="IE=Edge" http-equiv="X-UA-Compatible">
+	<link href="http://code.google.com/apis/maps/documentation/javascript/examples/standard.css" rel="stylesheet" type="text/css" />
+    <script type="text/javascript" src="https://static.nid.naver.com/js/naveridlogin_js_sdk_2.0.0.js" charset="utf-8"></script>
+    <meta content="IE=Edge" http-equiv="X-UA-Compatible">
 </head>
 <body>
 

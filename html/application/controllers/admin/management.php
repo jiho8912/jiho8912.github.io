@@ -102,7 +102,7 @@ class Management extends CI_Controller {
 
 		//비밀번호 확인
 		$pw = $this->member_m->select_member_pw($mb_id);
-		if($pw['mb_password'] != $mb_password)
+		if($pw['mb_password'] != md5($mb_password))
 		{
 			$this->member_m->alert('비밀번호를 확인해주세요.');
 		};

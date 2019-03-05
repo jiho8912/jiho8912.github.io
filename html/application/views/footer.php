@@ -25,12 +25,10 @@
             <div class="col-lg-12 text-center well-sm  clearfix">
 
                 <form id="sns_login" method="post">
-                    <img src="<?= board_Img_dir ?>/icon/social_facebook.png" width="22" height="22"
-                         style="cursor: pointer;" id="login_facebook" scope="public_profile,email,user_birthday">
-                    <img src="<?= board_Img_dir ?>/icon/social_twitter.png" width="22" height="22">
-                    <img src="<?= board_Img_dir ?>/icon/social_google.png" width="22" height="22">
-                    <img src="<?= board_Img_dir ?>/icon/social_naver.png" width="22" height="22">
+                    <img src="<?= board_Img_dir ?>/icon/social_facebook.png" width="22" height="22" style="cursor: pointer;" id="login_facebook" scope="public_profile,email,user_birthday">
+                    <img src="<?= board_Img_dir ?>/icon/social_naver.png" width="22" height="22" style="cursor: pointer;" id="login_naver" >
                     <img src="<?= board_Img_dir ?>/icon/social_kakao.png" width="22" height="22">
+                    <img src="<?= board_Img_dir ?>/icon/social_google.png" width="22" height="22">
                 </form>
 
             </div>
@@ -273,7 +271,7 @@
         var width = $("#contents img").width();
         $("#contents img").width("100%");
 
-        //페이스북 api 시작
+        // 페이스북 api 시작
         $("#login_facebook").click(function () {
 
             FB.login(function (response) {
@@ -281,29 +279,56 @@
                 if (response.status === 'connected') {
 
                     FB.getLoginStatus(function (response) {
-                        console.log(JSON.stringify(response));
+                        //console.log(JSON.stringify(response));
                     });
 
                     FB.api('/me?fields=name,email', function (response) {
-                        $.post("/member/sns_in",
-                            {
-                                ajax: true,
-                                mb_id: response.id,
-                                mb_name: response.name,
-                                mb_email: response.email,
-                            },
+                        var params = {};
+                        params.mb_id = response.id;
+                        params.mb_name = response.name;
+                        params.mb_email = response.email;
+                        params.type = 'facebook';
 
-                            function (data) {
-                                alert(data.message);
-                                if (data) window.location.reload();
-                            });
+                        $.ajax({
+                            method: "post",
+                            url: '/member/sns_in_front',
+                            data: params,
+                            success: function (res) {
+                                alert(res.message);
+                                if (res) location.href = '/';
+                            }
+                        });
                     });
                 }
             }, {scope: 'public_profile,email'});
         });
-        //페이스북 api 종료
+        // 페이스북 api 종료
+
+        // 네이버 로그인 api
+        $("#login_naver").click(function () {
+            $.ajax({
+                method: "post",
+                url: '/member/generate_state',
+                contentType: "application/json",
+                data: '',
+                success: function (res) {
+                    if(res){
+                        var client_id = "<?=NAVER_CLIENT_ID?>";
+                        var redirect_url = "<?=NAVER_CALLBACK_URL?>";
+                        var url = "https://nid.naver.com/oauth2.0/authorize?client_id=" +client_id+ "&response_type=code&redirect_uri=" +redirect_url+ "&state=" +res;
+                        popup(url, 600, 500);
+                    }else{
+                        swal({
+                            text: '네이버 로그인 실패!',
+                            type: 'error'
+                        });
+                    }
+                }
+            });
+        });
     });
 
+    /* 페이스북 api */
     window.fbAsyncInit = function () {
         FB.init({
             appId: '629623190526314',
