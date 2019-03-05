@@ -188,7 +188,6 @@ class Member extends CI_Controller {
                 echo '<script>alert("로그인에 실패하였습니다.");</script>';
             }
 		}else{
-
             //세션값 삽입
             $this->session->set_userdata(array('mb_id'=>$mb_id));
             echo '<script>alert("로그인 되었습니다.");</script>';
@@ -474,6 +473,9 @@ class Member extends CI_Controller {
         echo $state;
     }
 
+    /**
+     *
+     */
     public function callback_url(){
 
         $return_code = $this->input->get('code');

@@ -331,7 +331,7 @@ class api extends CI_Controller{
                         'returnLocation' => 'HNLO71',
                         'pickUpDateTime' => date('Y-m-d', strtotime( "+1 day" ))  . 'T12:00:00',
                         'returnDateTime' => date('Y-m-d', strtotime( "+2 day" )) . 'T12:00:00',
-                        'rateQualifier' => '',
+                        'rateQualifier' => 'AL : 300083 , NL : 5030370',
                         'ic' => '300083',
                         'airCode' => '',
                         'airMemId' => '',

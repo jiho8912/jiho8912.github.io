@@ -273,15 +273,8 @@
 
         // 페이스북 api 시작
         $("#login_facebook").click(function () {
-
             FB.login(function (response) {
-                var accessToken = response.authResponse.accessToken;
                 if (response.status === 'connected') {
-
-                    FB.getLoginStatus(function (response) {
-                        //console.log(JSON.stringify(response));
-                    });
-
                     FB.api('/me?fields=name,email', function (response) {
                         var params = {};
                         params.mb_id = response.id;
@@ -300,7 +293,7 @@
                         });
                     });
                 }
-            }, {scope: 'public_profile,email'});
+            });
         });
         // 페이스북 api 종료
 
@@ -335,7 +328,7 @@
             cookie: true,  // enable cookies to allow the server to access
                            // the session
             xfbml: true,  // parse social plugins on this page
-            version: 'v2.5' // use graph api version 2.5
+            version: 'v3.2' // use graph api version 2.5
         });
     };
     // Load the SDK asynchronously
