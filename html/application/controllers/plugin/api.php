@@ -342,7 +342,7 @@ class api extends CI_Controller{
                         'Customer' => false,
                         'customerId' => true,
                         'groupId' => true,
-                        'providerCode' => true,
+                        'providerCode' => 'EHI',
                         'billing' => false
                     ),
                     'header' => $this->setDeemHeader('CarSVCCustomer'),

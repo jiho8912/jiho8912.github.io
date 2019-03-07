@@ -192,13 +192,6 @@
 
                         console.log(data);
 
-                        if(data.res) {
-                            var res = JSON.parse(data.res);
-                            if (res.TokenType && res.AccessToken) {
-                                $(".Authorization").val("Bearer " + res.AccessToken);
-                            }
-                        }
-
                         var request_code_wrap = $('.request pre.code-wrap');
                         var response_code_wrap = $('.response pre.code-wrap');
 
@@ -207,6 +200,12 @@
                         if(data.req) {
                             if (data.req.indexOf("xml") == -1) {
                                 request_data_str += formatJson(data.req);
+
+                                var res = JSON.parse(data.res);
+                                if (res.TokenType && res.AccessToken) {
+                                    $(".Authorization").val("Bearer " + res.AccessToken);
+                                }
+
                             } else {
                                 request_data_str += formatXml(data.req);
                             }
