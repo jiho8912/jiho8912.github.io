@@ -189,7 +189,15 @@
                     dataType : 'json',
 
                     success : function(data){
+
                         console.log(data);
+
+                        if(data.res) {
+                            var res = JSON.parse(data.res);
+                            if (res.TokenType && res.AccessToken) {
+                                $(".Authorization").val("Bearer " + res.AccessToken);
+                            }
+                        }
 
                         var request_code_wrap = $('.request pre.code-wrap');
                         var response_code_wrap = $('.response pre.code-wrap');
@@ -375,6 +383,7 @@
                     var row_div1 = $(row1).children('.row').children('div');
                     var row_key1 = row_div1.eq(0).text();
                     var row_value1 = row_div1.eq(1).children('input[type="text"]').val();
+                    if(!row_value1) row_value1 = false
                     data_str[row_key1] = row_value1;
 
                     if((row_key1 == "givenName" || row_key1 == "surname" || row_key1 == "uniqueId")  && row_value1 == ""){
@@ -389,6 +398,7 @@
                             var row_div2 = $(row2).children('.row').children('div');
                             var row_key2 = row_div2.eq(0).text();
                             var row_value2 = row_div2.eq(1).children('input[type="text"]').val();
+                            if(!row_value2) row_value2 = false
                             data_str[row_key1][row_key2] = row_value2;
 
                             if($(row2).attr("sub_data") == 1){
@@ -398,6 +408,7 @@
                                     var row_div3 = $(row3).children('.row').children('div');
                                     var row_key3 = row_div3.eq(0).text();
                                     var row_value3 = row_div3.eq(1).children('input[type="text"]').val();
+                                    if(!row_value3) row_valu3 = false
                                     data_str[row_key1][row_key2][row_key3] = row_value3;
 
                                     if($(row3).attr("sub_data") == 1){
@@ -407,6 +418,7 @@
                                             var row_div4 = $(row4).children('.row').children('div');
                                             var row_key4 = row_div4.eq(0).text();
                                             var row_value4 = row_div4.eq(1).children('input[type="text"]').val();
+                                            if(!row_value4) row_value4 = false
                                             data_str[row_key1][row_key2][row_key3][row_key4] = row_value4;
                                         });
 
@@ -597,7 +609,7 @@
 										<div class="row">
 											<div class="col-lg-3"><p class="ico-circle-none"></p><?= $key ?></div>
 											<div class="col-lg-9">
-												<input type="text" value="<?=$header_item?>" />
+												<input type="text" class="<?=$key?>" value="<?=$header_item?>" />
 											</div>
 										</div>
 									<?php endforeach; ?>

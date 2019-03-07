@@ -4,15 +4,23 @@ defined('BASEPATH') OR exit('No direct script access allowed');
 
 class api extends CI_Controller{
 	const CONTROLLER_DIR = './application/controllers';
+    var $session_id;
+    var $EntityCode = '32967';
+    var $ClientAppID = 'TMKOREA.T';
+    var $ClientIdentifier = 'FHSJ3VPZ-KG5M-VWZD-PGU8-R36KF2LMQFNQ';
+    var $ClientSecret = 'bSG6W88mCxf4gAwTREmSzHAU';
+    var $UserID = 'TMK';
 
 	public function __construct(){
 		parent::__construct();
 
 		$this->load->helper('url');
+        $this->load->library('session');
 	}
 
 	public function index(){
 
+        $this->session_id = $this->session->userdata('session_id');
         $base_url = $this->setBaseUrl($_REQUEST['active_controller']);
 
         $view_data = array(
@@ -37,18 +45,38 @@ class api extends CI_Controller{
     }
 
 	private function setDeemHeader($method){
+
+	    $SecCtx = array(
+            'sess' => array(
+                'id' => $this->session_id
+            ),
+            'eff' => array(
+                'ref' => 'auth'
+            ),
+            'auth' => array(
+                'id' => $this->UserID,
+                'type' => 'e',
+                'ext' => array(
+                    's' => $this->EntityCode,
+                    'p' => $this->EntityCode
+                )
+            )
+        );
+
+        $Accept = str_replace('carsvc' ,'', strtolower($method));
+        $Accept = 'application/vnd.deem.' . $Accept . '.v1.1+json';
+
         $header = array(
-            'Accept' => 'application/vnd.deem.Authorization.v1.1+json',
-            'X-Rearden-SecCtx' => htmlspecialchars('{"sess":{"id":"ea321010-9b44-428f-9932-9171116f96d3"},"eff":{"ref":"auth"},"auth":{"id":"test","type":"e","ext":{"s":32967,"p":32967}}}'),
+            'Accept' => $Accept,
+            'X-Rearden-SecCtx' => htmlspecialchars(json_encode($SecCtx)),
             'Accept-Language' => 'en-US',
             'Content-Type' => 'application/json',
-            'EntityCode' => 32967,
-            'ClientAppID' => 'TMKOREA.T'
+            'EntityCode' => $this->EntityCode,
+            'ClientAppID' => $this->ClientAppID
         );
 
         if($method != 'CarSVCAuthorization'){
-            $type = 'Bearer ';
-            $header['Authorization'] = $type. 'gAAAAMO0YA1pi1eGz88lrXc5nLuK_MuQLOPtHyzM9byoABrOOrb9HDcfTAvJT2oVLFETaNzcEMGTadkXVt1K40Ab_iJwp0KsUZmr7OrWs5uVh1HzXfJXsTxfD0xjmHHWOwi9rplQQns_oXPWZ7ztMYHAU9dqALxSXSH5ycC_hAYnyYtwBAEAAIAAAABBqSPsq6X0KjWCfAIZqPm1SepxGkSXMkdPAaOXySaqBvRv1S0e0eA7eQTLTtwWx-V1H8bOuy6Y9rzP36d_SEmuZdLGJSWsCv5w7iZcjOYPMgkE3Ayp2BeiPSQtSz4hMtzgTzqaNt9VBdkXSTLIsWrQPTy1oRhKno2zziovzrLojWNajTKQzCBdQ1rxaSWsASzMivk1sEX9PGXFkto9wk4NyIaPp_EBj1nln9F_Soaeu0qEFECEdru4UmMUV8VzgCQF8qammFboFiL1EFxK-9n8tm7CP8xVsKd5J7VHqm0Pb6Sp6BFyugrzJMD9KElf3KSabxv6_WM9xUmZEZ3FGOPm';
+            $header['Authorization'] = '';
         }
 
         if($method == 'CarSVCProvider'){
@@ -78,13 +106,13 @@ class api extends CI_Controller{
                     'description' => 'access token 생성',
                     'help_url' => 'https://optimus-qa.deemgroundapp.com/CarSVCAuthorization/Help'
 				),
-				'carsvcprovider' => array(
-                    'method_name' => 'carsvcprovider',
+				'CarSVCprovider' => array(
+                    'method_name' => 'CarSVCprovider',
                     'url_parameter' => array(
                         'provider' => false
                     ),
                     'parameter' => array(
-                        'ServiceClass' => 'SEDAN,LIMO,VAN,BUS,SUV,SHUTTLE,TAXI,SHARE',
+                        'ServiceClass' => 'SEDAN',
                         'OnDemand' => false,
                         'PickUpLocation' => array(
                         	'IsMeetAndGreet' => false,
@@ -121,8 +149,8 @@ class api extends CI_Controller{
                     'description' => '요금검색(A Street to Street)',
                     'help_url' => 'https://optimus-qa.deemgroundapp.com/CarSVCProvider/Help'
 				),
-				'carsvcBooking_POST' => array(
-                    'method_name' => 'carsvcBooking_POST',
+				'CarSVCBooking_POST' => array(
+                    'method_name' => 'CarSVCBooking_POST',
                     'url_parameter' => array(
                         'Booking' => false
                     ),
@@ -132,7 +160,7 @@ class api extends CI_Controller{
                             'FirstName' => 'Test',
                             'LastName' => 'Booker',
                             'DayPhone' => '010-9582-8912',
-                            'DayPhoneExt' => '010-9582-8912',
+                            'DayPhoneExt' => '12345',
                             'CellPhone' => '010-9582-8912',
                             'EmailAddress' => 'jiho@alamo.co.kr',
                         ),
@@ -140,7 +168,7 @@ class api extends CI_Controller{
                             'FirstName' => 'Test',
                             'LastName' => 'Passenger',
                             'DayPhone' => '010-9582-8912',
-                            'DayPhoneExt' => '010-9582-8912',
+                            'DayPhoneExt' => '12345',
                             'CellPhone' => '010-9582-8912',
                             'EmailAddress' => 'jiho@alamo.co.kr',
                             'PNRNumber' => 'ABCDE0',
@@ -187,7 +215,7 @@ class api extends CI_Controller{
                             'BillingPostalCode' => '07094',
                             'BillingCountryCode' => 'US'
                         ),
-                        'ProviderSearchId' => 'ProviderSearchID',
+                        'ProviderSearchId' => '462A-073A209-1076-003E-01',
                         'SpecialRequests' => 'Test Special Requests',
                         'PickupInstructions' => 'Test Pickup Instructions',
                         'DropOffInstructions' => 'Test Dropoff Instructions'
@@ -197,8 +225,8 @@ class api extends CI_Controller{
                     'description' => '예약하기',
                     'help_url' => 'https://optimus-qa.deemgroundapp.com/CarSVCBooking/Help/Api/POST-Booking'
 				),
-                'carsvcBooking_PUT' => array(
-                    'method_name' => 'carsvcBooking_PUT',
+                'CarSVCBooking_PUT' => array(
+                    'method_name' => 'CarSVCBooking_PUT',
                     'url_parameter' => array(
                         'Booking' => false,
                         'ReservationID' => true
@@ -209,7 +237,7 @@ class api extends CI_Controller{
                             'FirstName' => 'Test',
                             'LastName' => 'Booker',
                             'DayPhone' => '010-9582-8912',
-                            'DayPhoneExt' => '010-9582-8912',
+                            'DayPhoneExt' => '12345',
                             'CellPhone' => '010-9582-8912',
                             'EmailAddress' => 'jiho@alamo.co.kr',
                         ),
@@ -217,7 +245,7 @@ class api extends CI_Controller{
                             'FirstName' => 'Test',
                             'LastName' => 'Passenger',
                             'DayPhone' => '010-9582-8912',
-                            'DayPhoneExt' => '010-9582-8912',
+                            'DayPhoneExt' => '12345',
                             'CellPhone' => '010-9582-8912',
                             'EmailAddress' => 'jiho@alamo.co.kr',
                             'PNRNumber' => 'ABCDE0',
@@ -264,7 +292,7 @@ class api extends CI_Controller{
                             'BillingPostalCode' => '07094',
                             'BillingCountryCode' => 'US'
                         ),
-                        'ProviderSearchId' => 'ProviderSearchID',
+                        'ProviderSearchId' => '462A-073A209-1076-003E-01',
                         'SpecialRequests' => 'Test Special Requests',
                         'PickupInstructions' => 'Test Pickup Instructions',
                         'DropOffInstructions' => 'Test Dropoff Instructions'
@@ -274,8 +302,8 @@ class api extends CI_Controller{
                     'description' => '예약수정',
                     'help_url' => 'https://optimus-qa.deemgroundapp.com/CarSVCBooking/Help/Api/PUT-Booking-reservationId'
                 ),
-                'carsvcBooking_GET_STATUS' => array(
-                    'method_name' => 'carsvcBooking_GET_STATUS',
+                'CarSVCBooking_GET_STATUS' => array(
+                    'method_name' => 'CarSVCBooking_GET_STATUS',
                     'url_parameter' => array(
                         'Booking' => false,
                         'ReservationID' => true,
@@ -286,8 +314,8 @@ class api extends CI_Controller{
                     'description' => '예약,차량 상태확인',
                     'help_url' => 'https://optimus-qa.deemgroundapp.com/CarSVCBooking/Help/Api/GET-Booking-reservationId-Status'
                 ),
-                'carsvcBooking_DELETE' => array(
-                    'method_name' => 'carsvcBooking_DELETE',
+                'CarSVCBooking_DELETE' => array(
+                    'method_name' => 'CarSVCBooking_DELETE',
                     'url_parameter' => array(
                         'Booking' => false,
                         'ReservationID' => true
@@ -297,8 +325,8 @@ class api extends CI_Controller{
                     'description' => '예약 취소',
                     'help_url' => 'https://optimus-qa.deemgroundapp.com/CarSVCBooking/Help/Api/DELETE-Booking-reservationId'
                 ),
-                'carsvcBooking_GET_DETAIL' => array(
-                    'method_name' => 'carsvcBooking_GET_DETAIL',
+                'CarSVCBooking_GET_DETAIL' => array(
+                    'method_name' => 'CarSVCBooking_GET_DETAIL',
                     'url_parameter' => array(
                         'Booking' => false,
                         'ReservationID' => true
@@ -308,8 +336,8 @@ class api extends CI_Controller{
                     'description' => '예약세부정보확인',
                     'help_url' => 'https://optimus-qa.deemgroundapp.com/CarSVCBooking/Help/Api/GET-Booking-reservationId'
                 ),
-                'carSVCCustomer' => array(
-                    'method_name' => 'carSVCCustomer',
+                'CarSVCCustomer' => array(
+                    'method_name' => 'CarSVCCustomer',
                     'url_parameter' => array(
                         'Customer' => false,
                         'customerId' => true,
@@ -426,7 +454,7 @@ class api extends CI_Controller{
         curl_setopt($ch, CURLOPT_SSL_VERIFYPEER, 0);
         curl_setopt($ch, CURLOPT_FOLLOWLOCATION, 1);
         curl_setopt($ch, CURLOPT_SSL_VERIFYHOST, 2);
-        curl_setopt($ch, CURLOPT_TIMEOUT, 15);
+        curl_setopt($ch, CURLOPT_TIMEOUT, 30);
         curl_setopt($ch, CURLOPT_CUSTOMREQUEST, $type); // call 타입 get,post,put,delete
 		if(strtoupper($type != 'GET')) {
 			curl_setopt($ch, CURLOPT_POSTFIELDS, $parameter); //POST로 보낼 데이터 지정하기
