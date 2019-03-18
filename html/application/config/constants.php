@@ -44,7 +44,9 @@ define('FOPEN_READ_WRITE_CREATE_STRICT',		'x+b');
 define('NAVER_CLIENT_ID', 'IO1m4JaZnzAAmrPQ6q6j');
 define('NAVER_CLIENT_SECRET', 'W3siSrPP9C');
 define('NAVER_CALLBACK_URL', 'http://' . urlencode($_SERVER['HTTP_HOST'] . '/member/callback_url'));
-
+define('KAKAO_APP_KEY', '5eb1767728ef3efdecfd82e20535b95b');
+define('KAKAO_CALLBACK_URL', 'http://' . urlencode($_SERVER['HTTP_HOST'] . '/member/callback_url_kakao'));
+define('KAKAO_CLIENT_SECRET', '20YB8VbGpPX7xlA6x9I68N2O2KLi76OA');
 
 
 /* End of file constants.php */

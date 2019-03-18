@@ -33,13 +33,14 @@ class api extends CI_Controller{
 	}
 
     private function setBaseUrl($controllerName){
-        if($controllerName == 'DEEM'){
-            $base_url = 'https://optimus-qa.deemgroundapp.com/';
-        }else if($controllerName == 'ALAMO'){
-            $base_url = 'http://www.alamo-stage.co.kr/gateApiLive.php/';
-        }else{
-            $base_url = 'http://localhost/';
-        }
+
+        $url_Array = array(
+            'DEEM' => 'https://optimus-qa.deemgroundapp.com/',
+            'ALAMO' => 'http://www.alamo-stage.co.kr/gateApiLive.php/',
+            'KaKao' => 'https://kapi.kakao.com/v1/push/'
+        );
+
+        $base_url = $url_Array[$controllerName];
 
         return $base_url;
     }
@@ -175,25 +176,25 @@ class api extends CI_Controller{
                             'GDSSystem' => 'SABRE'
                         ),
                         'OtherPassengers' => array(
-                            0 => array(
-                                'FirstName' => 'ADD',
+                            array(
+                                'FirstName' => 'Add',
                                 'LastName' => 'Passenger 1'
                             ),
-                            1 => array(
-                                'FirstName' => 'ADD',
+                            array(
+                                'FirstName' => 'Add',
                                 'LastName' => 'Passenger 2'
                             ),
                         ),
                         'Accounting' => array(
                             'TripReason' => 'Attending Tech Conference',
                             'AccountingFields' => array(
-                                0 => array(
+                                array(
                                     'FieldNumber' => 1,
                                     'FieldTypeCode' => 'COST',
                                     'FieldLabel' => 'Cost Center',
                                     'FieldValue' => 'CC450'
                                 ),
-                                1 => array(
+                                array(
                                     'FieldNumber' => 2,
                                     'FieldTypeCode' => 'DEPT',
                                     'FieldLabel' => 'Dept Code',
@@ -252,11 +253,11 @@ class api extends CI_Controller{
                             'GDSSystem' => 'SABRE'
                         ),
                         'OtherPassengers' => array(
-                            0 => array(
+                            array(
                                 'FirstName' => 'ADD',
                                 'LastName' => 'Passenger 1'
                             ),
-                            1 => array(
+                            array(
                                 'FirstName' => 'ADD',
                                 'LastName' => 'Passenger 2'
                             ),
@@ -264,13 +265,13 @@ class api extends CI_Controller{
                         'Accounting' => array(
                             'TripReason' => 'Attending Tech Conference',
                             'AccountingFields' => array(
-                                0 => array(
+                                array(
                                     'FieldNumber' => 1,
                                     'FieldTypeCode' => 'COST',
                                     'FieldLabel' => 'Cost Center',
                                     'FieldValue' => 'CC450'
                                 ),
-                                1 => array(
+                                array(
                                     'FieldNumber' => 2,
                                     'FieldTypeCode' => 'DEPT',
                                     'FieldLabel' => 'Dept Code',
@@ -396,6 +397,15 @@ class api extends CI_Controller{
                     ),
                     'call_type' => 'POST',
                     'description' => '지점정보조회',
+                ),
+                'PingRQ' => array(
+                    'method_name' => 'PingRQ',
+                    'url_parameter' => '',
+                    'parameter' => array(
+                        'EchoData' => 'THIS IS A PING TEST'
+                    ),
+                    'call_type' => 'POST',
+                    'description' => '핑테스트',
                 )
             ),
             'RCCL' => array(
@@ -405,6 +415,23 @@ class api extends CI_Controller{
                     'parameter' => '',
                     'call_type' => 'POST',
                     'description' => '',
+                )
+            ),
+            'KaKao' => array(
+                'register' => array(
+                    'method_name' => 'register',
+                    'url_parameter' => '',
+                    'parameter' => array(
+                        'uuid' => '',
+                        'device_id' => '',
+                        'push_type' => '',
+                        'push_token' => ''
+                    ),
+                    'call_type' => 'POST',
+                    'description' => '푸시 토큰 등록',
+                    'header' => array(
+                        'Authorization' => 'KaKaoAK cb6cf9726679d522b858f5a8f1d27f5d'
+                    ),
                 )
             )
 		);
@@ -446,7 +473,7 @@ class api extends CI_Controller{
         foreach ($_POST['headers'] as $key => $val){
         	$headers[] = $key . ': ' . $val;
         }
-        $parameter = ($_POST['service'] == "DEEM") ? json_encode($_POST['parameter']) : $this->setAlamoParams($_POST['parameter']);
+        $parameter = ($_POST['service'] == "DEEM") ? $_POST['parameter'] : $this->setAlamoParams(json_decode($_POST['parameter']));
         $ch = curl_init();
         curl_setopt($ch, CURLOPT_URL, $url);
         curl_setopt($ch, CURLOPT_HEADER, 0);
@@ -454,7 +481,7 @@ class api extends CI_Controller{
         curl_setopt($ch, CURLOPT_SSL_VERIFYPEER, 0);
         curl_setopt($ch, CURLOPT_FOLLOWLOCATION, 1);
         curl_setopt($ch, CURLOPT_SSL_VERIFYHOST, 2);
-        curl_setopt($ch, CURLOPT_TIMEOUT, 30);
+        curl_setopt($ch, CURLOPT_TIMEOUT, 100);
         curl_setopt($ch, CURLOPT_CUSTOMREQUEST, $type); // call 타입 get,post,put,delete
 		if(strtoupper($type != 'GET')) {
 			curl_setopt($ch, CURLOPT_POSTFIELDS, $parameter); //POST로 보낼 데이터 지정하기
@@ -494,6 +521,8 @@ class api extends CI_Controller{
             $r->getInfoOfReservation($param);
         } else if($method == 'VehLocDetailRQ'){
             $r->getInfoLocDetail($param);
+        } else if($method == 'PingRQ'){
+            $r->getPingTest($param);
         }
 
         $body = substr($r->req, strpos($r->req, "<soapenv"));

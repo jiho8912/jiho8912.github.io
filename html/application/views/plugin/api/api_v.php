@@ -151,7 +151,7 @@
                 window.location.href = "?active_controller=" + controller_name;
 			});
 
-			$(document).on('click', 'button[type="submit"]', function(){
+			$(document).on("click", "button[type='submit']", function(){
                 _error = false;
                 _error_msg = '';
                 var api_parent = $(this).parents('section');
@@ -197,7 +197,7 @@
 
                         request_data_str += '\n';
 
-                        if(data.req) {
+                        if(data.res && data.req) {
                             if (data.req.indexOf("xml") == -1) {
                                 request_data_str += formatJson(data.req);
 
@@ -205,6 +205,7 @@
                                 if (res.TokenType && res.AccessToken) {
                                     $(".Authorization").val("Bearer " + res.AccessToken);
                                 }
+
 
                             } else {
                                 request_data_str += formatXml(data.req);
@@ -222,6 +223,8 @@
                 });
 
 			});
+
+            $("div .CarSVCAuthorization button[type='submit']").trigger("click");
 
 			$('.footer-header-area').click(function(){
 				$('body').removeClass('console-active')
@@ -382,7 +385,8 @@
                     var row_div1 = $(row1).children('.row').children('div');
                     var row_key1 = row_div1.eq(0).text();
                     var row_value1 = row_div1.eq(1).children('input[type="text"]').val();
-                    if(!row_value1) row_value1 = false
+                    if(!row_value1) row_value1 = false;
+
                     data_str[row_key1] = row_value1;
 
                     if((row_key1 == "givenName" || row_key1 == "surname" || row_key1 == "uniqueId")  && row_value1 == ""){
@@ -392,22 +396,28 @@
 
                     if($(row1).attr("sub_data") == 1){
                         data_str[row_key1] = {};
+                        if(row_key1 == 'OtherPassengers'){
+                            data_str[row_key1] = [];
+                        }
 
                         $.each($(row1).children('div[sub_data]'), function(index2, row2){
                             var row_div2 = $(row2).children('.row').children('div');
                             var row_key2 = row_div2.eq(0).text();
                             var row_value2 = row_div2.eq(1).children('input[type="text"]').val();
-                            if(!row_value2) row_value2 = false
+                            if(!row_value2) row_value2 = false;
                             data_str[row_key1][row_key2] = row_value2;
 
                             if($(row2).attr("sub_data") == 1){
                                 data_str[row_key1][row_key2] = {};
+                                if(row_key2 == 'AccountingFields'){
+                                    data_str[row_key1][row_key2] = [];
+                                }
 
                                 $.each($(row2).children('div[sub_data]'), function(index3, row3){
                                     var row_div3 = $(row3).children('.row').children('div');
                                     var row_key3 = row_div3.eq(0).text();
                                     var row_value3 = row_div3.eq(1).children('input[type="text"]').val();
-                                    if(!row_value3) row_valu3 = false
+                                    if(!row_value3) row_valu3 = false;
                                     data_str[row_key1][row_key2][row_key3] = row_value3;
 
                                     if($(row3).attr("sub_data") == 1){
@@ -417,7 +427,7 @@
                                             var row_div4 = $(row4).children('.row').children('div');
                                             var row_key4 = row_div4.eq(0).text();
                                             var row_value4 = row_div4.eq(1).children('input[type="text"]').val();
-                                            if(!row_value4) row_value4 = false
+                                            if(!row_value4) row_value4 = false;
                                             data_str[row_key1][row_key2][row_key3][row_key4] = row_value4;
                                         });
 
@@ -430,7 +440,8 @@
                     }
                 });
 
-                return data_str;
+                console.log(JSON.stringify(data_str));
+                return JSON.stringify(data_str);
             }
 
             function ajax_header_binding(api_parent, group_name){

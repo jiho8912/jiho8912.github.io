@@ -309,10 +309,33 @@
                         var client_id = "<?=NAVER_CLIENT_ID?>";
                         var redirect_url = "<?=NAVER_CALLBACK_URL?>";
                         var url = "https://nid.naver.com/oauth2.0/authorize?client_id=" +client_id+ "&response_type=code&redirect_uri=" +redirect_url+ "&state=" +res;
-                        popup(url, 600, 500);
+                        popup(url, 600, 700);
                     }else{
                         swal({
                             text: '네이버 로그인 실패!',
+                            type: 'error'
+                        });
+                    }
+                }
+            });
+        });
+
+        // 카카오 로그인
+        $("#login_kakao").click(function () {
+            $.ajax({
+                method: "post",
+                url: '/member/generate_state',
+                contentType: "application/json",
+                data: '',
+                success: function (res) {
+                    if(res){
+                        var app_key = "<?=KAKAO_APP_KEY?>";
+                        var redirect_uri = "<?=KAKAO_CALLBACK_URL?>";
+                        var url = "https://kauth.kakao.com/oauth/authorize?client_id=" + app_key + "&redirect_uri=" + redirect_uri + "&response_type=code&state=" +res;
+                        popup(url, 600, 700);
+                    }else{
+                        swal({
+                            text: '카카오 로그인 실패!',
                             type: 'error'
                         });
                     }

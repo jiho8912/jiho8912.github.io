@@ -1512,18 +1512,18 @@ $req ='
 		}
 		
 		/* ping test */
-		function getPingTest() {
+		function getPingTest($param) {
 			$this->setUrl($this->SERVICE_URL) ;	// URL SETTING
 		
 			$this->putH("OTA_PingRQ", "", "3", "100000002") ;
 				
 			$this->initSetSOAPData("OTA_PingRQ", "AL") ;
 		
-			$req = '<EchoData>THIS IS A PING TEST</EchoData>';
+			$req = '<EchoData>' .$param->EchoData. '</EchoData>';
 				
 			$this->putB($req) ;
 		
-			return $this->get() ;
+			//return $this->get() ;
 		}
 
 

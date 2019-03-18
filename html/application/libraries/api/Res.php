@@ -1043,8 +1043,8 @@ if(! class_exists("Res") )	{
 		}
 		
 		/* ping test */
-		function getPingTest() {
-			$this->res = parent::getPingTest() ;
+		function getPingTest($param) {
+			$this->res = parent::getPingTest($param) ;
 		
 			$dom = new DOMDocument() ;
 			$dom->loadXML($this->res) ;

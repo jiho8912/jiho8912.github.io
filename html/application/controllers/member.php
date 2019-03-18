@@ -537,5 +537,67 @@ class Member extends CI_Controller {
         //header("location:" . $this->session->userdata('return_url'));
     }
 
+    public function callback_url_kakao(){
+        $return_code = $this->input->get('code');
+        $return_state = $this->input->get('state');
+        $state = $this->session->userdata('state');
+
+        if($state != $return_state){
+            alert('토큰값 불일치!', '',true);
+        }else{
+            $parmas = array(
+                'grant_type' => 'authorization_code',
+                'client_id' => KAKAO_APP_KEY,
+                //'client_secret' => KAKAO_CLIENT_SECRET,
+                'redirect_uri' => KAKAO_CALLBACK_URL,
+                'code' => $return_code
+            );
+
+            $headers = array(
+                'Content-type: application/x-www-form-urlencoded;charset=utf-8'
+            );
+
+            $kakao_curl = 'https://kauth.kakao.com/oauth/token';
+
+            $result = curlCall($kakao_curl, $headers, $parmas, 'post');
+debug($parmas,$result);
+exit;
+            if($result['res_code'] == 200){
+                $responseArr = json_decode($result['response'], true);
+                // 토큰값으로 네이버 회원정보 가져오기
+                $headers = array(
+                    'Host: openapi.naver.com',
+                    'Pragma: no-cache',
+                    'Accept: */*',
+                    sprintf('Authorization: Bearer %s', $responseArr['access_token'])
+                );
+                $this->session->set_userdata(array('access_token' => $responseArr['access_token']));
+                unset($response,$responseArr);
+
+                $url = 'https://openapi.naver.com/v1/nid/me';
+                $result = curlCall($url,$headers);
+
+                $responseArr = json_decode($result['response'], true);
+
+                if($result['res_code'] == 200) {
+                    $parmas = array(
+                        'mb_id' => $responseArr['response']['id'],
+                        'mb_name' => $responseArr['response']['name'],
+                        'mb_email' => $responseArr['response']['email'],
+                        'mb_password' => $this->session->userdata('access_token'),
+                        'type' => 'naver'
+                    );
+
+                    $this->sns_in_backend($parmas);
+                }else{
+                    alert('네이버 정보가져오기에 실패하였습니다.', '',true);
+                }
+            }else{
+                alert('토큰값을 가져오지못했습니다.', '',true);
+            }
+
+        }
+    }
+
 }
 
