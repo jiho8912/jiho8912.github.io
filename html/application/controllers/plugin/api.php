@@ -353,6 +353,15 @@ class api extends CI_Controller{
                 ),
 			),
             'ALAMO' => array(
+                'PingRQ' => array(
+                    'method_name' => 'PingRQ',
+                    'url_parameter' => '',
+                    'parameter' => array(
+                        'EchoData' => 'THIS IS A PING TEST'
+                    ),
+                    'call_type' => 'POST',
+                    'description' => '핑테스트',
+                ),
                 'VehAvailRateRQ' => array(
                     'method_name' => 'VehAvailRateRQ',
                     'url_parameter' => '',
@@ -397,15 +406,6 @@ class api extends CI_Controller{
                     ),
                     'call_type' => 'POST',
                     'description' => '지점정보조회',
-                ),
-                'PingRQ' => array(
-                    'method_name' => 'PingRQ',
-                    'url_parameter' => '',
-                    'parameter' => array(
-                        'EchoData' => 'THIS IS A PING TEST'
-                    ),
-                    'call_type' => 'POST',
-                    'description' => '핑테스트',
                 )
             ),
             'RCCL' => array(
