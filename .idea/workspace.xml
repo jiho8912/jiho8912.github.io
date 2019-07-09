@@ -2,16 +2,38 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="ff5fcec0-56b4-4d8e-b19c-d2f884e4fd61" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/html/application/libraries/rcclApi/BookingPriceBean.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/html/application/libraries/rcclApi/CabinBean.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/html/application/libraries/rcclApi/CabinOptionBean.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/html/application/libraries/rcclApi/CategoryBean.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/html/application/libraries/rcclApi/CategoryOptionBean.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/html/application/libraries/rcclApi/Common.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/html/application/libraries/rcclApi/ConfirmBean.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/html/application/libraries/rcclApi/CruisAPI.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/html/application/libraries/rcclApi/CruisAPI.php_20180103" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/html/application/libraries/rcclApi/EtcBean.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/html/application/libraries/rcclApi/FareBean.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/html/application/libraries/rcclApi/FareOptionBean.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/html/application/libraries/rcclApi/GoogleUrlApi.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/html/application/libraries/rcclApi/HTTPRequest.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/html/application/libraries/rcclApi/ItinInfoBean.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/html/application/libraries/rcclApi/JSON.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/html/application/libraries/rcclApi/PaymentBean.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/html/application/libraries/rcclApi/PkgBean.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/html/application/libraries/rcclApi/PriceInfoBean.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/html/application/libraries/rcclApi/PromotionPriceBean.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/html/application/libraries/rcclApi/Req.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/html/application/libraries/rcclApi/Req.php_20180103" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/html/application/libraries/rcclApi/Res.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/html/application/libraries/rcclApi/Res.php_20180103" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/html/application/libraries/rcclApi/ResForAdmin.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/html/application/libraries/rcclApi/SailBean.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/html/application/libraries/rcclApi/SailOptionBean.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/html/upload/RCL Cruise FIT Spec 5.2.pdf" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/php.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/php.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/html/application/config/constants.php" beforeDir="false" afterPath="$PROJECT_DIR$/html/application/config/constants.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/html/application/controllers/member.php" beforeDir="false" afterPath="$PROJECT_DIR$/html/application/controllers/member.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/html/application/controllers/plugin/api.php" beforeDir="false" afterPath="$PROJECT_DIR$/html/application/controllers/plugin/api.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/html/application/helpers/public_function_helper.php" beforeDir="false" afterPath="$PROJECT_DIR$/html/application/helpers/public_function_helper.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/html/application/libraries/api/Req.php" beforeDir="false" afterPath="$PROJECT_DIR$/html/application/libraries/api/Req.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/html/application/libraries/api/Res.php" beforeDir="false" afterPath="$PROJECT_DIR$/html/application/libraries/api/Res.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/html/application/views/footer.php" beforeDir="false" afterPath="$PROJECT_DIR$/html/application/views/footer.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/html/application/views/member/login_v.php" beforeDir="false" afterPath="$PROJECT_DIR$/html/application/views/member/login_v.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/html/application/views/plugin/api/api_v.php" beforeDir="false" afterPath="$PROJECT_DIR$/html/application/views/plugin/api/api_v.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/html/application/libraries/common.php" beforeDir="false" afterPath="$PROJECT_DIR$/html/application/libraries/common.php" afterDir="false" />
     </list>
     <ignored path="html/.idea/" />
     <ignored path="html/application/config/database.php" />
@@ -55,17 +77,19 @@
     <session id="-1602964055">
       <usages-collector id="statistics.lifecycle.project">
         <counts>
-          <entry key="project.closed" value="30" />
-          <entry key="project.open.time.0" value="9" />
-          <entry key="project.open.time.1" value="17" />
+          <entry key="project.closed" value="41" />
+          <entry key="project.open.time.0" value="11" />
+          <entry key="project.open.time.1" value="23" />
           <entry key="project.open.time.10" value="2" />
+          <entry key="project.open.time.2" value="2" />
           <entry key="project.open.time.3" value="1" />
           <entry key="project.open.time.4" value="4" />
-          <entry key="project.open.time.5" value="1" />
+          <entry key="project.open.time.5" value="2" />
           <entry key="project.open.time.6" value="2" />
           <entry key="project.open.time.7" value="1" />
+          <entry key="project.open.time.8" value="1" />
           <entry key="project.open.time.9" value="1" />
-          <entry key="project.opened" value="39" />
+          <entry key="project.opened" value="51" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.extensions.open">
@@ -77,18 +101,18 @@
           <entry key="csv" value="1" />
           <entry key="default" value="1" />
           <entry key="gitignore" value="12" />
-          <entry key="htaccess" value="10" />
+          <entry key="htaccess" value="12" />
           <entry key="html" value="11" />
-          <entry key="ini" value="4" />
+          <entry key="ini" value="6" />
           <entry key="jpg" value="1" />
           <entry key="js" value="15" />
           <entry key="json" value="1" />
           <entry key="log" value="10" />
           <entry key="pem" value="1" />
-          <entry key="php" value="372" />
+          <entry key="php" value="403" />
           <entry key="sql" value="4" />
           <entry key="ts" value="4" />
-          <entry key="txt" value="2" />
+          <entry key="txt" value="3" />
           <entry key="vmoptions" value="2" />
           <entry key="xml" value="4" />
           <entry key="다운로드" value="2" />
@@ -100,18 +124,18 @@
           <entry key="CSS" value="2" />
           <entry key="HTML" value="11" />
           <entry key="Image" value="1" />
-          <entry key="Ini" value="4" />
+          <entry key="Ini" value="6" />
           <entry key="JSON" value="1" />
           <entry key="JavaScript" value="15" />
           <entry key="Log" value="1" />
-          <entry key="PHP" value="372" />
-          <entry key="PLAIN_TEXT" value="35" />
+          <entry key="PHP" value="403" />
+          <entry key="PLAIN_TEXT" value="36" />
           <entry key="SQL" value="2" />
           <entry key="Scratch" value="2" />
           <entry key="SmartyConfig" value="2" />
           <entry key="TypeScript" value="4" />
           <entry key="XML" value="4" />
-          <entry key="htaccess" value="10" />
+          <entry key="htaccess" value="12" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.extensions.edit">
@@ -120,11 +144,11 @@
           <entry key="default" value="8" />
           <entry key="dummy" value="16" />
           <entry key="gitignore" value="28" />
-          <entry key="htaccess" value="16" />
+          <entry key="htaccess" value="72" />
           <entry key="html" value="31" />
-          <entry key="ini" value="13" />
+          <entry key="ini" value="16" />
           <entry key="js" value="60" />
-          <entry key="php" value="21315" />
+          <entry key="php" value="21973" />
           <entry key="txt" value="165" />
           <entry key="vmoptions" value="3" />
           <entry key="xml" value="2" />
@@ -133,12 +157,12 @@
       <usages-collector id="statistics.file.types.edit">
         <counts>
           <entry key="HTML" value="37" />
-          <entry key="Ini" value="13" />
+          <entry key="Ini" value="16" />
           <entry key="JavaScript" value="60" />
-          <entry key="PHP" value="21309" />
+          <entry key="PHP" value="21967" />
           <entry key="PLAIN_TEXT" value="236" />
           <entry key="XML" value="2" />
-          <entry key="htaccess" value="16" />
+          <entry key="htaccess" value="72" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.php.new.class">
@@ -156,47 +180,74 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/html/application/views/footer.php">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="224">
-              <caret line="332" column="54" selection-start-line="332" selection-start-column="54" selection-end-line="332" selection-end-column="54" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/html/application/controllers/member.php">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="12903">
-              <caret line="561" column="25" selection-start-line="561" selection-start-column="25" selection-end-line="561" selection-end-column="25" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/html/application/helpers/public_function_helper.php">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="9062">
-              <caret line="394" column="8" selection-start-line="394" selection-start-column="8" selection-end-line="394" selection-end-column="8" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/html/application/config/constants.php">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="627">
-              <caret line="47" column="8" selection-start-line="47" selection-start-column="8" selection-end-line="47" selection-end-column="8" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
+      <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/html/application/controllers/plugin/api.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="397">
-              <caret line="524" column="21" selection-start-line="524" selection-start-column="21" selection-end-line="524" selection-end-column="21" />
+            <state relative-caret-position="304">
+              <caret line="566" column="32" selection-start-line="566" selection-start-column="32" selection-end-line="566" selection-end-column="32" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/html/application/libraries/rcclApi/Common.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="211">
+              <caret line="25" column="16" selection-start-line="25" selection-start-column="16" selection-end-line="25" selection-end-column="16" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/html/application/libraries/rcclApi/CruisAPI.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="226">
+              <caret line="133" column="33" selection-start-line="133" selection-start-column="33" selection-end-line="133" selection-end-column="33" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/html/application/libraries/rcclApi/Res.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="143">
+              <caret line="486" column="21" lean-forward="true" selection-start-line="486" selection-start-column="21" selection-end-line="486" selection-end-column="21" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/html/application/libraries/common.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="493">
+              <caret line="50" column="5" lean-forward="true" selection-start-line="50" selection-start-column="5" selection-end-line="50" selection-end-column="5" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/html/application/libraries/rcclApi/JSON.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="211">
+              <caret line="16" column="36" selection-start-line="16" selection-start-column="23" selection-end-line="16" selection-end-column="36" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/html/application/libraries/rcclApi/HTTPRequest.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="92">
+              <caret line="4" column="6" selection-start-line="4" selection-start-column="6" selection-end-line="4" selection-end-column="6" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/html/application/libraries/rcclApi/Req.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="42">
+              <caret line="193" column="22" selection-start-line="193" selection-start-column="22" selection-end-line="193" selection-end-column="22" />
             </state>
           </provider>
         </entry>
@@ -204,35 +255,8 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/html/application/libraries/api/Res.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="247">
-              <caret line="1046" column="37" selection-start-line="1046" selection-start-column="37" selection-end-line="1046" selection-end-column="37" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/html/application/libraries/api/Req.php">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="385">
-              <caret line="1521" column="49" selection-start-line="1521" selection-start-column="49" selection-end-line="1521" selection-end-column="49" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/html/application/views/member/login_v.php">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="713">
-              <caret line="31" column="19" selection-start-line="31" selection-start-column="19" selection-end-line="31" selection-end-column="19" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/html/application/views/plugin/api/api_v.php">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="4738">
-              <caret line="206" column="33" selection-start-line="206" selection-start-column="33" selection-end-line="206" selection-end-column="33" />
+            <state relative-caret-position="463">
+              <caret line="756" column="40" selection-start-line="756" selection-start-column="40" selection-end-line="756" selection-end-column="40" />
             </state>
           </provider>
         </entry>
@@ -248,36 +272,36 @@
   </component>
   <component name="FindInProjectRecents">
     <findStrings>
-      <find>result_json</find>
-      <find>.ajax</find>
-      <find>sns_in</find>
-      <find>ajax</find>
-      <find>$resultresult_json</find>
-      <find>비밀번호가</find>
-      <find>callback_url</find>
-      <find>btn_email</find>
-      <find>email_check</find>
-      <find>수정되었</find>
-      <find>update</find>
-      <find>getLoginStatus</find>
-      <find>checkLoginState</find>
-      <find>FB.api</find>
-      <find>rateQual</find>
-      <find>EntityCode</find>
-      <find>Header</find>
-      <find>ProviderSearchId</find>
-      <find>DayPhoneExt</find>
-      <find>Change</find>
-      <find>ProviderCode</find>
-      <find>providerCode</find>
-      <find>ADD</find>
-      <find>ajax_data_binding</find>
       <find>JSON.parse</find>
       <find>api-wrap CarSVCAuthorization</find>
       <find>CURLOPT_POSTFIELDS</find>
       <find>20YB8VbGpPX7xlA6x9I68N2O2KLi76OA</find>
       <find>edd5a09b1efccfcce7e8c5374e5bbd46</find>
       <find>cmsTemplateList.php</find>
+      <find>index</find>
+      <find>mysqli</find>
+      <find>mysql</find>
+      <find>exten</find>
+      <find>this-&gt;get</find>
+      <find>this-&gt;post</find>
+      <find>setcookie</find>
+      <find>$this-&gt;</find>
+      <find>this-&gt;input</find>
+      <find>this-&gt;input-</find>
+      <find>viewManual</find>
+      <find>exsist</find>
+      <find>setAlamoParams</find>
+      <find>stage</find>
+      <find>/common/classes/api/</find>
+      <find>CategoryList</find>
+      <find>api</find>
+      <find>getCategoryList</find>
+      <find>CruisAPI</find>
+      <find>isDevDebug</find>
+      <find>VehAvailRateRQ</find>
+      <find>Common</find>
+      <find>Services_JSON</find>
+      <find>timeStringNow</find>
     </findStrings>
     <replaceStrings>
       <replace>visitor_m</replace>
@@ -286,6 +310,8 @@
       <replace>$parameter</replace>
       <replace>getApiList</replace>
       <replace>getApiDetail</replace>
+      <replace>/application/libraries/api/</replace>
+      <replace>rcclApi</replace>
     </replaceStrings>
   </component>
   <component name="Git.Settings">
@@ -300,17 +326,6 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$APPLICATION_HOME_DIR$/bin/phpstorm64.exe.vmoptions" />
-        <option value="$PROJECT_DIR$/html/application/controllers/plugin/shop.php" />
-        <option value="$PROJECT_DIR$/html/application/views/plugin/shop/stdpay/INIStdPaySample/INIpayMobile_Sample.php" />
-        <option value="$PROJECT_DIR$/html/application/controllers/plugin/ajaxTest.php" />
-        <option value="$PROJECT_DIR$/html/application/views/plugin/test/test.php" />
-        <option value="$PROJECT_DIR$/html/application/views/admin/shop/admin_category_list_v.php" />
-        <option value="&lt;b53ca6b6-c715-4f73-97d2-10ac61ae401f&gt;/www/jiho/html/application/controllers/plugin/shop.php" />
-        <option value="&lt;b53ca6b6-c715-4f73-97d2-10ac61ae401f&gt;/www/jiho/html/application/controllers/plugin/excel_js.php" />
-        <option value="&lt;b53ca6b6-c715-4f73-97d2-10ac61ae401f&gt;/www/jiho/html/application/controllers/plugin/test2.php" />
-        <option value="&lt;b53ca6b6-c715-4f73-97d2-10ac61ae401f&gt;/www/jiho/html/application/views/plugin/shop/stdpay/libs/INIStdPayUtil.php" />
-        <option value="&lt;b53ca6b6-c715-4f73-97d2-10ac61ae401f&gt;/www/jiho/html/application/views/plugin/shop/stdpay/INIStdPaySample/INIStdPayRequest.php" />
         <option value="&lt;b53ca6b6-c715-4f73-97d2-10ac61ae401f&gt;/www/jiho/html/application/config/constants.php" />
         <option value="$PROJECT_DIR$/html/application/views/admin/admin_calender_v.php" />
         <option value="$PROJECT_DIR$/html/application/views/plugin/calender/calender_v.php" />
@@ -339,7 +354,6 @@
         <option value="$PROJECT_DIR$/html/application/models/member_m.php" />
         <option value="$PROJECT_DIR$/html/application/views/member/update_v.php" />
         <option value="$PROJECT_DIR$/html/.gitignore" />
-        <option value="$PROJECT_DIR$/html/application/config/database.php" />
         <option value="&lt;b53ca6b6-c715-4f73-97d2-10ac61ae401f&gt;/www/jiho/html/application/config/database.php" />
         <option value="$PROJECT_DIR$/html/application/views/plugin/api/api_v.php" />
         <option value="$PROJECT_DIR$/html/application/views/member/login_v.php" />
@@ -349,8 +363,20 @@
         <option value="$PROJECT_DIR$/html/application/helpers/public_function_helper.php" />
         <option value="&lt;b53ca6b6-c715-4f73-97d2-10ac61ae401f&gt;/www/jiho/html/appVersion.txt" />
         <option value="$PROJECT_DIR$/html/application/libraries/api/Res.php" />
-        <option value="$PROJECT_DIR$/html/application/controllers/plugin/api.php" />
+        <option value="&lt;de3315b4-161d-46e7-a539-22e50585dfe3&gt;/web_new/rentacar/TMK_RENTACAR_LEGACY/gateApiLive.php" />
+        <option value="&lt;b53ca6b6-c715-4f73-97d2-10ac61ae401f&gt;/www/jiho/html/index.php" />
+        <option value="&lt;b53ca6b6-c715-4f73-97d2-10ac61ae401f&gt;/www/jiho/html/application/config/config.php" />
+        <option value="&lt;b53ca6b6-c715-4f73-97d2-10ac61ae401f&gt;/www/jiho/html/.htaccess" />
+        <option value="$PROJECT_DIR$/html/application/config/database.php" />
+        <option value="$PROJECT_DIR$/../php-5.4.14-nts-Win32-VC9-x86/php.ini" />
         <option value="$PROJECT_DIR$/html/application/libraries/api/Req.php" />
+        <option value="$PROJECT_DIR$/html/application/libraries/rcclApi/Res.php" />
+        <option value="$PROJECT_DIR$/html/application/libraries/api/CruisAPI.php" />
+        <option value="$PROJECT_DIR$/html/application/libraries/rcclApi/CruisAPI.php" />
+        <option value="$PROJECT_DIR$/html/application/libraries/common.php" />
+        <option value="$PROJECT_DIR$/html/application/libraries/rcclApi/Common.php" />
+        <option value="$PROJECT_DIR$/html/application/libraries/rcclApi/Req.php" />
+        <option value="$PROJECT_DIR$/html/application/controllers/plugin/api.php" />
       </list>
     </option>
   </component>
@@ -360,12 +386,13 @@
     <detection-done>true</detection-done>
     <sorting>DEFINITION_ORDER</sorting>
   </component>
+  <component name="PhpDebugGeneral" listening_started="true" />
   <component name="PhpWorkspaceProjectConfiguration" interpreter_name="PHP" />
   <component name="ProjectFrameBounds" extendedState="6">
-    <option name="x" value="1912" />
-    <option name="y" value="-8" />
-    <option name="width" value="1936" />
-    <option name="height" value="1056" />
+    <option name="x" value="2552" />
+    <option name="y" value="-333" />
+    <option name="width" value="1216" />
+    <option name="height" value="1896" />
   </component>
   <component name="ProjectLevelVcsManager">
     <OptionsSetting value="false" id="Update" />
@@ -393,13 +420,6 @@
               <item name="jiho8912.github.io" type="462c0819:PsiDirectoryNode" />
               <item name="html" type="462c0819:PsiDirectoryNode" />
               <item name="application" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="jiho8912.github.io" type="b2602c69:ProjectViewProjectNode" />
-              <item name="jiho8912.github.io" type="462c0819:PsiDirectoryNode" />
-              <item name="html" type="462c0819:PsiDirectoryNode" />
-              <item name="application" type="462c0819:PsiDirectoryNode" />
-              <item name="config" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="jiho8912.github.io" type="b2602c69:ProjectViewProjectNode" />
@@ -436,13 +456,32 @@
               <item name="jiho8912.github.io" type="462c0819:PsiDirectoryNode" />
               <item name="html" type="462c0819:PsiDirectoryNode" />
               <item name="application" type="462c0819:PsiDirectoryNode" />
+              <item name="libraries" type="462c0819:PsiDirectoryNode" />
+              <item name="rcclApi" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="jiho8912.github.io" type="b2602c69:ProjectViewProjectNode" />
+              <item name="jiho8912.github.io" type="462c0819:PsiDirectoryNode" />
+              <item name="html" type="462c0819:PsiDirectoryNode" />
+              <item name="application" type="462c0819:PsiDirectoryNode" />
               <item name="views" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="jiho8912.github.io" type="b2602c69:ProjectViewProjectNode" />
               <item name="jiho8912.github.io" type="462c0819:PsiDirectoryNode" />
               <item name="html" type="462c0819:PsiDirectoryNode" />
-              <item name="js" type="462c0819:PsiDirectoryNode" />
+              <item name="application" type="462c0819:PsiDirectoryNode" />
+              <item name="views" type="462c0819:PsiDirectoryNode" />
+              <item name="plugin" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="jiho8912.github.io" type="b2602c69:ProjectViewProjectNode" />
+              <item name="jiho8912.github.io" type="462c0819:PsiDirectoryNode" />
+              <item name="html" type="462c0819:PsiDirectoryNode" />
+              <item name="application" type="462c0819:PsiDirectoryNode" />
+              <item name="views" type="462c0819:PsiDirectoryNode" />
+              <item name="plugin" type="462c0819:PsiDirectoryNode" />
+              <item name="api" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="jiho8912.github.io" type="b2602c69:ProjectViewProjectNode" />
@@ -480,26 +519,26 @@
   </component>
   <component name="PropertiesComponent">
     <property name="DatabaseDriversLRU" value="mysql" />
-    <property name="SearchEverywhereHistoryKey" value="callback_url&#9;null&#9;null&#10;generate_state&#9;null&#9;null&#10;foot&#9;FILE&#9;file://D:/jiho/jiho8912.github.io/html/application/views/footer.php&#10;login_v&#9;FILE&#9;file://D:/jiho/jiho8912.github.io/html/application/views/member/login_v.php&#10;api_v&#9;FILE&#9;file://D:/jiho/jiho8912.github.io/html/application/views/plugin/api/api_v.php&#10;update&#9;null&#9;null&#10;validate_reg&#9;FILE&#9;file://D:/jiho/jiho8912.github.io/html/js/validate_reg.js&#10;update_v&#9;null&#9;null&#10;validate&#9;FILE&#9;file://D:/jiho/jiho8912.github.io/html/js/validate.js&#10;logout&#9;null&#9;null&#10;alert&#9;null&#9;null&#10;select_mb_detail&#9;null&#9;null&#10;update_member_info&#9;null&#9;null&#10;select_member_pw&#9;null&#9;null&#10;result_json&#9;null&#9;null&#10;sns_in&#9;null&#9;null&#10;is&#9;null&#9;null&#10;admin_main_v&#9;FILE&#9;file://D:/jiho/jiho8912.github.io/html/application/views/admin/admin_main_v.php&#10;git&#9;FILE&#9;file://D:/jiho/jiho8912.github.io/html/.gitignore&#10;getListOfAvailRate&#9;null&#9;null&#10;excel_v&#9;FILE&#9;file://D:/jiho/jiho8912.github.io/html/application/views/plugin/excel/excel_v.php&#10;getter&#9;ACTION&#9;PhpGenerateGettersAndSetters&#10;test&#9;FILE&#9;file://D:/jiho/jiho8912.github.io/html/application/controllers/plugin/test.php&#10;work&#9;FILE&#9;file://D:/jiho/jiho8912.github.io/html/.idea/workspace.xml&#10;constants&#9;FILE&#9;file://D:/jiho/jiho8912.github.io/html/application/config/constants.php&#10;cardNoInterestQuota&#9;null&#9;null&#10;INIStdPayUtil&#9;FILE&#9;file://D:/jiho/jiho8912.github.io/html/application/views/plugin/shop/stdpay/libs/INIStdPayUtil.php&#10;admin_member_update&#9;null&#9;null&#10;member_m&#9;null&#9;null&#10;admin_member_v&#9;null&#9;null&#10;_clean_input_keys&#9;null&#9;null&#10;-&gt;select&#9;null&#9;null&#10;-&gt;update&#9;null&#9;null&#10;trans_complete&#9;null&#9;null&#10;db_debug&#9;null&#9;null&#10;_trans_status&#9;null&#9;null&#10;trans_rollback&#9;null&#9;null&#10;trans_status&#9;null&#9;null&#10;updateCategory&#9;null&#9;null&#10;select_admin_category_list&#9;null&#9;null&#10;admin_menu_v&#9;FILE&#9;file://D:/jiho/jiho8912.github.io/html/application/views/admin/admin_menu_v.php&#10;jexcel&#9;FILE&#9;file://D:/jiho/jiho8912.github.io/html/js/jquery.jexcel.js&#10;excel&#9;FILE&#9;file://D:/jiho/jiho8912.github.io/html/application/views/plugin/exceljs/exceljs_v.php&#10;select_category_tree&#9;null&#9;null&#10;excelup&#9;null&#9;null&#10;admin_excel_v&#9;FILE&#9;file://D:/jiho/jiho8912.github.io/html/application/views/admin/admin_excel_v.php&#10;background_img_del&#9;null&#9;null&#10;mysqli_driver&#9;FILE&#9;file://D:/jiho/jiho8912.github.io/html/system/database/drivers/mysqli/mysqli_driver.php&#10;DB_driver.php&#9;FILE&#9;file://D:/jiho/jiho8912.github.io/html/system/database/DB_driver.php" />
+    <property name="SearchEverywhereHistoryKey" value="co&#9;FILE&#9;file://D:/jiho/jiho8912.github.io/html/application/libraries/common.php&#10;HTTPRequest&#9;null&#9;null&#10;CruisAPI&#9;null&#9;null&#10;api&#9;null&#9;null&#10;plugin&#9;FILE&#9;file://D:/jiho/jiho8912.github.io/html/application/controllers/plugin&#10;mysqli_driver&#9;FILE&#9;file://D:/jiho/jiho8912.github.io/html/system/database/drivers/mysqli/mysqli_driver.php&#10;callback_url&#9;null&#9;null&#10;generate_state&#9;null&#9;null&#10;foot&#9;FILE&#9;file://D:/jiho/jiho8912.github.io/html/application/views/footer.php&#10;login_v&#9;FILE&#9;file://D:/jiho/jiho8912.github.io/html/application/views/member/login_v.php&#10;api_v&#9;FILE&#9;file://D:/jiho/jiho8912.github.io/html/application/views/plugin/api/api_v.php&#10;update&#9;null&#9;null&#10;validate_reg&#9;FILE&#9;file://D:/jiho/jiho8912.github.io/html/js/validate_reg.js&#10;update_v&#9;null&#9;null&#10;validate&#9;FILE&#9;file://D:/jiho/jiho8912.github.io/html/js/validate.js&#10;logout&#9;null&#9;null&#10;alert&#9;null&#9;null&#10;select_mb_detail&#9;null&#9;null&#10;update_member_info&#9;null&#9;null&#10;select_member_pw&#9;null&#9;null&#10;result_json&#9;null&#9;null&#10;sns_in&#9;null&#9;null&#10;is&#9;null&#9;null&#10;admin_main_v&#9;FILE&#9;file://D:/jiho/jiho8912.github.io/html/application/views/admin/admin_main_v.php&#10;git&#9;FILE&#9;file://D:/jiho/jiho8912.github.io/html/.gitignore&#10;getListOfAvailRate&#9;null&#9;null&#10;excel_v&#9;FILE&#9;file://D:/jiho/jiho8912.github.io/html/application/views/plugin/excel/excel_v.php&#10;getter&#9;ACTION&#9;PhpGenerateGettersAndSetters&#10;test&#9;FILE&#9;file://D:/jiho/jiho8912.github.io/html/application/controllers/plugin/test.php&#10;work&#9;FILE&#9;file://D:/jiho/jiho8912.github.io/html/.idea/workspace.xml&#10;constants&#9;FILE&#9;file://D:/jiho/jiho8912.github.io/html/application/config/constants.php&#10;cardNoInterestQuota&#9;null&#9;null&#10;INIStdPayUtil&#9;FILE&#9;file://D:/jiho/jiho8912.github.io/html/application/views/plugin/shop/stdpay/libs/INIStdPayUtil.php&#10;admin_member_update&#9;null&#9;null&#10;member_m&#9;null&#9;null&#10;admin_member_v&#9;null&#9;null&#10;_clean_input_keys&#9;null&#9;null&#10;-&gt;select&#9;null&#9;null&#10;-&gt;update&#9;null&#9;null&#10;trans_complete&#9;null&#9;null&#10;db_debug&#9;null&#9;null&#10;_trans_status&#9;null&#9;null&#10;trans_rollback&#9;null&#9;null&#10;trans_status&#9;null&#9;null&#10;updateCategory&#9;null&#9;null&#10;select_admin_category_list&#9;null&#9;null&#10;admin_menu_v&#9;FILE&#9;file://D:/jiho/jiho8912.github.io/html/application/views/admin/admin_menu_v.php&#10;jexcel&#9;FILE&#9;file://D:/jiho/jiho8912.github.io/html/js/jquery.jexcel.js&#10;excel&#9;FILE&#9;file://D:/jiho/jiho8912.github.io/html/application/views/plugin/exceljs/exceljs_v.php&#10;select_category_tree&#9;null&#9;null" />
     <property name="WebServerToolWindowFactoryState" value="true" />
     <property name="WebServerToolWindowPanel.toolwindow.highlight.mappings" value="true" />
     <property name="WebServerToolWindowPanel.toolwindow.highlight.symlinks" value="true" />
     <property name="WebServerToolWindowPanel.toolwindow.show.date" value="false" />
     <property name="WebServerToolWindowPanel.toolwindow.show.permissions" value="false" />
     <property name="WebServerToolWindowPanel.toolwindow.show.size" value="false" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/html/application/config/database.php" />
-    <property name="settings.editor.selected.configurable" value="project.propVCSSupport.Ignored.Files" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/../php-7.0.32-nts-Win32-VC14-x64/php.exe" />
+    <property name="settings.editor.selected.configurable" value="reference.webide.settings.project.settings.php" />
   </component>
   <component name="ReadonlyStatusHandler">
     <option name="SHOW_DIALOG" value="false" />
   </component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="D:\jiho\jiho8912.github.io\html\application\libraries\rcclApi" />
+      <recent name="D:\jiho\jiho8912.github.io\html\application\libraries" />
+      <recent name="D:\jiho\jiho8912.github.io\html\upload" />
       <recent name="D:\jiho\jiho8912.github.io\html\application\controllers\apidocs" />
       <recent name="D:\jiho\jiho8912.github.io\html\application\controllers\plugin" />
-      <recent name="D:\jiho\jiho8912.github.io\html\application\views" />
-      <recent name="D:\jiho\jiho8912.github.io\html\application\controllers" />
-      <recent name="D:\jiho\jiho8912.github.io\html\application\libraries" />
     </key>
     <key name="MoveFile.RECENT_KEYS">
       <recent name="D:\jiho\jiho8912.github.io\html\application\controllers\apidocs" />
@@ -593,7 +632,19 @@
       <workItem from="1551920381204" duration="36898000" />
       <workItem from="1552531736401" duration="1546000" />
       <workItem from="1552544202870" duration="622000" />
-      <workItem from="1552881827935" duration="426000" />
+      <workItem from="1552881827935" duration="1273000" />
+      <workItem from="1552896788836" duration="4520000" />
+      <workItem from="1553235767299" duration="216000" />
+      <workItem from="1555558505405" duration="631000" />
+      <workItem from="1556179360431" duration="1010000" />
+      <workItem from="1556181571187" duration="114000" />
+      <workItem from="1556182787749" duration="247000" />
+      <workItem from="1556183582428" duration="251000" />
+      <workItem from="1556237417116" duration="22000" />
+      <workItem from="1556259450669" duration="745000" />
+      <workItem from="1558060275049" duration="45000" />
+      <workItem from="1562221349642" duration="5836000" />
+      <workItem from="1562228782612" duration="2850000" />
     </task>
     <task id="LOCAL-00001" summary="업데이트">
       <created>1538100632817</created>
@@ -847,23 +898,37 @@
       <option name="project" value="LOCAL" />
       <updated>1551946418131</updated>
     </task>
-    <option name="localTasksCounter" value="37" />
+    <task id="LOCAL-00037" summary="update">
+      <created>1552882347996</created>
+      <option name="number" value="00037" />
+      <option name="presentableId" value="LOCAL-00037" />
+      <option name="project" value="LOCAL" />
+      <updated>1552882347996</updated>
+    </task>
+    <task id="LOCAL-00038" summary="update">
+      <created>1552882641513</created>
+      <option name="number" value="00038" />
+      <option name="presentableId" value="LOCAL-00038" />
+      <option name="project" value="LOCAL" />
+      <updated>1552882641513</updated>
+    </task>
+    <option name="localTasksCounter" value="39" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="406764000" />
+    <option name="totallyTimeSpent" value="424098000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="1912" y="-8" width="1936" height="1056" extended-state="6" />
     <editor active="true" />
     <layout>
-      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.1119403" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.17750533" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Favorites" order="2" side_tool="true" />
-      <window_info anchor="bottom" id="File Transfer" order="0" sideWeight="0.49946696" visible="true" weight="0.1834962" />
+      <window_info anchor="bottom" id="File Transfer" order="0" sideWeight="0.49946696" weight="0.1834962" />
       <window_info anchor="bottom" id="Message" order="1" />
-      <window_info anchor="bottom" id="Find" order="2" weight="0.32899022" />
-      <window_info anchor="bottom" id="Run" order="3" visible="true" weight="0.21498372" />
+      <window_info anchor="bottom" id="Find" order="2" visible="true" weight="0.32899022" />
+      <window_info anchor="bottom" id="Run" order="3" weight="0.21498372" />
       <window_info anchor="bottom" id="Debug" order="4" weight="0.3995657" />
       <window_info anchor="bottom" id="Cvs" order="5" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="6" weight="0.4" />
@@ -878,7 +943,7 @@
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
       <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
       <window_info anchor="right" id="Database" order="3" weight="0.32995737" />
-      <window_info active="true" anchor="right" id="Remote Host" order="4" visible="true" weight="0.17590618" />
+      <window_info anchor="right" id="Remote Host" order="4" weight="0.17560554" />
     </layout>
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -937,123 +1002,11 @@
     <option name="LAST_COMMIT_MESSAGE" value="update" />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/html/application/controllers/plugin/calender.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="351">
-          <caret line="24" column="34" lean-forward="true" selection-start-line="24" selection-start-column="34" selection-end-line="24" selection-end-column="34" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://D:/cachegrind.out.17104">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-282594" />
-      </provider>
-    </entry>
-    <entry file="file://$APPLICATION_HOME_DIR$/plugins/JavaScriptLanguage/jsLanguageServicesImpl/external/lib.es5.d.ts">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="8349">
-          <caret line="376" column="4" selection-start-line="376" selection-start-column="4" selection-end-line="376" selection-end-column="4" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/html/application/libraries/api/AlamoAPI.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="230">
-          <caret line="10" column="32" selection-start-line="10" selection-start-column="26" selection-end-line="10" selection-end-column="32" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://$APPLICATION_HOME_DIR$/plugins/php/lib/php.jar!/stubs/curl/curl_d.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="232">
-          <caret line="171" column="9" selection-start-line="171" selection-start-column="9" selection-end-line="171" selection-end-column="9" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/html/application/controllers/plugin/exceljs.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="414">
-          <caret line="18" column="5" selection-start-line="18" selection-start-column="5" selection-end-line="18" selection-end-column="5" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/html/application/controllers/plugin/test.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="184">
-          <caret line="40" column="38" selection-start-line="40" selection-start-column="38" selection-end-line="40" selection-end-column="38" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/html/system/core/Controller.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-86">
-          <caret line="37" column="20" selection-start-line="37" selection-start-column="20" selection-end-line="37" selection-end-column="20" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/html/application/libraries/api/HTTPRequest.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-6">
-          <caret line="158" column="21" selection-start-line="158" selection-start-column="21" selection-end-line="158" selection-end-column="21" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/html/application/controllers/admin/main.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-595">
-          <caret line="66" column="25" selection-start-line="66" selection-start-column="20" selection-end-line="66" selection-end-column="25" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/html/application/views/admin/admin_main_v.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="180">
-          <caret line="345" column="41" lean-forward="true" selection-start-line="345" selection-start-column="41" selection-end-line="345" selection-end-column="41" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/html/system/helpers/url_helper.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="232">
-          <caret line="84" column="13" selection-start-line="84" selection-start-column="13" selection-end-line="84" selection-end-column="13" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/html/application/controllers/res.php" />
-    <entry file="file://$PROJECT_DIR$/html/application/controllers/deem.php" />
-    <entry file="file://$PROJECT_DIR$/html/application/config/routes.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="618">
-          <caret line="40" column="36" selection-start-line="40" selection-start-column="32" selection-end-line="40" selection-end-column="36" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/html/application/views/plugin/docs/docs.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="293">
-          <caret line="120" column="34" lean-forward="true" selection-start-line="120" selection-start-column="34" selection-end-line="120" selection-end-column="34" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/html/application/controllers/apidocs/docs.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="23">
-          <caret line="5" column="61" selection-start-line="5" selection-start-column="61" selection-end-line="5" selection-end-column="61" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/html/application/controllers/apidocs/deem.php" />
     <entry file="file://$PROJECT_DIR$/html/application/views/board/gellary_head.php">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="187">
           <caret line="26" column="30" selection-start-line="26" selection-start-column="30" selection-end-line="26" selection-end-column="30" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/html/application/controllers/board.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="122">
-          <caret line="113" column="14" lean-forward="true" selection-start-line="113" selection-start-column="14" selection-end-line="113" selection-end-column="14" />
         </state>
       </provider>
     </entry>
@@ -1075,13 +1028,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state>
           <caret column="9" selection-start-column="9" selection-end-column="9" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/html/application/config/config.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="391">
-          <caret line="17" lean-forward="true" selection-start-line="17" selection-end-line="17" />
         </state>
       </provider>
     </entry>
@@ -1179,13 +1125,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/html/application/config/database.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="420">
-          <caret line="48" column="22" lean-forward="true" selection-start-line="48" selection-start-column="22" selection-end-line="48" selection-end-column="22" />
-        </state>
-      </provider>
-    </entry>
     <entry file="jar://$APPLICATION_HOME_DIR$/plugins/php/lib/php.jar!/stubs/standard/standard_2.php">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="7774">
@@ -1202,8 +1141,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/html/application/views/footer.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="224">
-          <caret line="332" column="54" selection-start-line="332" selection-start-column="54" selection-end-line="332" selection-end-column="54" />
+        <state relative-caret-position="201">
+          <caret line="331" column="59" lean-forward="true" selection-start-line="331" selection-start-column="59" selection-end-line="331" selection-end-column="59" />
         </state>
       </provider>
     </entry>
@@ -1221,6 +1160,90 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/../php-5.4.14-nts-Win32-VC9-x86/php.ini">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="437">
+          <caret line="882" column="11" selection-start-line="882" selection-start-column="11" selection-end-line="882" selection-end-column="52" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/html/application/config/constants.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1081">
+          <caret line="47" column="8" selection-start-line="47" selection-start-column="8" selection-end-line="47" selection-end-column="8" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/html/.htaccess">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="115">
+          <caret line="5" column="36" selection-start-line="5" selection-start-column="36" selection-end-line="5" selection-end-column="36" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/html/application/config/database.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1288">
+          <caret line="56" column="50" selection-start-line="56" selection-start-column="50" selection-end-line="56" selection-end-column="50" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/../php-7.0.32-nts-Win32-VC14-x64/php.ini">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="20470">
+          <caret line="890" column="54" selection-start-line="890" selection-start-column="54" selection-end-line="890" selection-end-column="54" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/html/system/database/drivers/mysqli/mysqli_driver.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="414">
+          <caret line="18" column="3" selection-start-line="18" selection-start-column="3" selection-end-line="18" selection-end-column="3" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/html/system/libraries/Session.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="562">
+          <caret line="681" column="8" selection-start-line="681" selection-start-column="8" selection-end-line="681" selection-end-column="8" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/html/application/controllers/board.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="11753">
+          <caret line="511" column="9" selection-start-line="511" selection-start-column="9" selection-end-line="511" selection-end-column="9" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/html/system/core/Input.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="6578">
+          <caret line="286" column="8" selection-start-line="286" selection-start-column="8" selection-end-line="286" selection-end-column="8" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/html/application/config/config.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="391">
+          <caret line="17" selection-start-line="17" selection-end-line="17" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/html/application/libraries/api/HTTPRequest.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="2162">
+          <caret line="94" column="37" selection-start-line="94" selection-start-column="37" selection-end-line="94" selection-end-column="37" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/html/system/core/Security.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="286">
+          <caret line="216" column="20" lean-forward="true" selection-start-line="216" selection-start-column="20" selection-end-line="216" selection-end-column="20" />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/html/application/views/member/login_v.php">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="713">
@@ -1228,38 +1251,101 @@
         </state>
       </provider>
     </entry>
+    <entry file="jar://$APPLICATION_HOME_DIR$/plugins/php/lib/php.jar!/stubs/standard/standard_1.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="298">
+          <caret line="978" column="9" selection-start-line="978" selection-start-column="9" selection-end-line="978" selection-end-column="9" />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/html/application/views/plugin/api/api_v.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="4738">
-          <caret line="206" column="33" selection-start-line="206" selection-start-column="33" selection-end-line="206" selection-end-column="33" />
+        <state relative-caret-position="1495">
+          <caret line="65" column="27" selection-start-line="65" selection-start-column="27" selection-end-line="65" selection-end-column="27" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/html/application/config/constants.php">
+    <entry file="file://$PROJECT_DIR$/html/application/libraries/api/CruisAPI.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="627">
-          <caret line="47" column="8" selection-start-line="47" selection-start-column="8" selection-end-line="47" selection-end-column="8" />
+        <state>
+          <caret column="60" selection-start-column="40" selection-end-column="60" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/html/application/controllers/plugin/api.php">
+    <entry file="file://$PROJECT_DIR$/html/application/libraries/api/AlamoAPI.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="397">
-          <caret line="524" column="21" selection-start-line="524" selection-start-column="21" selection-end-line="524" selection-end-column="21" />
+        <state>
+          <caret column="63" selection-start-column="40" selection-end-column="63" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/html/application/libraries/api/Res.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="247">
-          <caret line="1046" column="37" selection-start-line="1046" selection-start-column="37" selection-end-line="1046" selection-end-column="37" />
+        <state relative-caret-position="463">
+          <caret line="756" column="40" selection-start-line="756" selection-start-column="40" selection-end-line="756" selection-end-column="40" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/html/application/libraries/rcclApi/HTTPRequest.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="92">
+          <caret line="4" column="6" selection-start-line="4" selection-start-column="6" selection-end-line="4" selection-end-column="6" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/html/application/libraries/rcclApi/JSON.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="211">
+          <caret line="16" column="36" selection-start-line="16" selection-start-column="23" selection-end-line="16" selection-end-column="36" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/html/application/libraries/api/Req.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="385">
-          <caret line="1521" column="49" selection-start-line="1521" selection-start-column="49" selection-end-line="1521" selection-end-column="49" />
+        <state relative-caret-position="108">
+          <caret line="735" column="17" selection-start-line="735" selection-start-column="17" selection-end-line="735" selection-end-column="17" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/html/application/libraries/common.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="493">
+          <caret line="50" column="5" lean-forward="true" selection-start-line="50" selection-start-column="5" selection-end-line="50" selection-end-column="5" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/html/application/libraries/rcclApi/CruisAPI.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="226">
+          <caret line="133" column="33" selection-start-line="133" selection-start-column="33" selection-end-line="133" selection-end-column="33" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/html/application/libraries/rcclApi/Req.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="42">
+          <caret line="193" column="22" selection-start-line="193" selection-start-column="22" selection-end-line="193" selection-end-column="22" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/html/application/libraries/rcclApi/Res.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="143">
+          <caret line="486" column="21" lean-forward="true" selection-start-line="486" selection-start-column="21" selection-end-line="486" selection-end-column="21" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/html/application/libraries/rcclApi/Common.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="211">
+          <caret line="25" column="16" selection-start-line="25" selection-start-column="16" selection-end-line="25" selection-end-column="16" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/html/application/controllers/plugin/api.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="304">
+          <caret line="566" column="32" selection-start-line="566" selection-start-column="32" selection-end-line="566" selection-end-column="32" />
         </state>
       </provider>
     </entry>

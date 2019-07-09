@@ -37,6 +37,7 @@ class api extends CI_Controller{
         $url_Array = array(
             'DEEM' => 'https://optimus-qa.deemgroundapp.com/',
             'ALAMO' => 'http://www.alamo-stage.co.kr/gateApiLive.php/',
+            'RCCL' => 'http://www.rccl-stage.co.kr/gateApiLive.php?act=/',
             'KaKao' => 'https://kapi.kakao.com/v1/push/'
         );
 
@@ -409,14 +410,24 @@ class api extends CI_Controller{
                 )
             ),
             'RCCL' => array(
-                'test' => array(
-                    'method_name' => 'test',
+                'CruiseCategoryAvailRQ' => array(
+                    'method_name' => 'CategoryList',
                     'url_parameter' => '',
-                    'parameter' => '',
+                    'parameter' => array(
+                        'sailDate' => '03/01/2020',
+                        'packageId' => 'AN7BH028',
+                        'adultAmt' => '2',
+                        'childAmt' => '0',
+                        'cabinType' => '2',
+                        'silver' => '0',
+                        'isNRD' => true
+                    ),
                     'call_type' => 'POST',
-                    'description' => '',
+                    'description' => '카테고리리스트 검색',
+                    'help_url' => '/plugin/api/viewManual?fileName=RCL Cruise FIT Spec 5.2.pdf#page=86'
                 )
-            ),
+            )
+            /*
             'KaKao' => array(
                 'register' => array(
                     'method_name' => 'register',
@@ -434,6 +445,7 @@ class api extends CI_Controller{
                     ),
                 )
             )
+            */
 		);
 
 		return $controller_arr;
@@ -468,12 +480,20 @@ class api extends CI_Controller{
      * @param $params
      */
     public function call(){
-        $url = $_POST['url'];
-        $type = $_POST['type'];
-        foreach ($_POST['headers'] as $key => $val){
+        $url = $this->input->post('url');
+        $type = $this->input->post('type');
+        foreach ($this->input->post('headers') as $key => $val){
         	$headers[] = $key . ': ' . $val;
         }
-        $parameter = ($_POST['service'] == "DEEM") ? $_POST['parameter'] : $this->setAlamoParams(json_decode($_POST['parameter']));
+
+        if($this->input->post('service') == 'DEEM'){
+            $parameter = $this->input->post('parameter');
+        }else if($this->input->post('service') == 'ALAMO'){
+            $parameter = $this->setAlamoParams(json_decode($this->input->post('parameter')));
+        }else{ // RCCL
+            $parameter = $this->setRcclParams(json_decode($this->input->post('parameter')));
+        }
+
         $ch = curl_init();
         curl_setopt($ch, CURLOPT_URL, $url);
         curl_setopt($ch, CURLOPT_HEADER, 0);
@@ -528,6 +548,56 @@ class api extends CI_Controller{
         $body = substr($r->req, strpos($r->req, "<soapenv"));
         return $body;
     }
+
+    /**
+     * @param $parameter
+     * @return bool|string
+     */
+    function setRcclParams($parameter)
+    {
+        $this->load->library('rcclApi/res');
+        $this->load->library('rcclApi/Common');
+        $r = New Res();
+        $param = (array)$parameter;
+
+        $method = end(explode("/", $_REQUEST['url']));
+        if ($method == 'CategoryList') {
+            $params = Array(
+                $param['sailDate'],
+                $param['packageId'],
+                $param['adultAmt'],
+                $param['childAmt'],
+                $param['cabinType'],
+                $param['silver'],
+                $param['isNRD']
+            );
+            $r->getCategoryList($params);
+        }
+
+        $body = substr($r->req, strpos($r->req, "<soapenv"));
+        return $body;
+    }
+
+    function viewManual()
+    {
+        $filePath = $_SERVER['DOCUMENT_ROOT'] .'/upload/';
+        $fileName = $this->input->get('fileName');
+        if(file_exists($filePath . $fileName))
+        {
+            header("Content-type:application/pdf");
+            header("Content-Transfer-Encoding: binary") ;
+            Header("Content-Length: ".(string)(filesize($filePath . $fileName))) ;
+            header("Cache-Control: no-cache, must-revalidate");
+            header('Pragma: no-cache');
+            header("Expires: 0");
+            ob_clean();
+            flush();
+            readfile($filePath . $fileName);
+        }else{
+            echo 'exist no file';
+        }
+    }
+
 
 }
 

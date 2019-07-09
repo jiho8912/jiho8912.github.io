@@ -35,4 +35,26 @@ class Common
 		}
 		return $seg_exp;
 	}
+
+    function formatXml($xmlString)
+    {
+        $xmlDocument = new DOMDocument('1.0');
+        $xmlDocument->preserveWhiteSpace = false;
+        $xmlDocument->formatOutput = true;
+        $xmlDocument->loadXML($xmlString);
+
+        return $xmlDocument->saveXML();
+    }
+
+    function arr_get($array, $key, $default = null){
+        return isset($array[$key]) ? $array[$key] : $default;
+    }
+
+    function timeStringNow()
+    {
+        $timestamp = time();
+        $dt = new DateTime("now", new DateTimeZone('Asia/Seoul')); //first argument "must" be a string
+        $dt->setTimezone(new DateTimeZone('Europe/London')); //adjust the object to correct timestamp
+        return $dt->format('Y-m-d\TH:i:s\Z');
+    }
 }
