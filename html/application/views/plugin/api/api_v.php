@@ -212,8 +212,9 @@
                             }
                         }
 
-                        request_code_wrap.html(request_data_str);
-                        response_code_wrap.html(data.res);
+                        console.log(request_data_str);
+                        request_code_wrap.text(request_data_str);
+                        response_code_wrap.text(data.res);
 
                         request_code_wrap.removeClass('highlighter');
                         response_code_wrap.removeClass('highlighter');
@@ -440,7 +441,6 @@
                     }
                 });
 
-                console.log(JSON.stringify(data_str));
                 return JSON.stringify(data_str);
             }
 

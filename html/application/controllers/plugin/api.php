@@ -415,16 +415,49 @@ class api extends CI_Controller{
                     'url_parameter' => '',
                     'parameter' => array(
                         'sailDate' => '03/01/2020',
-                        'packageId' => 'AN7BH028',
-                        'adultAmt' => '2',
+                        'packageId' => 'EC14F089',
+                        'adultAmt' => '1',
                         'childAmt' => '0',
                         'cabinType' => '2',
                         'silver' => '0',
-                        'isNRD' => true
+                        'isNRD' => false
                     ),
                     'call_type' => 'POST',
-                    'description' => '카테고리리스트 검색',
+                    'description' => '크루즈 가격 리스트 요청',
                     'help_url' => '/plugin/api/viewManual?fileName=RCL Cruise FIT Spec 5.2.pdf#page=86'
+                ),
+                'CruisePriceBookingRQ' => array(
+                    'method_name' => 'BookingPrice',
+                    'url_parameter' => '',
+                    'parameter' => array(
+                        'sailDate' => '03/01/2020',
+                        'categoryCode' => 'c1',
+                        'fareCode' => 'F4890114',
+                        'shipCode' => 'EC',
+                        'cabinNumber' => '',
+                        'packageId' => 'EC14F089',
+                        'adultAmt' => '1',
+                        'childAmt' => '0',
+                        'isNRD' => false,
+                        'promotionCode' => ''
+                    ),
+                    'call_type' => 'POST',
+                    'description' => '크루즈 예약 가격 요청',
+                    'help_url' => '/plugin/api/viewManual?fileName=RCL Cruise FIT Spec 5.2.pdf#page=158'
+                ),
+                'CruiseFareAvailRQ' => array(
+                    'method_name' => 'FareList',
+                    'url_parameter' => '',
+                    'parameter' => array(
+                        'Start' => '03/01/2020',
+                        'ShipCode' => 'EC',
+                        'adultAmt' => '1',
+                        'childAmt' => '0',
+                        'packageCode' => 'EC14F089',
+                    ),
+                    'call_type' => 'POST',
+                    'description' => '크루즈 프로모션 리스트 요청',
+                    'help_url' => '/plugin/api/viewManual?fileName=RCL Cruise FIT Spec 5.2.pdf#page=144'
                 )
             )
             /*
@@ -501,7 +534,7 @@ class api extends CI_Controller{
         curl_setopt($ch, CURLOPT_SSL_VERIFYPEER, 0);
         curl_setopt($ch, CURLOPT_FOLLOWLOCATION, 1);
         curl_setopt($ch, CURLOPT_SSL_VERIFYHOST, 2);
-        curl_setopt($ch, CURLOPT_TIMEOUT, 100);
+        curl_setopt($ch, CURLOPT_TIMEOUT, 5);
         curl_setopt($ch, CURLOPT_CUSTOMREQUEST, $type); // call 타입 get,post,put,delete
 		if(strtoupper($type != 'GET')) {
 			curl_setopt($ch, CURLOPT_POSTFIELDS, $parameter); //POST로 보낼 데이터 지정하기
@@ -572,6 +605,24 @@ class api extends CI_Controller{
                 $param['isNRD']
             );
             $r->getCategoryList($params);
+        }else if($method == 'BookingPrice'){
+            $params = Array(
+                $param['sailDate'],
+                $param['categoryCode'],
+                $param['fareCode'],
+                $param['shipCode'],
+                $param['cabinNumber'],
+                '',
+                $param['packageId'],
+                $param['adultAmt'],
+                $param['childAmt'],
+                '',
+                $param['isNRD'],
+                $param['promotionCode']
+            );
+            $r->getBookingPrice($params);
+        }else if($method == 'FareList'){
+            $r->getFareList($param);
         }
 
         $body = substr($r->req, strpos($r->req, "<soapenv"));

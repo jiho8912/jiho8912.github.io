@@ -2,38 +2,10 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="ff5fcec0-56b4-4d8e-b19c-d2f884e4fd61" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/html/application/libraries/rcclApi/BookingPriceBean.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/html/application/libraries/rcclApi/CabinBean.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/html/application/libraries/rcclApi/CabinOptionBean.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/html/application/libraries/rcclApi/CategoryBean.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/html/application/libraries/rcclApi/CategoryOptionBean.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/html/application/libraries/rcclApi/Common.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/html/application/libraries/rcclApi/ConfirmBean.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/html/application/libraries/rcclApi/CruisAPI.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/html/application/libraries/rcclApi/CruisAPI.php_20180103" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/html/application/libraries/rcclApi/EtcBean.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/html/application/libraries/rcclApi/FareBean.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/html/application/libraries/rcclApi/FareOptionBean.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/html/application/libraries/rcclApi/GoogleUrlApi.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/html/application/libraries/rcclApi/HTTPRequest.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/html/application/libraries/rcclApi/ItinInfoBean.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/html/application/libraries/rcclApi/JSON.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/html/application/libraries/rcclApi/PaymentBean.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/html/application/libraries/rcclApi/PkgBean.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/html/application/libraries/rcclApi/PriceInfoBean.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/html/application/libraries/rcclApi/PromotionPriceBean.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/html/application/libraries/rcclApi/Req.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/html/application/libraries/rcclApi/Req.php_20180103" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/html/application/libraries/rcclApi/Res.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/html/application/libraries/rcclApi/Res.php_20180103" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/html/application/libraries/rcclApi/ResForAdmin.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/html/application/libraries/rcclApi/SailBean.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/html/application/libraries/rcclApi/SailOptionBean.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/html/upload/RCL Cruise FIT Spec 5.2.pdf" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/php.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/php.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/html/application/controllers/plugin/api.php" beforeDir="false" afterPath="$PROJECT_DIR$/html/application/controllers/plugin/api.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/html/application/libraries/common.php" beforeDir="false" afterPath="$PROJECT_DIR$/html/application/libraries/common.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/html/application/libraries/rcclApi/Req.php" beforeDir="false" afterPath="$PROJECT_DIR$/html/application/libraries/rcclApi/Req.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/html/application/views/plugin/api/api_v.php" beforeDir="false" afterPath="$PROJECT_DIR$/html/application/views/plugin/api/api_v.php" afterDir="false" />
     </list>
     <ignored path="html/.idea/" />
     <ignored path="html/application/config/database.php" />
@@ -77,11 +49,11 @@
     <session id="-1602964055">
       <usages-collector id="statistics.lifecycle.project">
         <counts>
-          <entry key="project.closed" value="41" />
+          <entry key="project.closed" value="43" />
           <entry key="project.open.time.0" value="11" />
-          <entry key="project.open.time.1" value="23" />
+          <entry key="project.open.time.1" value="25" />
           <entry key="project.open.time.10" value="2" />
-          <entry key="project.open.time.2" value="2" />
+          <entry key="project.open.time.2" value="3" />
           <entry key="project.open.time.3" value="1" />
           <entry key="project.open.time.4" value="4" />
           <entry key="project.open.time.5" value="2" />
@@ -89,7 +61,7 @@
           <entry key="project.open.time.7" value="1" />
           <entry key="project.open.time.8" value="1" />
           <entry key="project.open.time.9" value="1" />
-          <entry key="project.opened" value="51" />
+          <entry key="project.opened" value="54" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.extensions.open">
@@ -105,13 +77,13 @@
           <entry key="html" value="11" />
           <entry key="ini" value="6" />
           <entry key="jpg" value="1" />
-          <entry key="js" value="15" />
+          <entry key="js" value="16" />
           <entry key="json" value="1" />
           <entry key="log" value="10" />
           <entry key="pem" value="1" />
-          <entry key="php" value="403" />
+          <entry key="php" value="405" />
           <entry key="sql" value="4" />
-          <entry key="ts" value="4" />
+          <entry key="ts" value="5" />
           <entry key="txt" value="3" />
           <entry key="vmoptions" value="2" />
           <entry key="xml" value="4" />
@@ -126,14 +98,14 @@
           <entry key="Image" value="1" />
           <entry key="Ini" value="6" />
           <entry key="JSON" value="1" />
-          <entry key="JavaScript" value="15" />
+          <entry key="JavaScript" value="16" />
           <entry key="Log" value="1" />
-          <entry key="PHP" value="403" />
+          <entry key="PHP" value="405" />
           <entry key="PLAIN_TEXT" value="36" />
           <entry key="SQL" value="2" />
           <entry key="Scratch" value="2" />
           <entry key="SmartyConfig" value="2" />
-          <entry key="TypeScript" value="4" />
+          <entry key="TypeScript" value="5" />
           <entry key="XML" value="4" />
           <entry key="htaccess" value="12" />
         </counts>
@@ -148,7 +120,7 @@
           <entry key="html" value="31" />
           <entry key="ini" value="16" />
           <entry key="js" value="60" />
-          <entry key="php" value="21973" />
+          <entry key="php" value="22509" />
           <entry key="txt" value="165" />
           <entry key="vmoptions" value="3" />
           <entry key="xml" value="2" />
@@ -156,10 +128,10 @@
       </usages-collector>
       <usages-collector id="statistics.file.types.edit">
         <counts>
-          <entry key="HTML" value="37" />
+          <entry key="HTML" value="48" />
           <entry key="Ini" value="16" />
           <entry key="JavaScript" value="60" />
-          <entry key="PHP" value="21967" />
+          <entry key="PHP" value="22492" />
           <entry key="PLAIN_TEXT" value="236" />
           <entry key="XML" value="2" />
           <entry key="htaccess" value="72" />
@@ -180,11 +152,47 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file pinned="false" current-in-tab="true">
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/html/application/controllers/plugin/api.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="304">
-              <caret line="566" column="32" selection-start-line="566" selection-start-column="32" selection-end-line="566" selection-end-column="32" />
+            <state relative-caret-position="-4156">
+              <caret line="460" column="17" lean-forward="true" selection-start-line="460" selection-start-column="17" selection-end-line="460" selection-end-column="17" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/html/application/libraries/rcclApi/Req.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="384">
+              <caret line="1592" column="35" lean-forward="true" selection-start-line="1592" selection-start-column="35" selection-end-line="1592" selection-end-column="35" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/html/application/views/plugin/api/api_v.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="23">
+              <caret line="218" column="45" selection-start-line="218" selection-start-column="45" selection-end-line="218" selection-end-column="45" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/html/static/admin/js/jstree.js">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="139357">
+              <caret line="6059" column="12" selection-start-line="6059" selection-start-column="12" selection-end-line="6059" selection-end-column="12" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$APPLICATION_HOME_DIR$/plugins/JavaScriptLanguage/jsLanguageServicesImpl/external/lib.es5.d.ts">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="19320">
+              <caret line="853" column="4" selection-start-line="853" selection-start-column="4" selection-end-line="853" selection-end-column="4" />
             </state>
           </provider>
         </entry>
@@ -192,17 +200,8 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/html/application/libraries/rcclApi/Common.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="211">
-              <caret line="25" column="16" selection-start-line="25" selection-start-column="16" selection-end-line="25" selection-end-column="16" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/html/application/libraries/rcclApi/CruisAPI.php">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="226">
-              <caret line="133" column="33" selection-start-line="133" selection-start-column="33" selection-end-line="133" selection-end-column="33" />
+            <state relative-caret-position="1495">
+              <caret line="65" column="24" selection-start-line="65" selection-start-column="24" selection-end-line="65" selection-end-column="24" />
             </state>
           </provider>
         </entry>
@@ -210,17 +209,8 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/html/application/libraries/rcclApi/Res.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="143">
-              <caret line="486" column="21" lean-forward="true" selection-start-line="486" selection-start-column="21" selection-end-line="486" selection-end-column="21" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/html/application/libraries/common.php">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="493">
-              <caret line="50" column="5" lean-forward="true" selection-start-line="50" selection-start-column="5" selection-end-line="50" selection-end-column="5" />
+            <state relative-caret-position="46368">
+              <caret line="2016" column="39" selection-start-line="2016" selection-start-column="39" selection-end-line="2016" selection-end-column="39" />
             </state>
           </provider>
         </entry>
@@ -228,7 +218,7 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/html/application/libraries/rcclApi/JSON.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="211">
+            <state relative-caret-position="368">
               <caret line="16" column="36" selection-start-line="16" selection-start-column="23" selection-end-line="16" selection-end-column="36" />
             </state>
           </provider>
@@ -244,18 +234,9 @@
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/html/application/libraries/rcclApi/Req.php">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="42">
-              <caret line="193" column="22" selection-start-line="193" selection-start-column="22" selection-end-line="193" selection-end-column="22" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/html/application/libraries/api/Res.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="463">
+            <state relative-caret-position="17388">
               <caret line="756" column="40" selection-start-line="756" selection-start-column="40" selection-end-line="756" selection-end-column="40" />
             </state>
           </provider>
@@ -272,17 +253,6 @@
   </component>
   <component name="FindInProjectRecents">
     <findStrings>
-      <find>JSON.parse</find>
-      <find>api-wrap CarSVCAuthorization</find>
-      <find>CURLOPT_POSTFIELDS</find>
-      <find>20YB8VbGpPX7xlA6x9I68N2O2KLi76OA</find>
-      <find>edd5a09b1efccfcce7e8c5374e5bbd46</find>
-      <find>cmsTemplateList.php</find>
-      <find>index</find>
-      <find>mysqli</find>
-      <find>mysql</find>
-      <find>exten</find>
-      <find>this-&gt;get</find>
       <find>this-&gt;post</find>
       <find>setcookie</find>
       <find>$this-&gt;</find>
@@ -302,6 +272,17 @@
       <find>Common</find>
       <find>Services_JSON</find>
       <find>timeStringNow</find>
+      <find>211.52.72.36</find>
+      <find>AN7BH028</find>
+      <find>CruiseCategoryAvailRQ</find>
+      <find>1954050095</find>
+      <find>lo</find>
+      <find>code-wrap</find>
+      <find>pre</find>
+      <find>xml-tag-block</find>
+      <find>console.log</find>
+      <find>fareList</find>
+      <find>debug</find>
     </findStrings>
     <replaceStrings>
       <replace>visitor_m</replace>
@@ -312,6 +293,7 @@
       <replace>getApiDetail</replace>
       <replace>/application/libraries/api/</replace>
       <replace>rcclApi</replace>
+      <replace>textarea</replace>
     </replaceStrings>
   </component>
   <component name="Git.Settings">
@@ -326,7 +308,6 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="&lt;b53ca6b6-c715-4f73-97d2-10ac61ae401f&gt;/www/jiho/html/application/config/constants.php" />
         <option value="$PROJECT_DIR$/html/application/views/admin/admin_calender_v.php" />
         <option value="$PROJECT_DIR$/html/application/views/plugin/calender/calender_v.php" />
         <option value="$PROJECT_DIR$/html/application/libraries/api/AlamoAPI.php" />
@@ -355,7 +336,6 @@
         <option value="$PROJECT_DIR$/html/application/views/member/update_v.php" />
         <option value="$PROJECT_DIR$/html/.gitignore" />
         <option value="&lt;b53ca6b6-c715-4f73-97d2-10ac61ae401f&gt;/www/jiho/html/application/config/database.php" />
-        <option value="$PROJECT_DIR$/html/application/views/plugin/api/api_v.php" />
         <option value="$PROJECT_DIR$/html/application/views/member/login_v.php" />
         <option value="$PROJECT_DIR$/html/application/views/footer.php" />
         <option value="$PROJECT_DIR$/html/application/controllers/member.php" />
@@ -375,8 +355,10 @@
         <option value="$PROJECT_DIR$/html/application/libraries/rcclApi/CruisAPI.php" />
         <option value="$PROJECT_DIR$/html/application/libraries/common.php" />
         <option value="$PROJECT_DIR$/html/application/libraries/rcclApi/Common.php" />
-        <option value="$PROJECT_DIR$/html/application/libraries/rcclApi/Req.php" />
+        <option value="&lt;b53ca6b6-c715-4f73-97d2-10ac61ae401f&gt;/www/jiho/html/application/controllers/plugin/api.php" />
+        <option value="$PROJECT_DIR$/html/application/views/plugin/api/api_v.php" />
         <option value="$PROJECT_DIR$/html/application/controllers/plugin/api.php" />
+        <option value="$PROJECT_DIR$/html/application/libraries/rcclApi/Req.php" />
       </list>
     </option>
   </component>
@@ -389,10 +371,10 @@
   <component name="PhpDebugGeneral" listening_started="true" />
   <component name="PhpWorkspaceProjectConfiguration" interpreter_name="PHP" />
   <component name="ProjectFrameBounds" extendedState="6">
-    <option name="x" value="2552" />
-    <option name="y" value="-333" />
-    <option name="width" value="1216" />
-    <option name="height" value="1896" />
+    <option name="x" value="-8" />
+    <option name="y" value="-8" />
+    <option name="width" value="1936" />
+    <option name="height" value="1056" />
   </component>
   <component name="ProjectLevelVcsManager">
     <OptionsSetting value="false" id="Update" />
@@ -449,14 +431,6 @@
               <item name="html" type="462c0819:PsiDirectoryNode" />
               <item name="application" type="462c0819:PsiDirectoryNode" />
               <item name="libraries" type="462c0819:PsiDirectoryNode" />
-              <item name="api" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="jiho8912.github.io" type="b2602c69:ProjectViewProjectNode" />
-              <item name="jiho8912.github.io" type="462c0819:PsiDirectoryNode" />
-              <item name="html" type="462c0819:PsiDirectoryNode" />
-              <item name="application" type="462c0819:PsiDirectoryNode" />
-              <item name="libraries" type="462c0819:PsiDirectoryNode" />
               <item name="rcclApi" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
@@ -482,6 +456,27 @@
               <item name="views" type="462c0819:PsiDirectoryNode" />
               <item name="plugin" type="462c0819:PsiDirectoryNode" />
               <item name="api" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="jiho8912.github.io" type="b2602c69:ProjectViewProjectNode" />
+              <item name="jiho8912.github.io" type="462c0819:PsiDirectoryNode" />
+              <item name="html" type="462c0819:PsiDirectoryNode" />
+              <item name="static" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="jiho8912.github.io" type="b2602c69:ProjectViewProjectNode" />
+              <item name="jiho8912.github.io" type="462c0819:PsiDirectoryNode" />
+              <item name="html" type="462c0819:PsiDirectoryNode" />
+              <item name="static" type="462c0819:PsiDirectoryNode" />
+              <item name="admin" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="jiho8912.github.io" type="b2602c69:ProjectViewProjectNode" />
+              <item name="jiho8912.github.io" type="462c0819:PsiDirectoryNode" />
+              <item name="html" type="462c0819:PsiDirectoryNode" />
+              <item name="static" type="462c0819:PsiDirectoryNode" />
+              <item name="admin" type="462c0819:PsiDirectoryNode" />
+              <item name="js" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="jiho8912.github.io" type="b2602c69:ProjectViewProjectNode" />
@@ -533,19 +528,19 @@
     <option name="SHOW_DIALOG" value="false" />
   </component>
   <component name="RecentsManager">
-    <key name="CopyFile.RECENT_KEYS">
-      <recent name="D:\jiho\jiho8912.github.io\html\application\libraries\rcclApi" />
-      <recent name="D:\jiho\jiho8912.github.io\html\application\libraries" />
-      <recent name="D:\jiho\jiho8912.github.io\html\upload" />
-      <recent name="D:\jiho\jiho8912.github.io\html\application\controllers\apidocs" />
-      <recent name="D:\jiho\jiho8912.github.io\html\application\controllers\plugin" />
-    </key>
     <key name="MoveFile.RECENT_KEYS">
       <recent name="D:\jiho\jiho8912.github.io\html\application\controllers\apidocs" />
       <recent name="D:\jiho\jiho8912.github.io\html\application\views\plugin\docs" />
       <recent name="D:\jiho\jiho8912.github.io\html\application\controllers\plugin" />
       <recent name="D:\jiho\jiho8912.github.io\html\application\controllers" />
       <recent name="D:\jiho\jiho8912.github.io\html\application\views\images" />
+    </key>
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="D:\jiho\jiho8912.github.io\html\application\libraries\rcclApi" />
+      <recent name="D:\jiho\jiho8912.github.io\html\application\libraries" />
+      <recent name="D:\jiho\jiho8912.github.io\html\upload" />
+      <recent name="D:\jiho\jiho8912.github.io\html\application\controllers\apidocs" />
+      <recent name="D:\jiho\jiho8912.github.io\html\application\controllers\plugin" />
     </key>
   </component>
   <component name="RunDashboard">
@@ -645,6 +640,9 @@
       <workItem from="1558060275049" duration="45000" />
       <workItem from="1562221349642" duration="5836000" />
       <workItem from="1562228782612" duration="2850000" />
+      <workItem from="1562658787890" duration="1308000" />
+      <workItem from="1563151943432" duration="15478000" />
+      <workItem from="1563328928830" duration="1143000" />
     </task>
     <task id="LOCAL-00001" summary="업데이트">
       <created>1538100632817</created>
@@ -912,23 +910,29 @@
       <option name="project" value="LOCAL" />
       <updated>1552882641513</updated>
     </task>
-    <option name="localTasksCounter" value="39" />
+    <task id="LOCAL-00039" summary="update">
+      <created>1562658897069</created>
+      <option name="number" value="00039" />
+      <option name="presentableId" value="LOCAL-00039" />
+      <option name="project" value="LOCAL" />
+      <updated>1562658897069</updated>
+    </task>
+    <option name="localTasksCounter" value="40" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="424098000" />
+    <option name="totallyTimeSpent" value="442027000" />
   </component>
   <component name="ToolWindowManager">
-    <frame x="1912" y="-8" width="1936" height="1056" extended-state="6" />
-    <editor active="true" />
+    <frame x="-8" y="-8" width="1936" height="1056" extended-state="7" />
     <layout>
-      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.17750533" />
+      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.15138593" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Favorites" order="2" side_tool="true" />
-      <window_info anchor="bottom" id="File Transfer" order="0" sideWeight="0.49946696" weight="0.1834962" />
+      <window_info anchor="bottom" id="File Transfer" order="0" sideWeight="0.49946696" weight="0.18341851" />
       <window_info anchor="bottom" id="Message" order="1" />
-      <window_info anchor="bottom" id="Find" order="2" visible="true" weight="0.32899022" />
-      <window_info anchor="bottom" id="Run" order="3" weight="0.21498372" />
+      <window_info anchor="bottom" id="Find" order="2" weight="0.32899022" />
+      <window_info active="true" anchor="bottom" id="Run" order="3" visible="true" weight="0.21389794" />
       <window_info anchor="bottom" id="Debug" order="4" weight="0.3995657" />
       <window_info anchor="bottom" id="Cvs" order="5" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="6" weight="0.4" />
@@ -943,7 +947,7 @@
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
       <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
       <window_info anchor="right" id="Database" order="3" weight="0.32995737" />
-      <window_info anchor="right" id="Remote Host" order="4" weight="0.17560554" />
+      <window_info anchor="right" id="Remote Host" order="4" visible="true" weight="0.17537314" />
     </layout>
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -1002,14 +1006,6 @@
     <option name="LAST_COMMIT_MESSAGE" value="update" />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/html/application/controllers/apidocs/deem.php" />
-    <entry file="file://$PROJECT_DIR$/html/application/views/board/gellary_head.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="187">
-          <caret line="26" column="30" selection-start-line="26" selection-start-column="30" selection-end-line="26" selection-end-column="30" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/html/application/views/admin/shop/admin_category_list_v.php">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="163">
@@ -1258,13 +1254,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/html/application/views/plugin/api/api_v.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1495">
-          <caret line="65" column="27" selection-start-line="65" selection-start-column="27" selection-end-line="65" selection-end-column="27" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/html/application/libraries/api/CruisAPI.php">
       <provider selected="true" editor-type-id="text-editor">
         <state>
@@ -1279,10 +1268,59 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/html/application/libraries/api/Res.php">
+    <entry file="file://$PROJECT_DIR$/html/application/libraries/api/Req.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="463">
-          <caret line="756" column="40" selection-start-line="756" selection-start-column="40" selection-end-line="756" selection-end-column="40" />
+        <state relative-caret-position="108">
+          <caret line="735" column="17" selection-start-line="735" selection-start-column="17" selection-end-line="735" selection-end-column="17" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/html/application/libraries/rcclApi/CruisAPI.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="3059">
+          <caret line="133" column="33" selection-start-line="133" selection-start-column="33" selection-end-line="133" selection-end-column="33" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/html/application/libraries/common.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1150">
+          <caret line="50" column="5" selection-start-line="50" selection-start-column="5" selection-end-line="50" selection-end-column="5" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/html/static/admin/js/jstree.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="139357">
+          <caret line="6059" column="12" selection-start-line="6059" selection-start-column="12" selection-end-line="6059" selection-end-column="12" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$APPLICATION_HOME_DIR$/plugins/JavaScriptLanguage/jsLanguageServicesImpl/external/lib.es5.d.ts">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="19320">
+          <caret line="853" column="4" selection-start-line="853" selection-start-column="4" selection-end-line="853" selection-end-column="4" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/html/application/libraries/rcclApi/Common.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1495">
+          <caret line="65" column="24" selection-start-line="65" selection-start-column="24" selection-end-line="65" selection-end-column="24" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/html/application/libraries/rcclApi/Res.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="46368">
+          <caret line="2016" column="39" selection-start-line="2016" selection-start-column="39" selection-end-line="2016" selection-end-column="39" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/html/application/libraries/rcclApi/JSON.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="368">
+          <caret line="16" column="36" selection-start-line="16" selection-start-column="23" selection-end-line="16" selection-end-column="36" />
         </state>
       </provider>
     </entry>
@@ -1293,59 +1331,31 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/html/application/libraries/rcclApi/JSON.php">
+    <entry file="file://$PROJECT_DIR$/html/application/libraries/api/Res.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="211">
-          <caret line="16" column="36" selection-start-line="16" selection-start-column="23" selection-end-line="16" selection-end-column="36" />
+        <state relative-caret-position="17388">
+          <caret line="756" column="40" selection-start-line="756" selection-start-column="40" selection-end-line="756" selection-end-column="40" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/html/application/libraries/api/Req.php">
+    <entry file="file://$PROJECT_DIR$/html/application/views/plugin/api/api_v.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="108">
-          <caret line="735" column="17" selection-start-line="735" selection-start-column="17" selection-end-line="735" selection-end-column="17" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/html/application/libraries/common.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="493">
-          <caret line="50" column="5" lean-forward="true" selection-start-line="50" selection-start-column="5" selection-end-line="50" selection-end-column="5" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/html/application/libraries/rcclApi/CruisAPI.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="226">
-          <caret line="133" column="33" selection-start-line="133" selection-start-column="33" selection-end-line="133" selection-end-column="33" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/html/application/libraries/rcclApi/Req.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="42">
-          <caret line="193" column="22" selection-start-line="193" selection-start-column="22" selection-end-line="193" selection-end-column="22" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/html/application/libraries/rcclApi/Res.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="143">
-          <caret line="486" column="21" lean-forward="true" selection-start-line="486" selection-start-column="21" selection-end-line="486" selection-end-column="21" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/html/application/libraries/rcclApi/Common.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="211">
-          <caret line="25" column="16" selection-start-line="25" selection-start-column="16" selection-end-line="25" selection-end-column="16" />
+        <state relative-caret-position="23">
+          <caret line="218" column="45" selection-start-line="218" selection-start-column="45" selection-end-line="218" selection-end-column="45" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/html/application/controllers/plugin/api.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="304">
-          <caret line="566" column="32" selection-start-line="566" selection-start-column="32" selection-end-line="566" selection-end-column="32" />
+        <state relative-caret-position="-4156">
+          <caret line="460" column="17" lean-forward="true" selection-start-line="460" selection-start-column="17" selection-end-line="460" selection-end-column="17" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/html/application/libraries/rcclApi/Req.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="384">
+          <caret line="1592" column="35" lean-forward="true" selection-start-line="1592" selection-start-column="35" selection-end-line="1592" selection-end-column="35" />
         </state>
       </provider>
     </entry>

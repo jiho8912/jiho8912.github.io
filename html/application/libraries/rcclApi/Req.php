@@ -17,7 +17,7 @@ if(! class_exists("Req") )	{
 		function getAttr($name,$input,$makeInput)
 		{
 			if( $input != "" )
-				return ' ' . $name . '="' . $makeInput . '" ' ;
+				return ' ' . $name . '="' . $makeInput . '"' ;
 			else
 				return  "" ;
 		}
@@ -221,9 +221,9 @@ if(! class_exists("Req") )	{
 
 			for($i = 0 ; $i < $adultAmt ; $i++ )
 			{
-				$default_age = ($i == 0 && $isSilver == "1") ? "Age=\"55\"" : "Age=\"30\"" ;
+				$default_age = ($i == 0 && $isSilver == "1") ? "Age=\"55\"" : "Age=\"30\"";
 				$guest .= sprintf(
-							'<Guest %s %s>
+							'<Guest %s%s>
 								<GuestTransportation Mode="29" Status="36">
 									<GatewayCity LocationCode="C/O"/>
 								</GuestTransportation>
@@ -673,8 +673,7 @@ else
 				"getBookingPrice",$this->interfaceURL."/BookingPrice","OTA_CruisePriceBookingRQ","","","false","1","106597") ;
 
 
-
-			$start				= $param[0] ;
+            $start = substr($param[0],6,4)."-".substr($param[0],0,2)."-".substr($param[0],3,2);
 			$priceCategoryCode	= $param[1]	;
 			$pt					= $param[2]	;
 			$shipCode			= $param[3]	;
@@ -689,6 +688,9 @@ else
             {
                 $is_nrd = true;
             }
+            if($param[11] != ""){
+                $promotionCode = $param[11];
+			}
 
             //PPGR 에 해당되지 않는 선박 : 아자마라 전 선박 + 셀러브리티 X시리즈
             $PPGR_option_str = '<SelectedOptions OptionCode="PPGR"/>';
@@ -716,16 +718,12 @@ else
 			}
 
             $prtDeStr = $prtStr ="";
-            if(isset($_REQUEST['PromotionCode']) && ( $_REQUEST['PromotionCode'] != "" && $_REQUEST['PromotionCode'] != "undefined" ))
-            {
-                $prtStr = "<SelectedPromotions PromotionCode=\"" . $_REQUEST['PromotionCode'] . "\" />";
-                $prtDeStr = "<SelectedOffers PromotionCode=\"" . $_REQUEST['PromotionCode'] . "\" />" ;
 
-            }
-            if($pt!= "" && $pt != "undefined" )
+            if($promotionCode!= "")
             {
-                $prtStr = "<SelectedPromotions PromotionCode=\"" . $pt . "\" />";
+                $prtStr = "<SelectedPromotions PromotionCode=\"" . $promotionCode . "\" />";
             }
+
 			$req ='
 			<SailingInfo>
 			<SelectedSailing Start="'.$start.'">
@@ -844,7 +842,7 @@ else
 
 			//echo $this->putB($req)."errorCode=>".$this->get($param) ;
 			$this->putB($req);
-			return $this->get($param) ;
+			//return $this->get($param) ;
 
 
 		}
@@ -1525,18 +1523,18 @@ else
 
 		function getFareList($param)
 		{
-
 			$this->setUrl($this->FITURL."/FareList") ;
 			$this->putH(
 					"getFareList",$this->interfaceURL."/FareList","OTA_CruiseFareAvailRQ","150","true","false","1","106597") ;
-			$start		= $this->getAttr("Start",$param['start'],$param['start']) ;				// 년월
-			$ship		= $this->getAttr("ShipCode",$param['ship'],$param['ship']) ;			// 배
+            $start = substr($param['Start'],6,4)."-".substr($param['Start'],0,2)."-".substr($param['Start'],3,2);
+			$start		= $this->getAttr("Start",$start,$start) ;				// 년월
+			$ship		= $this->getAttr("ShipCode",$param['ShipCode'],$param['ShipCode']) ;			// 배
 			$adultAmt	= $param['adultAmt'] ;
 			$childAmt	= $param['childAmt'] ;
 			$guestCount = $param['adultAmt'] + $param['childAmt'] ;
 
 			$packageCode = $param['packageCode'];
-			$status = $param['status'];
+			$status = 36;
 
 			$guest = "" ;
 
@@ -1547,7 +1545,7 @@ else
 				$default_age = ($i == 0 && $_REQUEST["isSilver"] == "1") ? "Age=\"55\"" : "Age=\"30\"" ;
 
 				$guest .= sprintf(
-						'<Guest %s %s>
+						'<Guest %s%s>
 								<GuestTransportation Mode="29" Status="36">
 									<GatewayCity LocationCode="C/O"/>
 								</GuestTransportation>
@@ -1563,7 +1561,7 @@ else
 			for($i = 0 ; $i < $childAmt ; $i++ )
 			{
 				$guest .= sprintf(
-						'<Guest Age="10" %s>
+						'<Guest Age="10"%s>
 								<GuestTransportation Mode="29" Status="36">
 									<GatewayCity LocationCode="C/O"/>
 								</GuestTransportation>
@@ -1582,18 +1580,26 @@ else
 			}
 			$guest .= "</GuestCounts>" ;
 
-
 			$req = $guest .
-			'<SailingInfo>
-				<SelectedSailing '. $start . '>
-				<CruiseLine ' .$ship . '/>
-				</SelectedSailing>
-				<InclusivePackageOption CruisePackageCode="'.$packageCode.'"/>
-			</SailingInfo>
-			<SearchQualifiers>       <Status Status="'.$status.'"/>     </SearchQualifiers>' ;
+			'
+				<SailingInfo>
+					<SelectedSailing '.$start.'>
+						<CruiseLine ' .$ship . '/>
+					</SelectedSailing>
+					<InclusivePackageOption CruisePackageCode="'.$packageCode.'"/>
+				</SailingInfo>
+				<SearchQualifiers>
+					<Status Status="'.$status.'"/>
+				</SearchQualifiers>
+				<TPA_Extensions>
+					<TPA_FareQualifiers>
+						<TPA_FareType IncludeCombinability="Yes" IncludeNonRefundablePromos="No"/>
+					</TPA_FareQualifiers>
+				</TPA_Extensions>
+			' ;
 
 			$this->putB($req) ;
-			return $this->get($param) ;
+			//return $this->get($param) ;
 		}
 
 
