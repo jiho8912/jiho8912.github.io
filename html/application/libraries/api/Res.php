@@ -33,7 +33,7 @@ if(! class_exists("Res") )	{
 
 		var $errorBean = "" ;
 
-		function Res($url)
+		function Res($url='')
 		{
 			$this->Req($url) ;
 		}

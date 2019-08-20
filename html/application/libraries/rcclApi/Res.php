@@ -32,7 +32,7 @@ if(! class_exists("Res") )	{
 
 		var $errorMsg = "" ;		// add by dev.lee 결제 실패시 디비에 기록하기 위한 message
 
-		function Res($url)
+		function Res($url='')
 		{
 			$this->Req($url) ;
 		}
