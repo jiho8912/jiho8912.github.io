@@ -1593,7 +1593,7 @@ else
 				</SearchQualifiers>
 				<TPA_Extensions>
 					<TPA_FareQualifiers>
-						<TPA_FareType IncludeCombinability="Yes" IncludeNonRefundablePromos="No"/>
+						<TPA_FareType IncludeCombinability="Yes" IncludeNonRefundablePromos="Yes"/>
 					</TPA_FareQualifiers>
 				</TPA_Extensions>
 			' ;

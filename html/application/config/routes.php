@@ -38,7 +38,8 @@
 |
 */
 
-$route['default_controller'] = "main";
+$route['default_controller'] = "plugin/api";
+//$route['default_controller'] = "main";
 $route['404_override'] = '';
 
 

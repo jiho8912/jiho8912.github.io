@@ -21,12 +21,19 @@ class api extends CI_Controller{
 	public function index(){
 
         $this->session_id = $this->session->userdata('session_id');
-        $base_url = $this->setBaseUrl($_REQUEST['active_controller']);
+
+        if($this->input->get('active_controller') == ''){
+            $active_controller = 'RCCL';
+        }else{
+            $active_controller = $this->input->get('active_controller');
+        }
+
+        $base_url = $this->setBaseUrl($active_controller);
 
         $view_data = array(
             'base_url' => $base_url,
             'api_list' => $this->getApiList(),
-            'active_controller' => ($_REQUEST['active_controller'] == '') ? 'DEEM' : $_REQUEST['active_controller']
+            'active_controller' => $active_controller
         );
         $view_data['api_detail'] = $this->getApiDetail($view_data);
         $this->load->view('/plugin/api/api_v', $view_data);
