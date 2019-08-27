@@ -10,6 +10,9 @@ class api extends CI_Controller{
     var $ClientIdentifier = 'FHSJ3VPZ-KG5M-VWZD-PGU8-R36KF2LMQFNQ';
     var $ClientSecret = 'bSG6W88mCxf4gAwTREmSzHAU';
     var $UserID = 'TMK';
+    var $SilverSeaID = 'rsvn@tourmktg.co.kr';
+    var $SilverSeaPASS = '123qweASD';
+
 
 	public function __construct(){
 		parent::__construct();
@@ -45,7 +48,7 @@ class api extends CI_Controller{
             'DEEM' => 'https://optimus-qa.deemgroundapp.com/',
             'ALAMO' => 'http://www.alamo-stage.co.kr/gateApiLive.php/',
             'RCCL' => 'http://www.rccl-stage.co.kr/gateApiLive.php?act=/',
-            'KaKao' => 'https://kapi.kakao.com/v1/push/'
+            'SilverSea' => 'https://shop.silversea.com/api/v1/'
         );
 
         $base_url = $url_Array[$controllerName];
@@ -466,26 +469,22 @@ class api extends CI_Controller{
                     'description' => '크루즈 프로모션 리스트 요청',
                     'help_url' => '/plugin/api/viewManual?fileName=RCL Cruise FIT Spec 5.2.pdf#page=144'
                 )
-            )
-            /*
-            'KaKao' => array(
-                'register' => array(
-                    'method_name' => 'register',
-                    'url_parameter' => '',
+            ),
+            'SilverSea' => array(
+                'voyages' => array(
+                    'method_name' => 'voyages',
                     'parameter' => array(
-                        'uuid' => '',
-                        'device_id' => '',
-                        'push_type' => '',
-                        'push_token' => ''
+                        'destination_id' => '',
+                        'ship_id' => '',
+                        'voyage_id' => '',
+                        'after' => '',
+                        'before' => '',
                     ),
-                    'call_type' => 'POST',
-                    'description' => '푸시 토큰 등록',
-                    'header' => array(
-                        'Authorization' => 'KaKaoAK cb6cf9726679d522b858f5a8f1d27f5d'
-                    ),
+                    'call_type' => 'GET',
+                    'description' => '항해 목록 검색',
+                    'help_url' => 'http://shop.silversea.com/api/Help/Api/GET-v1-voyages_destination_id_ship_id_voyage_id_after_before_page_per_page_language_cod_envelope'
                 )
             )
-            */
 		);
 
 		return $controller_arr;
@@ -530,8 +529,13 @@ class api extends CI_Controller{
             $parameter = $this->input->post('parameter');
         }else if($this->input->post('service') == 'ALAMO'){
             $parameter = $this->setAlamoParams(json_decode($this->input->post('parameter')));
-        }else{ // RCCL
+        }else if($this->input->post('service') == 'RCCL'){ // RCCL
             $parameter = $this->setRcclParams(json_decode($this->input->post('parameter')));
+        }else if($this->input->post('service') == 'SilverSea'){
+            if(strtoupper($type) == 'GET') {
+                $parameter = json_decode($this->input->post('parameter'));
+                $url = $url . '?' . http_build_query($parameter);;
+            }
         }
 
         $ch = curl_init();
@@ -545,6 +549,9 @@ class api extends CI_Controller{
         curl_setopt($ch, CURLOPT_CUSTOMREQUEST, $type); // call 타입 get,post,put,delete
 		if(strtoupper($type != 'GET')) {
 			curl_setopt($ch, CURLOPT_POSTFIELDS, $parameter); //POST로 보낼 데이터 지정하기
+        }
+        if($this->input->post('service') == 'SilverSea'){
+            curl_setopt($ch, CURLOPT_USERPWD, $this->SilverSeaID . ":" . $this->SilverSeaPASS);
         }
 		curl_setopt($ch, CURLOPT_HTTPHEADER, $headers);
         curl_setopt($ch, CURLOPT_USERAGENT, $_SERVER['HTTP_USER_AGENT']);

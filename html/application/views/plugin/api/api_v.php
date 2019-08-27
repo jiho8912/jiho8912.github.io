@@ -196,23 +196,20 @@
                         var response_code_wrap = $('.response pre.code-wrap');
 
                         request_data_str += '\n';
-
-                        if(data.res && data.req) {
+                        if(data.res && data.req && data.req.length > 0) {
                             if (data.req.indexOf("xml") == -1) {
                                 request_data_str += formatJson(data.req);
-
                                 var res = JSON.parse(data.res);
                                 if (res.TokenType && res.AccessToken) {
                                     $(".Authorization").val("Bearer " + res.AccessToken);
                                 }
 
-
                             } else {
+                                console.log(data.req);
                                 request_data_str += formatXml(data.req);
                             }
                         }
 
-                        console.log(request_data_str);
                         request_code_wrap.text(request_data_str);
                         response_code_wrap.text(data.res);
 
@@ -386,7 +383,7 @@
                     var row_div1 = $(row1).children('.row').children('div');
                     var row_key1 = row_div1.eq(0).text();
                     var row_value1 = row_div1.eq(1).children('input[type="text"]').val();
-                    if(!row_value1) row_value1 = false;
+                    if(!row_value1) return true;
 
                     data_str[row_key1] = row_value1;
 
@@ -405,7 +402,7 @@
                             var row_div2 = $(row2).children('.row').children('div');
                             var row_key2 = row_div2.eq(0).text();
                             var row_value2 = row_div2.eq(1).children('input[type="text"]').val();
-                            if(!row_value2) row_value2 = false;
+                            if(!row_value2) return true;
                             data_str[row_key1][row_key2] = row_value2;
 
                             if($(row2).attr("sub_data") == 1){
@@ -418,7 +415,7 @@
                                     var row_div3 = $(row3).children('.row').children('div');
                                     var row_key3 = row_div3.eq(0).text();
                                     var row_value3 = row_div3.eq(1).children('input[type="text"]').val();
-                                    if(!row_value3) row_valu3 = false;
+                                    if(!row_value3) return true;
                                     data_str[row_key1][row_key2][row_key3] = row_value3;
 
                                     if($(row3).attr("sub_data") == 1){
@@ -428,7 +425,7 @@
                                             var row_div4 = $(row4).children('.row').children('div');
                                             var row_key4 = row_div4.eq(0).text();
                                             var row_value4 = row_div4.eq(1).children('input[type="text"]').val();
-                                            if(!row_value4) row_value4 = false;
+                                            if(!row_value4) return true;
                                             data_str[row_key1][row_key2][row_key3][row_key4] = row_value4;
                                         });
 
