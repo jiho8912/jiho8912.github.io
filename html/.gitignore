@@ -10,4 +10,3 @@ application/logs/*
 
 application/config/database.php
 application/config/routes.php
-html/.idea/*
