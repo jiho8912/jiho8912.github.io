@@ -481,7 +481,7 @@ class api extends CI_Controller{
                         'before' => '',
                     ),
                     'call_type' => 'GET',
-                    'description' => '항해 목록 검색',
+                    'description' => '항해 목록 검색 ',
                     'help_url' => 'http://shop.silversea.com/api/Help/Api/GET-v1-voyages_destination_id_ship_id_voyage_id_after_before_page_per_page_language_cod_envelope'
                 )
             )

@@ -1,10 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="ff5fcec0-56b4-4d8e-b19c-d2f884e4fd61" name="Default Changelist" comment="update">
+    <list default="true" id="ff5fcec0-56b4-4d8e-b19c-d2f884e4fd61" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/html/application/controllers/plugin/api.php" beforeDir="false" afterPath="$PROJECT_DIR$/html/application/controllers/plugin/api.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/html/application/views/plugin/api/api_v.php" beforeDir="false" afterPath="$PROJECT_DIR$/html/application/views/plugin/api/api_v.php" afterDir="false" />
     </list>
     <ignored path="html/.idea/" />
     <ignored path="html/application/config/database.php" />
@@ -49,9 +47,9 @@
     <session id="-1602964055">
       <usages-collector id="statistics.lifecycle.project">
         <counts>
-          <entry key="project.closed" value="48" />
+          <entry key="project.closed" value="49" />
           <entry key="project.open.time.0" value="12" />
-          <entry key="project.open.time.1" value="26" />
+          <entry key="project.open.time.1" value="28" />
           <entry key="project.open.time.10" value="2" />
           <entry key="project.open.time.2" value="4" />
           <entry key="project.open.time.3" value="2" />
@@ -61,7 +59,7 @@
           <entry key="project.open.time.7" value="1" />
           <entry key="project.open.time.8" value="1" />
           <entry key="project.open.time.9" value="1" />
-          <entry key="project.opened" value="59" />
+          <entry key="project.opened" value="61" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.extensions.open">
@@ -82,7 +80,7 @@
           <entry key="json" value="1" />
           <entry key="log" value="10" />
           <entry key="pem" value="1" />
-          <entry key="php" value="430" />
+          <entry key="php" value="431" />
           <entry key="sql" value="4" />
           <entry key="ts" value="5" />
           <entry key="txt" value="3" />
@@ -102,7 +100,7 @@
           <entry key="JSON" value="1" />
           <entry key="JavaScript" value="16" />
           <entry key="Log" value="1" />
-          <entry key="PHP" value="430" />
+          <entry key="PHP" value="431" />
           <entry key="PLAIN_TEXT" value="37" />
           <entry key="SQL" value="2" />
           <entry key="Scratch" value="2" />
@@ -122,7 +120,7 @@
           <entry key="html" value="31" />
           <entry key="ini" value="16" />
           <entry key="js" value="60" />
-          <entry key="php" value="23040" />
+          <entry key="php" value="23044" />
           <entry key="txt" value="165" />
           <entry key="vmoptions" value="3" />
           <entry key="xml" value="2" />
@@ -133,7 +131,7 @@
           <entry key="HTML" value="48" />
           <entry key="Ini" value="16" />
           <entry key="JavaScript" value="60" />
-          <entry key="PHP" value="23023" />
+          <entry key="PHP" value="23027" />
           <entry key="PLAIN_TEXT" value="239" />
           <entry key="XML" value="2" />
           <entry key="htaccess" value="72" />
@@ -154,20 +152,29 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file pinned="false" current-in-tab="false">
+      <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/html/application/controllers/plugin/api.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="12949">
-              <caret line="563" column="31" selection-start-line="563" selection-start-column="21" selection-end-line="563" selection-end-column="31" />
+            <state relative-caret-position="616">
+              <caret line="476" column="47" lean-forward="true" selection-start-line="476" selection-start-column="47" selection-end-line="476" selection-end-column="47" />
             </state>
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="true">
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/html/application/views/plugin/api/api_v.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="621">
-              <caret line="208" column="44" selection-start-line="208" selection-start-column="44" selection-end-line="208" selection-end-column="44" />
+            <state relative-caret-position="207">
+              <caret line="154" column="31" lean-forward="true" selection-start-line="154" selection-start-column="31" selection-end-line="154" selection-end-column="31" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/html/application/config/database.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="238">
+              <caret line="50" column="37" selection-start-line="50" selection-start-column="37" selection-end-line="50" selection-end-column="37" />
             </state>
           </provider>
         </entry>
@@ -205,7 +212,6 @@
       <find>CONTROLLER_DIR</find>
       <find>active_controller</find>
       <find>RCCL</find>
-      <find>SilverSea</find>
       <find>URL Parameter</find>
       <find>Token</find>
       <find>$UserID</find>
@@ -213,6 +219,7 @@
       <find>Parameter</find>
       <find>#####</find>
       <find>parse_str</find>
+      <find>SilverSea</find>
     </findStrings>
     <replaceStrings>
       <replace>visitor_m</replace>
@@ -282,13 +289,13 @@
         <option value="$PROJECT_DIR$/html/application/libraries/rcclApi/Req.php" />
         <option value="$PROJECT_DIR$/html/.gitignore" />
         <option value="$PROJECT_DIR$/html/application/config/autoload.php" />
-        <option value="$PROJECT_DIR$/html/application/config/database.php" />
         <option value="&lt;b53ca6b6-c715-4f73-97d2-10ac61ae401f&gt;/www/jiho/html/application/config/routes.php" />
         <option value="$PROJECT_DIR$/html/application/libraries/rcclApi/Res.php" />
         <option value="$PROJECT_DIR$/html/application/libraries/api/Res.php" />
         <option value="$PROJECT_DIR$/html/application/config/routes.php" />
         <option value="$PROJECT_DIR$/html/application/controllers/plugin/api.php" />
         <option value="$PROJECT_DIR$/html/application/views/plugin/api/api_v.php" />
+        <option value="$PROJECT_DIR$/html/application/config/database.php" />
       </list>
     </option>
   </component>
@@ -457,7 +464,7 @@
   </component>
   <component name="PropertiesComponent">
     <property name="DatabaseDriversLRU" value="mysql" />
-    <property name="SearchEverywhereHistoryKey" value="api_v&#9;FILE&#9;file://D:/jiho/jiho8912.github.io/html/application/views/plugin/api/api_v.php&#10;ro&#9;FILE&#9;file://D:/jiho/jiho8912.github.io/html/application/config/routes.php&#10;res&#9;FILE&#9;file://D:/jiho/jiho8912.github.io/html/application/libraries/api/Res.php&#10;system&#9;FILE&#9;file://D:/jiho/jiho8912.github.io/html/system&#10;autoload&#9;FILE&#9;file://D:/jiho/jiho8912.github.io/html/application/config/autoload.php&#10;co&#9;FILE&#9;file://D:/jiho/jiho8912.github.io/html/application/libraries/common.php&#10;HTTPRequest&#9;null&#9;null&#10;CruisAPI&#9;null&#9;null&#10;api&#9;null&#9;null&#10;plugin&#9;FILE&#9;file://D:/jiho/jiho8912.github.io/html/application/controllers/plugin&#10;mysqli_driver&#9;FILE&#9;file://D:/jiho/jiho8912.github.io/html/system/database/drivers/mysqli/mysqli_driver.php&#10;callback_url&#9;null&#9;null&#10;generate_state&#9;null&#9;null&#10;foot&#9;FILE&#9;file://D:/jiho/jiho8912.github.io/html/application/views/footer.php&#10;login_v&#9;FILE&#9;file://D:/jiho/jiho8912.github.io/html/application/views/member/login_v.php&#10;update&#9;null&#9;null&#10;validate_reg&#9;FILE&#9;file://D:/jiho/jiho8912.github.io/html/js/validate_reg.js&#10;update_v&#9;null&#9;null&#10;validate&#9;FILE&#9;file://D:/jiho/jiho8912.github.io/html/js/validate.js&#10;logout&#9;null&#9;null&#10;alert&#9;null&#9;null&#10;select_mb_detail&#9;null&#9;null&#10;update_member_info&#9;null&#9;null&#10;select_member_pw&#9;null&#9;null&#10;result_json&#9;null&#9;null&#10;sns_in&#9;null&#9;null&#10;is&#9;null&#9;null&#10;admin_main_v&#9;FILE&#9;file://D:/jiho/jiho8912.github.io/html/application/views/admin/admin_main_v.php&#10;git&#9;FILE&#9;file://D:/jiho/jiho8912.github.io/html/.gitignore&#10;getListOfAvailRate&#9;null&#9;null&#10;excel_v&#9;FILE&#9;file://D:/jiho/jiho8912.github.io/html/application/views/plugin/excel/excel_v.php&#10;getter&#9;ACTION&#9;PhpGenerateGettersAndSetters&#10;test&#9;FILE&#9;file://D:/jiho/jiho8912.github.io/html/application/controllers/plugin/test.php&#10;work&#9;FILE&#9;file://D:/jiho/jiho8912.github.io/html/.idea/workspace.xml&#10;constants&#9;FILE&#9;file://D:/jiho/jiho8912.github.io/html/application/config/constants.php&#10;cardNoInterestQuota&#9;null&#9;null&#10;INIStdPayUtil&#9;FILE&#9;file://D:/jiho/jiho8912.github.io/html/application/views/plugin/shop/stdpay/libs/INIStdPayUtil.php&#10;admin_member_update&#9;null&#9;null&#10;member_m&#9;null&#9;null&#10;admin_member_v&#9;null&#9;null&#10;_clean_input_keys&#9;null&#9;null&#10;-&gt;select&#9;null&#9;null&#10;-&gt;update&#9;null&#9;null&#10;trans_complete&#9;null&#9;null&#10;db_debug&#9;null&#9;null&#10;_trans_status&#9;null&#9;null&#10;trans_rollback&#9;null&#9;null&#10;trans_status&#9;null&#9;null&#10;updateCategory&#9;null&#9;null&#10;select_admin_category_list&#9;null&#9;null" />
+    <property name="SearchEverywhereHistoryKey" value="data&#9;FILE&#9;file://D:/jiho/jiho8912.github.io/html/application/config/database.php&#10;api_v&#9;FILE&#9;file://D:/jiho/jiho8912.github.io/html/application/views/plugin/api/api_v.php&#10;ro&#9;FILE&#9;file://D:/jiho/jiho8912.github.io/html/application/config/routes.php&#10;res&#9;FILE&#9;file://D:/jiho/jiho8912.github.io/html/application/libraries/api/Res.php&#10;system&#9;FILE&#9;file://D:/jiho/jiho8912.github.io/html/system&#10;autoload&#9;FILE&#9;file://D:/jiho/jiho8912.github.io/html/application/config/autoload.php&#10;co&#9;FILE&#9;file://D:/jiho/jiho8912.github.io/html/application/libraries/common.php&#10;HTTPRequest&#9;null&#9;null&#10;CruisAPI&#9;null&#9;null&#10;api&#9;null&#9;null&#10;plugin&#9;FILE&#9;file://D:/jiho/jiho8912.github.io/html/application/controllers/plugin&#10;mysqli_driver&#9;FILE&#9;file://D:/jiho/jiho8912.github.io/html/system/database/drivers/mysqli/mysqli_driver.php&#10;callback_url&#9;null&#9;null&#10;generate_state&#9;null&#9;null&#10;foot&#9;FILE&#9;file://D:/jiho/jiho8912.github.io/html/application/views/footer.php&#10;login_v&#9;FILE&#9;file://D:/jiho/jiho8912.github.io/html/application/views/member/login_v.php&#10;update&#9;null&#9;null&#10;validate_reg&#9;FILE&#9;file://D:/jiho/jiho8912.github.io/html/js/validate_reg.js&#10;update_v&#9;null&#9;null&#10;validate&#9;FILE&#9;file://D:/jiho/jiho8912.github.io/html/js/validate.js&#10;logout&#9;null&#9;null&#10;alert&#9;null&#9;null&#10;select_mb_detail&#9;null&#9;null&#10;update_member_info&#9;null&#9;null&#10;select_member_pw&#9;null&#9;null&#10;result_json&#9;null&#9;null&#10;sns_in&#9;null&#9;null&#10;is&#9;null&#9;null&#10;admin_main_v&#9;FILE&#9;file://D:/jiho/jiho8912.github.io/html/application/views/admin/admin_main_v.php&#10;git&#9;FILE&#9;file://D:/jiho/jiho8912.github.io/html/.gitignore&#10;getListOfAvailRate&#9;null&#9;null&#10;excel_v&#9;FILE&#9;file://D:/jiho/jiho8912.github.io/html/application/views/plugin/excel/excel_v.php&#10;getter&#9;ACTION&#9;PhpGenerateGettersAndSetters&#10;test&#9;FILE&#9;file://D:/jiho/jiho8912.github.io/html/application/controllers/plugin/test.php&#10;work&#9;FILE&#9;file://D:/jiho/jiho8912.github.io/html/.idea/workspace.xml&#10;constants&#9;FILE&#9;file://D:/jiho/jiho8912.github.io/html/application/config/constants.php&#10;cardNoInterestQuota&#9;null&#9;null&#10;INIStdPayUtil&#9;FILE&#9;file://D:/jiho/jiho8912.github.io/html/application/views/plugin/shop/stdpay/libs/INIStdPayUtil.php&#10;admin_member_update&#9;null&#9;null&#10;member_m&#9;null&#9;null&#10;admin_member_v&#9;null&#9;null&#10;_clean_input_keys&#9;null&#9;null&#10;-&gt;select&#9;null&#9;null&#10;-&gt;update&#9;null&#9;null&#10;trans_complete&#9;null&#9;null&#10;db_debug&#9;null&#9;null&#10;_trans_status&#9;null&#9;null&#10;trans_rollback&#9;null&#9;null&#10;trans_status&#9;null&#9;null&#10;updateCategory&#9;null&#9;null" />
     <property name="WebServerToolWindowFactoryState" value="true" />
     <property name="WebServerToolWindowPanel.toolwindow.highlight.mappings" value="true" />
     <property name="WebServerToolWindowPanel.toolwindow.highlight.symlinks" value="true" />
@@ -472,19 +479,19 @@
     <option name="SHOW_DIALOG" value="false" />
   </component>
   <component name="RecentsManager">
-    <key name="MoveFile.RECENT_KEYS">
-      <recent name="D:\jiho\jiho8912.github.io\html\application\controllers\apidocs" />
-      <recent name="D:\jiho\jiho8912.github.io\html\application\views\plugin\docs" />
-      <recent name="D:\jiho\jiho8912.github.io\html\application\controllers\plugin" />
-      <recent name="D:\jiho\jiho8912.github.io\html\application\controllers" />
-      <recent name="D:\jiho\jiho8912.github.io\html\application\views\images" />
-    </key>
     <key name="CopyFile.RECENT_KEYS">
       <recent name="D:\jiho\jiho8912.github.io\html\application\libraries\rcclApi" />
       <recent name="D:\jiho\jiho8912.github.io\html\application\libraries" />
       <recent name="D:\jiho\jiho8912.github.io\html\upload" />
       <recent name="D:\jiho\jiho8912.github.io\html\application\controllers\apidocs" />
       <recent name="D:\jiho\jiho8912.github.io\html\application\controllers\plugin" />
+    </key>
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="D:\jiho\jiho8912.github.io\html\application\controllers\apidocs" />
+      <recent name="D:\jiho\jiho8912.github.io\html\application\views\plugin\docs" />
+      <recent name="D:\jiho\jiho8912.github.io\html\application\controllers\plugin" />
+      <recent name="D:\jiho\jiho8912.github.io\html\application\controllers" />
+      <recent name="D:\jiho\jiho8912.github.io\html\application\views\images" />
     </key>
   </component>
   <component name="RunDashboard">
@@ -592,6 +599,8 @@
       <workItem from="1566261182042" duration="77000" />
       <workItem from="1566265575371" duration="10010000" />
       <workItem from="1566375475633" duration="7000" />
+      <workItem from="1566873000109" duration="30000" />
+      <workItem from="1566873058126" duration="319000" />
     </task>
     <task id="LOCAL-00001" summary="업데이트">
       <created>1538100632817</created>
@@ -887,23 +896,30 @@
       <option name="project" value="LOCAL" />
       <updated>1566273969073</updated>
     </task>
-    <option name="localTasksCounter" value="43" />
+    <task id="LOCAL-00043" summary="update">
+      <created>1566873017665</created>
+      <option name="number" value="00043" />
+      <option name="presentableId" value="LOCAL-00043" />
+      <option name="project" value="LOCAL" />
+      <updated>1566873017665</updated>
+    </task>
+    <option name="localTasksCounter" value="44" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="457559000" />
+    <option name="totallyTimeSpent" value="457908000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="1912" y="-8" width="1936" height="1056" extended-state="6" />
     <editor active="true" />
     <layout>
-      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.15938166" />
+      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.16257995" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Favorites" order="2" side_tool="true" />
-      <window_info anchor="bottom" id="File Transfer" order="0" sideWeight="0.49946696" weight="0.18241042" />
+      <window_info anchor="bottom" id="File Transfer" order="0" sideWeight="0.49946696" visible="true" weight="0.18241042" />
       <window_info anchor="bottom" id="Message" order="1" />
       <window_info anchor="bottom" id="Find" order="2" weight="0.32899022" />
-      <window_info anchor="bottom" id="Run" order="3" weight="0.21389794" />
+      <window_info active="true" anchor="bottom" id="Run" order="3" visible="true" weight="0.21389794" />
       <window_info anchor="bottom" id="Debug" order="4" weight="0.3995657" />
       <window_info anchor="bottom" id="Cvs" order="5" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="6" weight="0.4" />
@@ -1256,13 +1272,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/html/application/config/database.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="356">
-          <caret line="62" column="30" selection-start-line="62" selection-start-column="30" selection-end-line="62" selection-end-column="30" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/html/application/libraries/rcclApi/Res.php">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="226">
@@ -1305,17 +1314,24 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/html/application/controllers/plugin/api.php">
+    <entry file="file://$PROJECT_DIR$/html/application/views/plugin/api/api_v.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="12949">
-          <caret line="563" column="31" selection-start-line="563" selection-start-column="21" selection-end-line="563" selection-end-column="31" />
+        <state relative-caret-position="207">
+          <caret line="154" column="31" lean-forward="true" selection-start-line="154" selection-start-column="31" selection-end-line="154" selection-end-column="31" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/html/application/views/plugin/api/api_v.php">
+    <entry file="file://$PROJECT_DIR$/html/application/config/database.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="621">
-          <caret line="208" column="44" selection-start-line="208" selection-start-column="44" selection-end-line="208" selection-end-column="44" />
+        <state relative-caret-position="238">
+          <caret line="50" column="37" selection-start-line="50" selection-start-column="37" selection-end-line="50" selection-end-column="37" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/html/application/controllers/plugin/api.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="616">
+          <caret line="476" column="47" lean-forward="true" selection-start-line="476" selection-start-column="47" selection-end-line="476" selection-end-column="47" />
         </state>
       </provider>
     </entry>
