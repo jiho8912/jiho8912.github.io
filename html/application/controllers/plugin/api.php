@@ -48,7 +48,8 @@ class api extends CI_Controller{
             'DEEM' => 'https://optimus-qa.deemgroundapp.com/',
             'ALAMO' => 'http://www.alamo-stage.co.kr/gateApiLive.php/',
             'RCCL' => 'http://www.rccl-stage.co.kr/gateApiLive.php?act=/',
-            'SilverSea' => 'https://shop.silversea.com/api/v1/'
+            'SilverSea' => 'https://shop.silversea.com/api/v1/',
+            'GNIS' => 'https://rccl.kr/gnis/'
         );
 
         $base_url = $url_Array[$controllerName];
@@ -484,6 +485,24 @@ class api extends CI_Controller{
                     'description' => '항해 목록 검색 ',
                     'help_url' => 'http://shop.silversea.com/api/Help/Api/GET-v1-voyages_destination_id_ship_id_voyage_id_after_before_page_per_page_language_cod_envelope'
                 )
+            ),
+            'GNIS' => array(
+                'payment' => array(
+                    'method_name' => 'payment.php',
+                    'parameter' => array(
+                        'auth_token' => 'zj35d11ab1ws73x4',
+                        'transaction_type' => 'B',
+                        's_date' => date('Y-m-d', strtotime( "-6 day" )),
+                        'e_date' => date('Y-m-d'),
+                        'acc_no' => '',
+                        'acc_no' => '',
+                        'depositor_name' => '',
+                        'status' => '99'
+                    ),
+                    'call_type' => 'GET',
+                    'description' => '입금목록 요청 ',
+                    'help_url' => '/plugin/api/viewManual?fileName=TMK-GNIS API.pdf#page=9'
+                )
             )
 		);
 
@@ -531,10 +550,10 @@ class api extends CI_Controller{
             $parameter = $this->setAlamoParams(json_decode($this->input->post('parameter')));
         }else if($this->input->post('service') == 'RCCL'){ // RCCL
             $parameter = $this->setRcclParams(json_decode($this->input->post('parameter')));
-        }else if($this->input->post('service') == 'SilverSea'){
+        }else if($this->input->post('service') == 'SilverSea' || $this->input->post('service') == 'GNIS'){
             if(strtoupper($type) == 'GET') {
-                $parameter = json_decode($this->input->post('parameter'));
-                $url = $url . '?' . http_build_query($parameter);;
+                $parameter = $this->input->post('parameter');
+                $url = $url . '?' . http_build_query(json_decode($this->input->post('parameter')));
             }
         }
 

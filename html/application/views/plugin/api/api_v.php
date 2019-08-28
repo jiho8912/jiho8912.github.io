@@ -172,7 +172,11 @@
                     return false;
                 }
 
-                var request_data_str = '# ' + call_type + ' ' + ajax_config['url'] + '\n';
+                if(call_type == 'POST') {
+                    var request_data_str = '# ' + call_type + ' ' + ajax_config['url'] + '\n';
+                }else{
+                    var request_data_str = '# ' + call_type + ' ' + ajax_config['url'] + http_query_builder(ajax_config['parameter']) +'\n';
+                }
 
                 request_data_str += '\n########################## header ########################################\n\n';
 
@@ -190,13 +194,16 @@
 
                     success : function(data){
 
-                        console.log(data);
+                        //console.log(data);
 
                         var request_code_wrap = $('.request pre.code-wrap');
                         var response_code_wrap = $('.response pre.code-wrap');
 
                         request_data_str += '\n';
-                        if(data.res && data.req && data.req.length > 0) {
+                        if(data.res && data.req) {
+
+                            console.log(data);
+
                             if (data.req.indexOf("xml") == -1) {
                                 request_data_str += formatJson(data.req);
                                 var res = JSON.parse(data.res);
@@ -205,7 +212,6 @@
                                 }
 
                             } else {
-                                console.log(data.req);
                                 request_data_str += formatXml(data.req);
                             }
                         }
@@ -226,7 +232,16 @@
 
 			$('.footer-header-area').click(function(){
 				$('body').removeClass('console-active')
-			})
+			});
+
+			function http_query_builder(parameters) {
+                var params = JSON.parse(parameters);
+                var query = "?";
+                $.each(params, function (index, val) {
+                    query += '&' + index + '=' + val;
+                });
+                return query;
+            }
 
             function formatXml(xml) {
                 var formatted = '';
