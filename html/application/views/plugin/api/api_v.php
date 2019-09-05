@@ -173,18 +173,21 @@
                 }
 
                 if(call_type == 'POST') {
-                    var request_data_str = '# ' + call_type + ' ' + ajax_config['url'] + '\n';
+                    var request_data_str = ajax_config['url'] + '\n';
                 }else{
-                    var request_data_str = '# ' + call_type + ' ' + ajax_config['url'] + http_query_builder(ajax_config['parameter']) +'\n';
+                    var request_data_str = ajax_config['url'] + http_query_builder(ajax_config['parameter']) +'\n';
                 }
 
-                request_data_str += '\n########################## header ########################################\n\n';
-
+                var i = 0;
                 for (header_key in ajax_config.headers) {
+                    if(i == 0){
+                        request_data_str += '\n########################## header ########################################\n\n';
+                    }
                     request_data_str += '+ <span class=\'header-key\'>' + header_key + '</span>:<span class=\'header-value\'>' + ajax_config['headers'][header_key] + '</span>\n'
+                    i ++ ;
                 }
 
-                request_data_str += '\n########################## parameter ########################################\n';
+                request_data_str += '\n########################## parameter #####################################\n';
 
                 $.ajax({
                     url : '/plugin/api/call',
@@ -236,10 +239,19 @@
 
 			function http_query_builder(parameters) {
                 var params = JSON.parse(parameters);
+
                 var query = "?";
+                var i = 0;
                 $.each(params, function (index, val) {
-                    query += '&' + index + '=' + val;
+                    if(i != 0) query += '&'
+                    query += index + '=' + val;
+                    i ++;
                 });
+
+                if(query == '?'){
+                    query = '';
+                }
+
                 return query;
             }
 

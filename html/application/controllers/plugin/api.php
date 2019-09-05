@@ -484,6 +484,50 @@ class api extends CI_Controller{
                     'call_type' => 'GET',
                     'description' => '항해 목록 검색 ',
                     'help_url' => 'http://shop.silversea.com/api/Help/Api/GET-v1-voyages_destination_id_ship_id_voyage_id_after_before_page_per_page_language_cod_envelope'
+                ),
+                'ships' => array(
+                    'method_name' => 'ships',
+                    'call_type' => 'GET',
+                    'description' => '선박 목록 검색 ',
+                    'help_url' => 'http://shop.silversea.com/api/Help/Api/GET-v1-ships_envelope'
+                ),
+                'ships/{ship_cod}' => array(
+                    'method_name' => 'ships',
+                    'url_parameter' => array(
+                        'ship_cod' => 'SC'
+                    ),
+                    'call_type' => 'GET',
+                    'description' => '선박 검색 ',
+                    'help_url' => 'http://shop.silversea.com/api/Help/Api/GET-v1-ships-ship_cod_envelope'
+                ),
+                'destinations' => array(
+                    'method_name' => 'destinations',
+                    'call_type' => 'GET',
+                    'description' => '목적지 목록 검색 ',
+                    'help_url' => 'http://shop.silversea.com/api/Help/Api/GET-v1-destinations_envelope'
+                ),
+                'destinations/{id}' => array(
+                    'method_name' => 'destinations',
+                    'url_parameter' => array(
+                        'id' => 'SC'
+                    ),
+                    'call_type' => 'GET',
+                    'description' => '목적지 검색 ',
+                    'help_url' => 'http://shop.silversea.com/api/Help/Api/GET-v1-destinations_envelope'
+                ),
+                'itinerary' => array(
+                    'method_name' => 'itineraries',
+                    'parameter' => array(
+                        'after' => date('Y-m-d'),
+                        'before' => date('Y-m-d', strtotime( "+1 month" )),
+                        'destination_id' => '',
+                        'ship_id' => '',
+                        'page' => '',
+                        'per_page' => ''
+                    ),
+                    'call_type' => 'GET',
+                    'description' => '상세일정',
+                    'help_url' => 'http://shop.silversea.com/api/Help/Api/GET-v1-destinations_envelope'
                 )
             ),
             'GNIS' => array(
