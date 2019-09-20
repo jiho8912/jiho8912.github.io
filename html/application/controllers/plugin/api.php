@@ -22,7 +22,7 @@ class api extends CI_Controller{
 	}
 
 	public function index(){
-
+echo 'rollback test';
         //$this->session_id = $this->session->userdata('session_id');
 
         if($this->input->get('active_controller') == ''){

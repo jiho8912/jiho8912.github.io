@@ -1,10 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="ff5fcec0-56b4-4d8e-b19c-d2f884e4fd61" name="Default Changelist" comment="">
+    <list default="true" id="ff5fcec0-56b4-4d8e-b19c-d2f884e4fd61" name="Default Changelist" comment="실버시 업데이트">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/html/application/controllers/plugin/api.php" beforeDir="false" afterPath="$PROJECT_DIR$/html/application/controllers/plugin/api.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/html/application/views/plugin/api/api_v.php" beforeDir="false" afterPath="$PROJECT_DIR$/html/application/views/plugin/api/api_v.php" afterDir="false" />
     </list>
     <ignored path="html/.idea/" />
     <ignored path="html/application/config/database.php" />
@@ -49,19 +48,19 @@
     <session id="-1602964055">
       <usages-collector id="statistics.lifecycle.project">
         <counts>
-          <entry key="project.closed" value="52" />
+          <entry key="project.closed" value="55" />
           <entry key="project.open.time.0" value="13" />
-          <entry key="project.open.time.1" value="30" />
+          <entry key="project.open.time.1" value="32" />
           <entry key="project.open.time.10" value="2" />
-          <entry key="project.open.time.2" value="4" />
+          <entry key="project.open.time.2" value="5" />
           <entry key="project.open.time.3" value="2" />
-          <entry key="project.open.time.4" value="4" />
+          <entry key="project.open.time.4" value="5" />
           <entry key="project.open.time.5" value="3" />
           <entry key="project.open.time.6" value="2" />
           <entry key="project.open.time.7" value="1" />
           <entry key="project.open.time.8" value="1" />
           <entry key="project.open.time.9" value="1" />
-          <entry key="project.opened" value="64" />
+          <entry key="project.opened" value="68" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.extensions.open">
@@ -122,8 +121,8 @@
           <entry key="html" value="31" />
           <entry key="ini" value="16" />
           <entry key="js" value="60" />
-          <entry key="php" value="23735" />
-          <entry key="txt" value="234" />
+          <entry key="php" value="23759" />
+          <entry key="txt" value="243" />
           <entry key="vmoptions" value="3" />
           <entry key="xml" value="2" />
         </counts>
@@ -133,8 +132,8 @@
           <entry key="HTML" value="48" />
           <entry key="Ini" value="16" />
           <entry key="JavaScript" value="60" />
-          <entry key="PHP" value="23718" />
-          <entry key="PLAIN_TEXT" value="308" />
+          <entry key="PHP" value="23742" />
+          <entry key="PLAIN_TEXT" value="317" />
           <entry key="XML" value="2" />
           <entry key="htaccess" value="72" />
         </counts>
@@ -157,8 +156,8 @@
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/html/application/controllers/plugin/api.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="378">
-              <caret line="515" column="51" selection-start-line="515" selection-start-column="51" selection-end-line="515" selection-end-column="51" />
+            <state relative-caret-position="552">
+              <caret line="24" column="21" selection-start-line="24" selection-start-column="21" selection-end-line="24" selection-end-column="21" />
             </state>
           </provider>
         </entry>
@@ -166,8 +165,8 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/html/application/views/plugin/api/api_v.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="233">
-              <caret line="489" column="37" lean-forward="true" selection-start-line="489" selection-start-column="34" selection-end-line="489" selection-end-column="37" />
+            <state relative-caret-position="11247">
+              <caret line="489" column="37" selection-start-line="489" selection-start-column="34" selection-end-line="489" selection-end-column="37" />
             </state>
           </provider>
         </entry>
@@ -301,10 +300,10 @@
   <component name="PhpDebugGeneral" listening_started="true" />
   <component name="PhpWorkspaceProjectConfiguration" interpreter_name="PHP" />
   <component name="ProjectFrameBounds" extendedState="6">
-    <option name="x" value="1912" />
-    <option name="y" value="-8" />
-    <option name="width" value="1936" />
-    <option name="height" value="1056" />
+    <option name="x" value="4087" />
+    <option name="y" value="208" />
+    <option name="width" value="1218" />
+    <option name="height" value="1888" />
   </component>
   <component name="ProjectLevelVcsManager">
     <OptionsSetting value="false" id="Update" />
@@ -579,7 +578,11 @@
       <workItem from="1566873058126" duration="619000" />
       <workItem from="1566955076233" duration="6251000" />
       <workItem from="1566972426030" duration="7128000" />
-      <workItem from="1567658497630" duration="1776000" />
+      <workItem from="1567658497630" duration="2550000" />
+      <workItem from="1568593755628" duration="1084000" />
+      <workItem from="1568618683671" duration="2759000" />
+      <workItem from="1568696932490" duration="602000" />
+      <workItem from="1568960652972" duration="110000" />
     </task>
     <task id="LOCAL-00001" summary="업데이트">
       <created>1538100632817</created>
@@ -910,23 +913,30 @@
       <option name="project" value="LOCAL" />
       <updated>1566975548378</updated>
     </task>
-    <option name="localTasksCounter" value="48" />
+    <task id="LOCAL-00048" summary="실버시 업데이트">
+      <created>1567660286879</created>
+      <option name="number" value="00048" />
+      <option name="presentableId" value="LOCAL-00048" />
+      <option name="project" value="LOCAL" />
+      <updated>1567660286879</updated>
+    </task>
+    <option name="localTasksCounter" value="49" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="473363000" />
+    <option name="totallyTimeSpent" value="478692000" />
   </component>
   <component name="ToolWindowManager">
-    <frame x="1912" y="-8" width="1936" height="1056" extended-state="6" />
+    <frame x="4089" y="210" width="974" height="1510" extended-state="6" />
     <editor active="true" />
     <layout>
-      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.1673774" />
+      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.2571116" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Favorites" order="2" side_tool="true" />
-      <window_info anchor="bottom" id="File Transfer" order="0" sideWeight="0.49946696" weight="0.18241042" />
+      <window_info anchor="bottom" id="File Transfer" order="0" sideWeight="0.49946696" visible="true" weight="0.18241042" />
       <window_info anchor="bottom" id="Message" order="1" />
       <window_info anchor="bottom" id="Find" order="2" weight="0.32899022" />
-      <window_info anchor="bottom" id="Run" order="3" weight="0.21389794" />
+      <window_info active="true" anchor="bottom" id="Run" order="3" visible="true" weight="0.21366279" />
       <window_info anchor="bottom" id="Debug" order="4" weight="0.3995657" />
       <window_info anchor="bottom" id="Cvs" order="5" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="6" weight="0.4" />
@@ -1000,7 +1010,8 @@
     <MESSAGE value="update" />
     <MESSAGE value="DB사용하지않음(autoload 세션,데이터베이스 삭제)" />
     <MESSAGE value="GNIS API 추가" />
-    <option name="LAST_COMMIT_MESSAGE" value="GNIS API 추가" />
+    <MESSAGE value="실버시 업데이트" />
+    <option name="LAST_COMMIT_MESSAGE" value="실버시 업데이트" />
   </component>
   <component name="editorHistoryManager">
     <entry file="file://$PROJECT_DIR$/html/application/models/member_m.php">
@@ -1338,17 +1349,17 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/html/application/views/plugin/api/api_v.php">
+    <entry file="file://$PROJECT_DIR$/html/application/controllers/plugin/api.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="233">
-          <caret line="489" column="37" lean-forward="true" selection-start-line="489" selection-start-column="34" selection-end-line="489" selection-end-column="37" />
+        <state relative-caret-position="552">
+          <caret line="24" column="21" selection-start-line="24" selection-start-column="21" selection-end-line="24" selection-end-column="21" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/html/application/controllers/plugin/api.php">
+    <entry file="file://$PROJECT_DIR$/html/application/views/plugin/api/api_v.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="378">
-          <caret line="515" column="51" selection-start-line="515" selection-start-column="51" selection-end-line="515" selection-end-column="51" />
+        <state relative-caret-position="11247">
+          <caret line="489" column="37" selection-start-line="489" selection-start-column="34" selection-end-line="489" selection-end-column="37" />
         </state>
       </provider>
     </entry>
