@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="ff5fcec0-56b4-4d8e-b19c-d2f884e4fd61" name="Default Changelist" comment="">
+    <list default="true" id="ff5fcec0-56b4-4d8e-b19c-d2f884e4fd61" name="Default Changelist" comment="delete rollback">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/html/application/controllers/plugin/api.php" beforeDir="false" afterPath="$PROJECT_DIR$/html/application/controllers/plugin/api.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/html/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/html/.gitignore" afterDir="false" />
     </list>
     <ignored path="html/.idea/" />
     <ignored path="html/application/config/database.php" />
@@ -72,7 +72,7 @@
           <entry key="css" value="2" />
           <entry key="csv" value="1" />
           <entry key="default" value="1" />
-          <entry key="gitignore" value="14" />
+          <entry key="gitignore" value="15" />
           <entry key="htaccess" value="13" />
           <entry key="html" value="11" />
           <entry key="ini" value="6" />
@@ -86,7 +86,7 @@
           <entry key="ts" value="5" />
           <entry key="txt" value="3" />
           <entry key="vmoptions" value="2" />
-          <entry key="xml" value="5" />
+          <entry key="xml" value="6" />
           <entry key="다운로드" value="2" />
           <entry key="다운로드 (3)" value="1" />
         </counts>
@@ -102,12 +102,12 @@
           <entry key="JavaScript" value="16" />
           <entry key="Log" value="1" />
           <entry key="PHP" value="444" />
-          <entry key="PLAIN_TEXT" value="38" />
+          <entry key="PLAIN_TEXT" value="39" />
           <entry key="SQL" value="2" />
           <entry key="Scratch" value="2" />
           <entry key="SmartyConfig" value="2" />
           <entry key="TypeScript" value="5" />
-          <entry key="XML" value="5" />
+          <entry key="XML" value="6" />
           <entry key="htaccess" value="13" />
         </counts>
       </usages-collector>
@@ -116,13 +116,13 @@
           <entry key="csv" value="16" />
           <entry key="default" value="8" />
           <entry key="dummy" value="16" />
-          <entry key="gitignore" value="31" />
+          <entry key="gitignore" value="34" />
           <entry key="htaccess" value="72" />
           <entry key="html" value="31" />
           <entry key="ini" value="16" />
           <entry key="js" value="60" />
           <entry key="php" value="23764" />
-          <entry key="txt" value="267" />
+          <entry key="txt" value="277" />
           <entry key="vmoptions" value="3" />
           <entry key="xml" value="2" />
         </counts>
@@ -133,7 +133,7 @@
           <entry key="Ini" value="16" />
           <entry key="JavaScript" value="60" />
           <entry key="PHP" value="23747" />
-          <entry key="PLAIN_TEXT" value="341" />
+          <entry key="PLAIN_TEXT" value="354" />
           <entry key="XML" value="2" />
           <entry key="htaccess" value="72" />
         </counts>
@@ -153,11 +153,29 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file pinned="false" current-in-tab="true">
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/html/application/controllers/plugin/api.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="303">
-              <caret line="24" column="2" selection-start-line="24" selection-start-column="2" selection-end-line="24" selection-end-column="2" />
+            <state relative-caret-position="418">
+              <caret line="29" column="14" lean-forward="true" selection-start-line="29" selection-start-column="14" selection-end-line="29" selection-end-column="14" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/html/.gitignore">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="46">
+              <caret line="2" lean-forward="true" selection-start-line="2" selection-end-line="2" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/.idea/workspace.xml">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="69">
+              <caret line="3" selection-start-line="3" selection-end-line="3" />
             </state>
           </provider>
         </entry>
@@ -280,7 +298,6 @@
         <option value="$PROJECT_DIR$/html/application/libraries/api/Res.php" />
         <option value="$PROJECT_DIR$/html/application/config/routes.php" />
         <option value="$PROJECT_DIR$/html/application/config/database.php" />
-        <option value="$PROJECT_DIR$/html/.gitignore" />
         <option value="$PROJECT_DIR$/html/index.php" />
         <option value="$PROJECT_DIR$/html/system/database/DB.php" />
         <option value="$PROJECT_DIR$/html/system/core/Loader.php" />
@@ -288,6 +305,7 @@
         <option value="$PROJECT_DIR$/html/application/config/autoload.php" />
         <option value="$PROJECT_DIR$/html/application/views/plugin/api/api_v.php" />
         <option value="$PROJECT_DIR$/html/application/controllers/plugin/api.php" />
+        <option value="$PROJECT_DIR$/html/.gitignore" />
       </list>
     </option>
   </component>
@@ -325,77 +343,6 @@
               <item name="jiho8912.github.io" type="b2602c69:ProjectViewProjectNode" />
               <item name="jiho8912.github.io" type="462c0819:PsiDirectoryNode" />
               <item name="html" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="jiho8912.github.io" type="b2602c69:ProjectViewProjectNode" />
-              <item name="jiho8912.github.io" type="462c0819:PsiDirectoryNode" />
-              <item name="html" type="462c0819:PsiDirectoryNode" />
-              <item name="application" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="jiho8912.github.io" type="b2602c69:ProjectViewProjectNode" />
-              <item name="jiho8912.github.io" type="462c0819:PsiDirectoryNode" />
-              <item name="html" type="462c0819:PsiDirectoryNode" />
-              <item name="application" type="462c0819:PsiDirectoryNode" />
-              <item name="controllers" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="jiho8912.github.io" type="b2602c69:ProjectViewProjectNode" />
-              <item name="jiho8912.github.io" type="462c0819:PsiDirectoryNode" />
-              <item name="html" type="462c0819:PsiDirectoryNode" />
-              <item name="application" type="462c0819:PsiDirectoryNode" />
-              <item name="controllers" type="462c0819:PsiDirectoryNode" />
-              <item name="plugin" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="jiho8912.github.io" type="b2602c69:ProjectViewProjectNode" />
-              <item name="jiho8912.github.io" type="462c0819:PsiDirectoryNode" />
-              <item name="html" type="462c0819:PsiDirectoryNode" />
-              <item name="application" type="462c0819:PsiDirectoryNode" />
-              <item name="views" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="jiho8912.github.io" type="b2602c69:ProjectViewProjectNode" />
-              <item name="jiho8912.github.io" type="462c0819:PsiDirectoryNode" />
-              <item name="html" type="462c0819:PsiDirectoryNode" />
-              <item name="application" type="462c0819:PsiDirectoryNode" />
-              <item name="views" type="462c0819:PsiDirectoryNode" />
-              <item name="plugin" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="jiho8912.github.io" type="b2602c69:ProjectViewProjectNode" />
-              <item name="jiho8912.github.io" type="462c0819:PsiDirectoryNode" />
-              <item name="html" type="462c0819:PsiDirectoryNode" />
-              <item name="application" type="462c0819:PsiDirectoryNode" />
-              <item name="views" type="462c0819:PsiDirectoryNode" />
-              <item name="plugin" type="462c0819:PsiDirectoryNode" />
-              <item name="api" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="jiho8912.github.io" type="b2602c69:ProjectViewProjectNode" />
-              <item name="jiho8912.github.io" type="462c0819:PsiDirectoryNode" />
-              <item name="html" type="462c0819:PsiDirectoryNode" />
-              <item name="system" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="jiho8912.github.io" type="b2602c69:ProjectViewProjectNode" />
-              <item name="jiho8912.github.io" type="462c0819:PsiDirectoryNode" />
-              <item name="html" type="462c0819:PsiDirectoryNode" />
-              <item name="system" type="462c0819:PsiDirectoryNode" />
-              <item name="core" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="jiho8912.github.io" type="b2602c69:ProjectViewProjectNode" />
-              <item name="jiho8912.github.io" type="462c0819:PsiDirectoryNode" />
-              <item name="html" type="462c0819:PsiDirectoryNode" />
-              <item name="system" type="462c0819:PsiDirectoryNode" />
-              <item name="database" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="jiho8912.github.io" type="b2602c69:ProjectViewProjectNode" />
-              <item name="jiho8912.github.io" type="462c0819:PsiDirectoryNode" />
-              <item name="html" type="462c0819:PsiDirectoryNode" />
-              <item name="upload" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="jiho8912.github.io" type="b2602c69:ProjectViewProjectNode" />
@@ -439,7 +386,7 @@
   </component>
   <component name="PropertiesComponent">
     <property name="DatabaseDriversLRU" value="mysql" />
-    <property name="SearchEverywhereHistoryKey" value="api_v&#9;FILE&#9;file://D:/jiho/jiho8912.github.io/html/application/views/plugin/api/api_v.php&#10;viewManual&#9;null&#9;null&#10;api&#9;FILE&#9;file://D:/jiho/jiho8912.github.io/html/application/controllers/plugin/api.php&#10;auto&#9;FILE&#9;file://D:/jiho/jiho8912.github.io/html/application/config/autoload.php&#10;Session&#9;FILE&#9;file://D:/jiho/jiho8912.github.io/html/system/libraries/Session.php&#10;CodeIgniter&#9;FILE&#9;file://D:/jiho/jiho8912.github.io/html/system/core/CodeIgniter.php&#10;index&#9;FILE&#9;file://D:/jiho/jiho8912.github.io/html/index.php&#10;Loader&#9;FILE&#9;file://D:/jiho/jiho8912.github.io/html/system/core/Loader.php&#10;db&#9;FILE&#9;file://D:/jiho/jiho8912.github.io/html/system/database/DB.php&#10;index.php&#9;FILE&#9;file://D:/jiho/jiho8912.github.io/html/index.php&#10;.ht&#9;FILE&#9;file://D:/jiho/jiho8912.github.io/html/.htaccess&#10;data&#9;FILE&#9;file://D:/jiho/jiho8912.github.io/html/application/config/database.php&#10;.idea&#9;FILE&#9;file://D:/jiho/jiho8912.github.io/.idea&#10;wor&#9;FILE&#9;file://D:/jiho/jiho8912.github.io/.idea/workspace.xml&#10;ro&#9;FILE&#9;file://D:/jiho/jiho8912.github.io/html/application/config/routes.php&#10;res&#9;FILE&#9;file://D:/jiho/jiho8912.github.io/html/application/libraries/api/Res.php&#10;system&#9;FILE&#9;file://D:/jiho/jiho8912.github.io/html/system&#10;autoload&#9;FILE&#9;file://D:/jiho/jiho8912.github.io/html/application/config/autoload.php&#10;co&#9;FILE&#9;file://D:/jiho/jiho8912.github.io/html/application/libraries/common.php&#10;HTTPRequest&#9;null&#9;null&#10;CruisAPI&#9;null&#9;null&#10;plugin&#9;FILE&#9;file://D:/jiho/jiho8912.github.io/html/application/controllers/plugin&#10;mysqli_driver&#9;FILE&#9;file://D:/jiho/jiho8912.github.io/html/system/database/drivers/mysqli/mysqli_driver.php&#10;callback_url&#9;null&#9;null&#10;generate_state&#9;null&#9;null&#10;foot&#9;FILE&#9;file://D:/jiho/jiho8912.github.io/html/application/views/footer.php&#10;login_v&#9;FILE&#9;file://D:/jiho/jiho8912.github.io/html/application/views/member/login_v.php&#10;update&#9;null&#9;null&#10;validate_reg&#9;FILE&#9;file://D:/jiho/jiho8912.github.io/html/js/validate_reg.js&#10;update_v&#9;null&#9;null&#10;validate&#9;FILE&#9;file://D:/jiho/jiho8912.github.io/html/js/validate.js&#10;logout&#9;null&#9;null&#10;alert&#9;null&#9;null&#10;select_mb_detail&#9;null&#9;null&#10;update_member_info&#9;null&#9;null&#10;select_member_pw&#9;null&#9;null&#10;result_json&#9;null&#9;null&#10;sns_in&#9;null&#9;null&#10;is&#9;null&#9;null&#10;admin_main_v&#9;FILE&#9;file://D:/jiho/jiho8912.github.io/html/application/views/admin/admin_main_v.php&#10;git&#9;FILE&#9;file://D:/jiho/jiho8912.github.io/html/.gitignore&#10;getListOfAvailRate&#9;null&#9;null&#10;excel_v&#9;FILE&#9;file://D:/jiho/jiho8912.github.io/html/application/views/plugin/excel/excel_v.php&#10;getter&#9;ACTION&#9;PhpGenerateGettersAndSetters&#10;test&#9;FILE&#9;file://D:/jiho/jiho8912.github.io/html/application/controllers/plugin/test.php&#10;work&#9;FILE&#9;file://D:/jiho/jiho8912.github.io/html/.idea/workspace.xml&#10;constants&#9;FILE&#9;file://D:/jiho/jiho8912.github.io/html/application/config/constants.php&#10;cardNoInterestQuota&#9;null&#9;null&#10;INIStdPayUtil&#9;FILE&#9;file://D:/jiho/jiho8912.github.io/html/application/views/plugin/shop/stdpay/libs/INIStdPayUtil.php&#10;admin_member_update&#9;null&#9;null" />
+    <property name="SearchEverywhereHistoryKey" value=".git&#9;FILE&#9;file://D:/jiho/jiho8912.github.io/html/.gitignore&#10;api_v&#9;FILE&#9;file://D:/jiho/jiho8912.github.io/html/application/views/plugin/api/api_v.php&#10;viewManual&#9;null&#9;null&#10;api&#9;FILE&#9;file://D:/jiho/jiho8912.github.io/html/application/controllers/plugin/api.php&#10;auto&#9;FILE&#9;file://D:/jiho/jiho8912.github.io/html/application/config/autoload.php&#10;Session&#9;FILE&#9;file://D:/jiho/jiho8912.github.io/html/system/libraries/Session.php&#10;CodeIgniter&#9;FILE&#9;file://D:/jiho/jiho8912.github.io/html/system/core/CodeIgniter.php&#10;index&#9;FILE&#9;file://D:/jiho/jiho8912.github.io/html/index.php&#10;Loader&#9;FILE&#9;file://D:/jiho/jiho8912.github.io/html/system/core/Loader.php&#10;db&#9;FILE&#9;file://D:/jiho/jiho8912.github.io/html/system/database/DB.php&#10;index.php&#9;FILE&#9;file://D:/jiho/jiho8912.github.io/html/index.php&#10;.ht&#9;FILE&#9;file://D:/jiho/jiho8912.github.io/html/.htaccess&#10;data&#9;FILE&#9;file://D:/jiho/jiho8912.github.io/html/application/config/database.php&#10;.idea&#9;FILE&#9;file://D:/jiho/jiho8912.github.io/.idea&#10;wor&#9;FILE&#9;file://D:/jiho/jiho8912.github.io/.idea/workspace.xml&#10;ro&#9;FILE&#9;file://D:/jiho/jiho8912.github.io/html/application/config/routes.php&#10;res&#9;FILE&#9;file://D:/jiho/jiho8912.github.io/html/application/libraries/api/Res.php&#10;system&#9;FILE&#9;file://D:/jiho/jiho8912.github.io/html/system&#10;autoload&#9;FILE&#9;file://D:/jiho/jiho8912.github.io/html/application/config/autoload.php&#10;co&#9;FILE&#9;file://D:/jiho/jiho8912.github.io/html/application/libraries/common.php&#10;HTTPRequest&#9;null&#9;null&#10;CruisAPI&#9;null&#9;null&#10;plugin&#9;FILE&#9;file://D:/jiho/jiho8912.github.io/html/application/controllers/plugin&#10;mysqli_driver&#9;FILE&#9;file://D:/jiho/jiho8912.github.io/html/system/database/drivers/mysqli/mysqli_driver.php&#10;callback_url&#9;null&#9;null&#10;generate_state&#9;null&#9;null&#10;foot&#9;FILE&#9;file://D:/jiho/jiho8912.github.io/html/application/views/footer.php&#10;login_v&#9;FILE&#9;file://D:/jiho/jiho8912.github.io/html/application/views/member/login_v.php&#10;update&#9;null&#9;null&#10;validate_reg&#9;FILE&#9;file://D:/jiho/jiho8912.github.io/html/js/validate_reg.js&#10;update_v&#9;null&#9;null&#10;validate&#9;FILE&#9;file://D:/jiho/jiho8912.github.io/html/js/validate.js&#10;logout&#9;null&#9;null&#10;alert&#9;null&#9;null&#10;select_mb_detail&#9;null&#9;null&#10;update_member_info&#9;null&#9;null&#10;select_member_pw&#9;null&#9;null&#10;result_json&#9;null&#9;null&#10;sns_in&#9;null&#9;null&#10;is&#9;null&#9;null&#10;admin_main_v&#9;FILE&#9;file://D:/jiho/jiho8912.github.io/html/application/views/admin/admin_main_v.php&#10;git&#9;FILE&#9;file://D:/jiho/jiho8912.github.io/html/.gitignore&#10;getListOfAvailRate&#9;null&#9;null&#10;excel_v&#9;FILE&#9;file://D:/jiho/jiho8912.github.io/html/application/views/plugin/excel/excel_v.php&#10;getter&#9;ACTION&#9;PhpGenerateGettersAndSetters&#10;test&#9;FILE&#9;file://D:/jiho/jiho8912.github.io/html/application/controllers/plugin/test.php&#10;work&#9;FILE&#9;file://D:/jiho/jiho8912.github.io/html/.idea/workspace.xml&#10;constants&#9;FILE&#9;file://D:/jiho/jiho8912.github.io/html/application/config/constants.php&#10;cardNoInterestQuota&#9;null&#9;null&#10;INIStdPayUtil&#9;FILE&#9;file://D:/jiho/jiho8912.github.io/html/application/views/plugin/shop/stdpay/libs/INIStdPayUtil.php" />
     <property name="WebServerToolWindowFactoryState" value="true" />
     <property name="WebServerToolWindowPanel.toolwindow.highlight.mappings" value="true" />
     <property name="WebServerToolWindowPanel.toolwindow.highlight.symlinks" value="true" />
@@ -584,14 +531,7 @@
       <workItem from="1568696932490" duration="602000" />
       <workItem from="1568960652972" duration="3168000" />
       <workItem from="1569463519474" duration="2523000" />
-      <workItem from="1569471770498" duration="4000" />
-    </task>
-    <task id="LOCAL-00004" summary="업데이트">
-      <created>1538114108138</created>
-      <option name="number" value="00004" />
-      <option name="presentableId" value="LOCAL-00004" />
-      <option name="project" value="LOCAL" />
-      <updated>1538114108138</updated>
+      <workItem from="1569471770498" duration="60000" />
     </task>
     <task id="LOCAL-00005" summary="업데이트">
       <created>1538114228031</created>
@@ -929,11 +869,18 @@
       <option name="project" value="LOCAL" />
       <updated>1569464898931</updated>
     </task>
-    <option name="localTasksCounter" value="53" />
+    <task id="LOCAL-00053" summary="delete rollback">
+      <created>1569471786707</created>
+      <option name="number" value="00053" />
+      <option name="presentableId" value="LOCAL-00053" />
+      <option name="project" value="LOCAL" />
+      <updated>1569471786707</updated>
+    </task>
+    <option name="localTasksCounter" value="54" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="484277000" />
+    <option name="totallyTimeSpent" value="484333000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -948,10 +895,10 @@
     <frame x="1912" y="-8" width="1936" height="1056" extended-state="6" />
     <editor active="true" />
     <layout>
-      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.12739871" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.12739871" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Favorites" order="2" side_tool="true" />
-      <window_info anchor="bottom" id="File Transfer" order="0" sideWeight="0.49946696" weight="0.18132465" />
+      <window_info anchor="bottom" id="File Transfer" order="0" sideWeight="0.49946696" visible="true" weight="0.18132465" />
       <window_info anchor="bottom" id="Message" order="1" />
       <window_info anchor="bottom" id="Find" order="2" weight="0.32899022" />
       <window_info anchor="bottom" id="Run" order="3" weight="0.21366279" />
@@ -960,7 +907,7 @@
       <window_info anchor="bottom" id="Inspection" order="6" weight="0.4" />
       <window_info anchor="bottom" id="TODO" order="7" weight="0.32994187" />
       <window_info anchor="bottom" id="Database Changes" order="8" weight="0.32790446" />
-      <window_info active="true" anchor="bottom" id="Version Control" order="9" visible="true" weight="0.4907709" />
+      <window_info anchor="bottom" id="Version Control" order="9" weight="0.4907709" />
       <window_info anchor="bottom" id="Terminal" order="10" weight="0.32899022" />
       <window_info anchor="bottom" id="Event Log" order="11" sideWeight="0.50053304" side_tool="true" weight="0.1834962" />
       <window_info anchor="bottom" id="Docker" order="12" show_stripe_button="false" />
@@ -1031,7 +978,8 @@
     <MESSAGE value="실버시 업데이트" />
     <MESSAGE value="rollback test" />
     <MESSAGE value="echo rollback" />
-    <option name="LAST_COMMIT_MESSAGE" value="echo rollback" />
+    <MESSAGE value="delete rollback" />
+    <option name="LAST_COMMIT_MESSAGE" value="delete rollback" />
   </component>
   <component name="editorHistoryManager">
     <entry file="file://$PROJECT_DIR$/html/application/models/member_m.php">
@@ -1282,20 +1230,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/.idea/workspace.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="460">
-          <caret line="20" column="47" selection-start-line="20" selection-start-column="47" selection-end-line="20" selection-end-column="47" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/html/.gitignore">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="230">
-          <caret line="10" column="31" lean-forward="true" selection-start-line="10" selection-start-column="31" selection-end-line="10" selection-end-column="31" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/html/.htaccess">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="115">
@@ -1371,8 +1305,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/html/application/controllers/plugin/api.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="303">
-          <caret line="24" column="2" selection-start-line="24" selection-start-column="2" selection-end-line="24" selection-end-column="2" />
+        <state relative-caret-position="418">
+          <caret line="29" column="14" lean-forward="true" selection-start-line="29" selection-start-column="14" selection-end-line="29" selection-end-column="14" />
         </state>
       </provider>
     </entry>
@@ -1380,6 +1314,20 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="10833">
           <caret line="471" column="34" selection-start-line="471" selection-start-column="34" selection-end-line="471" selection-end-column="34" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/.idea/workspace.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="69">
+          <caret line="3" selection-start-line="3" selection-end-line="3" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/html/.gitignore">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="46">
+          <caret line="2" lean-forward="true" selection-start-line="2" selection-end-line="2" />
         </state>
       </provider>
     </entry>
