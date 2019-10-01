@@ -91,7 +91,7 @@
 			    			$('li.highlight ol .highlight').removeClass('highlight');
 			    			$('li.highlight ol li').each(function(index, li_dom){
 			    				if (_method_dom.find('h2.method-name').text() == $(li_dom).find('a').text()){
-			    					$(li_dom).addClass('highlight')
+			    					$(li_dom).addClass('highlight');
 			    					return false
 			    				}
 			    			});
@@ -136,8 +136,9 @@
 				menu_click_flag = true;
 
 				var _this = $(this);
+                var text = _this.text().split('/');
 				$('html, body').stop(true).animate({
-					scrollTop: $('.' + _this.text()).offset().top - SCROLL_Y_CONTROL
+					scrollTop: $('.' + text[0] + _this.index()).offset().top - SCROLL_Y_CONTROL
 				}, 500, function() {
 				    menu_click_flag = false
 				});
@@ -207,15 +208,17 @@
 
                             console.log(data);
 
-                            if (data.req.indexOf("xml") == -1) {
+                            if (data.req.indexOf("xml") != -1) {
+                                request_data_str += formatXml(data.req);
+                            } else if(data.req.indexOf("json") != -1){
                                 request_data_str += formatJson(data.req);
                                 var res = JSON.parse(data.res);
                                 if (res.TokenType && res.AccessToken) {
                                     $(".Authorization").val("Bearer " + res.AccessToken);
                                 }
-
-                            } else {
-                                request_data_str += formatXml(data.req);
+                            }else{
+                                request_data_str += formatJson(data.req);
+                                var res = data.res;
                             }
                         }
 
@@ -533,8 +536,8 @@
 	<div class="main-container">
 		<div class="main-header-area">
 			<h1 id="active_controller"><?= $active_controller ?></h1>
-			<?php foreach ($api_detail as $api_item): ?>
-				<div class="api-wrap <?= $api_item['method_name']; ?>">
+			<?php foreach ($api_detail as $key => $api_item): ?>
+				<div class="api-wrap <?= $api_item['method_name'] . $key; ?>">
                     <h2 class="method-name">
                         <?if($api_item['help_url']){?>
                             <a href="<?= $api_item['help_url']; ?>" target="_blank">
@@ -572,7 +575,7 @@
 											<div class="col-lg-3"><p class="ico-circle-none"></p><?=$key ?></div>
 											<div class="col-lg-9">
                                                 <?if($url_parameter_item){?>
-												    <input type="text" value=""/>
+												    <input type="text" value="<?=$url_parameter_item?>"/>
                                                 <?}?>
 											</div>
 										</div>

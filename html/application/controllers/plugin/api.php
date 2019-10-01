@@ -478,17 +478,27 @@ class api extends CI_Controller{
                         'destination_id' => '',
                         'ship_id' => '',
                         'voyage_id' => '',
-                        'after' => '',
-                        'before' => '',
+                        'after' => date('Y-m-d'),
+                        'before' => date('Y-m-d', strtotime( "+1 month" )),
                     ),
                     'call_type' => 'GET',
-                    'description' => '항해 목록 검색 ',
+                    'description' => '항해 목록 검색',
+                    'help_url' => 'http://shop.silversea.com/api/Help/Api/GET-v1-voyages_destination_id_ship_id_voyage_id_after_before_page_per_page_language_cod_envelope'
+                ),
+                'voyages/{voyage_id}/itinerary' => array(
+                    'method_name' => 'voyages',
+                    'url_parameter' => array(
+                        'voyage_id' => '0000',
+                        'itinerary' => ''
+                    ),
+                    'call_type' => 'GET',
+                    'description' => '항해 검색',
                     'help_url' => 'http://shop.silversea.com/api/Help/Api/GET-v1-voyages_destination_id_ship_id_voyage_id_after_before_page_per_page_language_cod_envelope'
                 ),
                 'ships' => array(
                     'method_name' => 'ships',
                     'call_type' => 'GET',
-                    'description' => '선박 목록 검색 ',
+                    'description' => '선박 목록 검색',
                     'help_url' => 'http://shop.silversea.com/api/Help/Api/GET-v1-ships_envelope'
                 ),
                 'ships/{ship_cod}' => array(
@@ -497,25 +507,25 @@ class api extends CI_Controller{
                         'ship_cod' => 'SC'
                     ),
                     'call_type' => 'GET',
-                    'description' => '선박 검색 ',
+                    'description' => '선박 검색',
                     'help_url' => 'http://shop.silversea.com/api/Help/Api/GET-v1-ships-ship_cod_envelope'
                 ),
                 'destinations' => array(
                     'method_name' => 'destinations',
                     'call_type' => 'GET',
-                    'description' => '목적지 목록 검색 ',
+                    'description' => '목적지 목록 검색',
                     'help_url' => 'http://shop.silversea.com/api/Help/Api/GET-v1-destinations_envelope'
                 ),
                 'destinations/{id}' => array(
                     'method_name' => 'destinations',
                     'url_parameter' => array(
-                        'id' => 'SC'
+                        'id' => '1'
                     ),
                     'call_type' => 'GET',
-                    'description' => '목적지 검색 ',
-                    'help_url' => 'http://shop.silversea.com/api/Help/Api/GET-v1-destinations_envelope'
+                    'description' => '목적지 검색',
+                    'help_url' => 'http://shop.silversea.com/api/Help/Api/GET-v1-destinations-id'
                 ),
-                'itinerary' => array(
+                'itineraries' => array(
                     'method_name' => 'itineraries',
                     'parameter' => array(
                         'after' => date('Y-m-d'),
@@ -526,9 +536,47 @@ class api extends CI_Controller{
                         'per_page' => ''
                     ),
                     'call_type' => 'GET',
-                    'description' => '상세일정',
-                    'help_url' => 'http://shop.silversea.com/api/Help/Api/GET-v1-destinations_envelope'
-                )
+                    'description' => '상세일정 목록 검색',
+                    'help_url' => 'http://shop.silversea.com/api/Help/Api/GET-v1-itineraries_after_before_destination_id_ship_id_page_per_page_envelope'
+                ),
+                'itineraries/{id}' => array(
+                    'method_name' => 'itineraries',
+                    'url_parameter' => array(
+                        'id' => '0000'
+                    ),
+                    'call_type' => 'GET',
+                    'description' => '상세일정 검색',
+                    'help_url' => 'http://shop.silversea.com/api/Help/Api/GET-v1-itineraries-id_envelope'
+                ),
+                'fareCodes' => array(
+                    'method_name' => 'fareCodes',
+                    'call_type' => 'GET',
+                    'description' => '요금 목록',
+                    'help_url' => 'http://shop.silversea.com/api/Help/Api/GET-v1-fareCodes_envelope'
+                ),
+                'cruiseFares/{currency_cod}' => array(
+                    'method_name' => 'cruiseFares',
+                    'url_parameter' => array(
+                        'currency_cod' => 'USD'
+                    ),
+                    'parameter' => array(
+                        'voyage_id' => '',
+                        'page' => '',
+                    ),
+                    'call_type' => 'GET',
+                    'description' => '전체 가격 정보',
+                    'help_url' => 'http://shop.silversea.com/api/Help/Group?id=CruiseFares'
+                ),
+                'suiteCategories' => array(
+                    'method_name' => 'suiteCategories',
+                    'parameter' => array(
+                        'ship_cod' => '',
+                        'ship_id' => '',
+                    ),
+                    'call_type' => 'GET',
+                    'description' => '카테고리 받기',
+                    'help_url' => 'http://shop.silversea.com/api/Help/Api/GET-v1-suiteCategories_ship_cod_ship_id_envelope'
+                ),
             ),
             'GNIS' => array(
                 'payment' => array(

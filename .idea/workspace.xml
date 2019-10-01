@@ -1,7 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="ff5fcec0-56b4-4d8e-b19c-d2f884e4fd61" name="Default Changelist" comment="" />
+    <list default="true" id="ff5fcec0-56b4-4d8e-b19c-d2f884e4fd61" name="Default Changelist" comment="delete rollback">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/html/application/controllers/plugin/api.php" beforeDir="false" afterPath="$PROJECT_DIR$/html/application/controllers/plugin/api.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/html/application/views/plugin/api/api_v.php" beforeDir="false" afterPath="$PROJECT_DIR$/html/application/views/plugin/api/api_v.php" afterDir="false" />
+    </list>
     <ignored path="html/.idea/" />
     <ignored path="html/application/config/database.php" />
     <ignored path="html/application/config/routes.php" />
@@ -47,7 +51,7 @@
         <counts>
           <entry key="project.closed" value="58" />
           <entry key="project.open.time.0" value="14" />
-          <entry key="project.open.time.1" value="33" />
+          <entry key="project.open.time.1" value="34" />
           <entry key="project.open.time.10" value="2" />
           <entry key="project.open.time.2" value="5" />
           <entry key="project.open.time.3" value="2" />
@@ -57,7 +61,7 @@
           <entry key="project.open.time.7" value="1" />
           <entry key="project.open.time.8" value="1" />
           <entry key="project.open.time.9" value="1" />
-          <entry key="project.opened" value="70" />
+          <entry key="project.opened" value="71" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.extensions.open">
@@ -78,7 +82,7 @@
           <entry key="json" value="1" />
           <entry key="log" value="10" />
           <entry key="pem" value="1" />
-          <entry key="php" value="444" />
+          <entry key="php" value="445" />
           <entry key="sql" value="4" />
           <entry key="ts" value="5" />
           <entry key="txt" value="3" />
@@ -98,7 +102,7 @@
           <entry key="JSON" value="1" />
           <entry key="JavaScript" value="16" />
           <entry key="Log" value="1" />
-          <entry key="PHP" value="444" />
+          <entry key="PHP" value="445" />
           <entry key="PLAIN_TEXT" value="39" />
           <entry key="SQL" value="2" />
           <entry key="Scratch" value="2" />
@@ -118,7 +122,7 @@
           <entry key="html" value="31" />
           <entry key="ini" value="16" />
           <entry key="js" value="60" />
-          <entry key="php" value="23764" />
+          <entry key="php" value="24015" />
           <entry key="txt" value="277" />
           <entry key="vmoptions" value="3" />
           <entry key="xml" value="2" />
@@ -129,7 +133,7 @@
           <entry key="HTML" value="48" />
           <entry key="Ini" value="16" />
           <entry key="JavaScript" value="60" />
-          <entry key="PHP" value="23747" />
+          <entry key="PHP" value="23998" />
           <entry key="PLAIN_TEXT" value="354" />
           <entry key="XML" value="2" />
           <entry key="htaccess" value="72" />
@@ -153,26 +157,8 @@
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/html/application/controllers/plugin/api.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="441">
-              <caret line="30" column="52" selection-start-line="30" selection-start-column="52" selection-end-line="30" selection-end-column="52" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/html/.gitignore">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="46">
-              <caret line="2" lean-forward="true" selection-start-line="2" selection-end-line="2" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/.idea/workspace.xml">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="69">
-              <caret line="3" selection-start-line="3" selection-end-line="3" />
+            <state relative-caret-position="562">
+              <caret line="577" column="122" selection-start-line="577" selection-start-column="122" selection-end-line="577" selection-end-column="122" />
             </state>
           </provider>
         </entry>
@@ -180,8 +166,8 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/html/application/views/plugin/api/api_v.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="10833">
-              <caret line="471" column="34" selection-start-line="471" selection-start-column="34" selection-end-line="471" selection-end-column="34" />
+            <state relative-caret-position="371">
+              <caret line="138" column="51" selection-start-line="138" selection-start-column="51" selection-end-line="138" selection-end-column="51" />
             </state>
           </provider>
         </entry>
@@ -197,20 +183,6 @@
   </component>
   <component name="FindInProjectRecents">
     <findStrings>
-      <find>lo</find>
-      <find>code-wrap</find>
-      <find>pre</find>
-      <find>xml-tag-block</find>
-      <find>console.log</find>
-      <find>fareList</find>
-      <find>debug</find>
-      <find>post</find>
-      <find>this-&gt;load-&gt;database</find>
-      <find>CONTROLLER_DIR</find>
-      <find>active_controller</find>
-      <find>RCCL</find>
-      <find>URL Parameter</find>
-      <find>Token</find>
       <find>$UserID</find>
       <find>UserID</find>
       <find>Parameter</find>
@@ -224,9 +196,23 @@
       <find>GET</find>
       <find>http_query_builder</find>
       <find>필수</find>
-      <find>url_parameter</find>
       <find>필수값입니다</find>
       <find>rollback</find>
+      <find>itinerary</find>
+      <find>{currency_cod}</find>
+      <find>$SilverSeaID</find>
+      <find>url_parameter</find>
+      <find>method-name</find>
+      <find>collection</find>
+      <find>$method_index</find>
+      <find>his.tex</find>
+      <find>SilverSeaID</find>
+      <find>voyages</find>
+      <find>wrap</find>
+      <find>api-wrap</find>
+      <find>split()</find>
+      <find>scrollTop</find>
+      <find>항해 목록 검색</find>
     </findStrings>
     <replaceStrings>
       <replace>visitor_m</replace>
@@ -300,9 +286,9 @@
         <option value="$PROJECT_DIR$/html/system/core/Loader.php" />
         <option value="$PROJECT_DIR$/html/system/core/CodeIgniter.php" />
         <option value="$PROJECT_DIR$/html/application/config/autoload.php" />
+        <option value="$PROJECT_DIR$/html/.gitignore" />
         <option value="$PROJECT_DIR$/html/application/views/plugin/api/api_v.php" />
         <option value="$PROJECT_DIR$/html/application/controllers/plugin/api.php" />
-        <option value="$PROJECT_DIR$/html/.gitignore" />
       </list>
     </option>
   </component>
@@ -361,6 +347,30 @@
               <item name="application" type="462c0819:PsiDirectoryNode" />
               <item name="controllers" type="462c0819:PsiDirectoryNode" />
               <item name="plugin" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="jiho8912.github.io" type="b2602c69:ProjectViewProjectNode" />
+              <item name="jiho8912.github.io" type="462c0819:PsiDirectoryNode" />
+              <item name="html" type="462c0819:PsiDirectoryNode" />
+              <item name="application" type="462c0819:PsiDirectoryNode" />
+              <item name="views" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="jiho8912.github.io" type="b2602c69:ProjectViewProjectNode" />
+              <item name="jiho8912.github.io" type="462c0819:PsiDirectoryNode" />
+              <item name="html" type="462c0819:PsiDirectoryNode" />
+              <item name="application" type="462c0819:PsiDirectoryNode" />
+              <item name="views" type="462c0819:PsiDirectoryNode" />
+              <item name="plugin" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="jiho8912.github.io" type="b2602c69:ProjectViewProjectNode" />
+              <item name="jiho8912.github.io" type="462c0819:PsiDirectoryNode" />
+              <item name="html" type="462c0819:PsiDirectoryNode" />
+              <item name="application" type="462c0819:PsiDirectoryNode" />
+              <item name="views" type="462c0819:PsiDirectoryNode" />
+              <item name="plugin" type="462c0819:PsiDirectoryNode" />
+              <item name="api" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="jiho8912.github.io" type="b2602c69:ProjectViewProjectNode" />
@@ -550,6 +560,7 @@
       <workItem from="1568960652972" duration="3168000" />
       <workItem from="1569463519474" duration="2523000" />
       <workItem from="1569471770498" duration="901000" />
+      <workItem from="1569833460862" duration="12166000" />
     </task>
     <task id="LOCAL-00006" summary="업데이트">
       <created>1538121483840</created>
@@ -898,7 +909,7 @@
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="485174000" />
+    <option name="totallyTimeSpent" value="497340000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -911,14 +922,15 @@
   </component>
   <component name="ToolWindowManager">
     <frame x="1912" y="-8" width="1936" height="1056" extended-state="6" />
+    <editor active="true" />
     <layout>
-      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.12739871" />
+      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.12846482" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Favorites" order="2" side_tool="true" />
       <window_info anchor="bottom" id="File Transfer" order="0" sideWeight="0.49946696" visible="true" weight="0.18132465" />
       <window_info anchor="bottom" id="Message" order="1" />
       <window_info anchor="bottom" id="Find" order="2" weight="0.32899022" />
-      <window_info anchor="bottom" id="Run" order="3" weight="0.21366279" />
+      <window_info active="true" anchor="bottom" id="Run" order="3" visible="true" weight="0.21281216" />
       <window_info anchor="bottom" id="Debug" order="4" weight="0.3995657" />
       <window_info anchor="bottom" id="Cvs" order="5" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="6" weight="0.4" />
@@ -1320,31 +1332,31 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/html/application/views/plugin/api/api_v.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="10833">
-          <caret line="471" column="34" selection-start-line="471" selection-start-column="34" selection-end-line="471" selection-end-column="34" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/.idea/workspace.xml">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="69">
-          <caret line="3" selection-start-line="3" selection-end-line="3" />
+          <caret line="3" column="13" lean-forward="true" selection-start-line="3" selection-start-column="13" selection-end-line="3" selection-end-column="13" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/html/.gitignore">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="46">
-          <caret line="2" lean-forward="true" selection-start-line="2" selection-end-line="2" />
+        <state relative-caret-position="138">
+          <caret line="6" lean-forward="true" selection-start-line="6" selection-end-line="6" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/html/application/views/plugin/api/api_v.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="371">
+          <caret line="138" column="51" selection-start-line="138" selection-start-column="51" selection-end-line="138" selection-end-column="51" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/html/application/controllers/plugin/api.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="441">
-          <caret line="30" column="52" selection-start-line="30" selection-start-column="52" selection-end-line="30" selection-end-column="52" />
+        <state relative-caret-position="562">
+          <caret line="577" column="122" selection-start-line="577" selection-start-column="122" selection-end-line="577" selection-end-column="122" />
         </state>
       </provider>
     </entry>
