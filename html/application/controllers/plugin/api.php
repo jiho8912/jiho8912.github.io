@@ -480,6 +480,8 @@ class api extends CI_Controller{
                         'voyage_id' => '',
                         'after' => date('Y-m-d'),
                         'before' => date('Y-m-d', strtotime( "+1 month" )),
+                        'page' => 1,
+                        'per_page' => 50
                     ),
                     'call_type' => 'GET',
                     'description' => '항해 목록 검색',
@@ -489,7 +491,9 @@ class api extends CI_Controller{
                     'method_name' => 'voyages',
                     'url_parameter' => array(
                         'voyage_id' => '0000',
-                        'itinerary' => ''
+                        'itinerary' => '',
+                        'page' => 1,
+                        'per_page' => 50
                     ),
                     'call_type' => 'GET',
                     'description' => '항해 검색',
@@ -532,8 +536,8 @@ class api extends CI_Controller{
                         'before' => date('Y-m-d', strtotime( "+1 month" )),
                         'destination_id' => '',
                         'ship_id' => '',
-                        'page' => '',
-                        'per_page' => ''
+                        'page' => 1,
+                        'per_page' => 50
                     ),
                     'call_type' => 'GET',
                     'description' => '상세일정 목록 검색',
@@ -559,10 +563,6 @@ class api extends CI_Controller{
                     'url_parameter' => array(
                         'currency_cod' => 'USD'
                     ),
-                    'parameter' => array(
-                        'voyage_id' => '',
-                        'page' => '',
-                    ),
                     'call_type' => 'GET',
                     'description' => '전체 가격 정보',
                     'help_url' => 'http://shop.silversea.com/api/Help/Group?id=CruiseFares'
@@ -577,6 +577,23 @@ class api extends CI_Controller{
                     'description' => '카테고리 받기',
                     'help_url' => 'http://shop.silversea.com/api/Help/Api/GET-v1-suiteCategories_ship_cod_ship_id_envelope'
                 ),
+                'cities' => array(
+                    'method_name' => 'cities',
+                    'call_type' => 'GET',
+                    'description' => '도시리스트 받기',
+                    'parameter' => array(
+                        'page' => 1,
+                        'per_page' => 50,
+                    ),
+                    'help_url' => 'http://shop.silversea.com/api/Help/Api/GET-v1-cities_city_country_iso3_page_per_page_language_cod_envelope_embed'
+                ),
+                'countries' => array(
+                    'method_name' => 'countries',
+                    'call_type' => 'GET',
+                    'description' => '국가리스트 받기',
+                    'help_url' => 'http://shop.silversea.com/api/Help/Api/GET-v1-countries_country_iso3_envelope'
+                ),
+
             ),
             'GNIS' => array(
                 'payment' => array(
@@ -651,7 +668,7 @@ class api extends CI_Controller{
 
         $ch = curl_init();
         curl_setopt($ch, CURLOPT_URL, $url);
-        curl_setopt($ch, CURLOPT_HEADER, 0);
+        curl_setopt($ch, CURLOPT_HEADER, 1);
         curl_setopt($ch, CURLOPT_RETURNTRANSFER, true);
         curl_setopt($ch, CURLOPT_SSL_VERIFYPEER, 0);
         curl_setopt($ch, CURLOPT_FOLLOWLOCATION, 1);
@@ -667,11 +684,24 @@ class api extends CI_Controller{
 		curl_setopt($ch, CURLOPT_HTTPHEADER, $headers);
         curl_setopt($ch, CURLOPT_USERAGENT, $_SERVER['HTTP_USER_AGENT']);
         $result = curl_exec($ch);
+        $result = explode("\r\n\r\n", $result);
         $info = curl_getinfo($ch);
         $err_no = curl_errno($ch);
 
+        if($result[0] != '' && $this->input->post('service') == 'SilverSea'){
+            $res_header = array();
+            $temp_header = $this->get_headers($result[0]);
+            $res_header['X-RateLimit-Limit'] = $temp_header['X-Rate-Limit-Limit'];
+            $res_header['X-RateLimit-Remaining'] = $temp_header['X-Rate-Limit-Remaining'];
+            $res_header['X-RateLimit-Reset'] = $temp_header['X-Rate-Limit-Reset'];
+            $res_header['next_link'] = $temp_header['next_link'];
+            $res_header['last_link'] = $temp_header['last_link'];
+            $res_header['total_page'] = $temp_header['total_page'];
+        }
+
         $resultArray = array(
-            'res' => $result,
+            'res_header' => json_encode($res_header),
+            'res' => $result[count($result)-1],
             'req' => $parameter,
             'header' => $headers,
             'info' => $info,
@@ -774,6 +804,31 @@ class api extends CI_Controller{
         }
     }
 
+    function get_headers($arrRequests)
+    {
+
+        $headers = array();
+
+        foreach (explode("\r\n", $arrRequests) as $i => $line)
+        {
+            if ($i === 0) {
+                $headers['http_code'] = $line;
+            }else {
+                list ($key, $value) = explode(': ', $line);
+                $headers[$key] = $value;
+            }
+        }
+        if($headers['Link'] != ''){
+            preg_match('/<(.*)>; rel="next"/', $headers['Link'], $next_link);
+            $headers['next_link'] = $next_link[1];
+            preg_match('/,<(.*)>; rel="last"/', $headers['Link'], $last_link);
+            $headers['last_link'] = $last_link[1];
+            preg_match('/page=(.*)&/', $headers['last_link'],  $total_page);
+            $headers['total_page'] = $total_page[1];
+        }
+
+        return $headers;
+    }
 
 }
 

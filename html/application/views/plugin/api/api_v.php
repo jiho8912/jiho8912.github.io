@@ -188,8 +188,6 @@
                     i ++ ;
                 }
 
-                request_data_str += '\n########################## parameter #####################################\n';
-
                 $.ajax({
                     url : '/plugin/api/call',
                     data : ajax_config,
@@ -203,22 +201,29 @@
                         var request_code_wrap = $('.request pre.code-wrap');
                         var response_code_wrap = $('.response pre.code-wrap');
 
-                        request_data_str += '\n';
+                        if(data.res_header != ""){
+                            console.log(data.res_header);
+                            request_data_str += '\n\n########################## res_header #####################################\n';
+                            request_data_str += formatJson(data.res_header);
+                        }
+
+                        request_data_str += '\n\n########################## parameter #####################################\n';
                         if(data.res && data.req) {
 
                             console.log(data);
 
                             if (data.req.indexOf("xml") != -1) {
                                 request_data_str += formatXml(data.req);
-                            } else if(data.req.indexOf("json") != -1){
+                            }else{
                                 request_data_str += formatJson(data.req);
-                                var res = JSON.parse(data.res);
+                                if(data.res.indexOf("{") != -1){
+                                    var res = JSON.parse(data.res);
+                                }else{
+                                    var res = data.res;
+                                }
                                 if (res.TokenType && res.AccessToken) {
                                     $(".Authorization").val("Bearer " + res.AccessToken);
                                 }
-                            }else{
-                                request_data_str += formatJson(data.req);
-                                var res = data.res;
                             }
                         }
 
@@ -234,7 +239,7 @@
 
 			});
 
-            $("div .CarSVCAuthorization button[type='submit']").trigger("click");
+            $("div .CarSVCAuthorization0 button[type='submit']").trigger("click");
 
 			$('.footer-header-area').click(function(){
 				$('body').removeClass('console-active')
