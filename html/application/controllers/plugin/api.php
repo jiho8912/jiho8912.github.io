@@ -490,10 +490,8 @@ class api extends CI_Controller{
                 'voyages/{voyage_id}/itinerary' => array(
                     'method_name' => 'voyages',
                     'url_parameter' => array(
-                        'voyage_id' => '0000',
-                        'itinerary' => '',
-                        'page' => 1,
-                        'per_page' => 50
+                        'voyage_id' => '4645',
+                        'itinerary' => ''
                     ),
                     'call_type' => 'GET',
                     'description' => '항해 검색',
