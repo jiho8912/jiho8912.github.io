@@ -52,9 +52,9 @@ OTA API (Royal Caribbean Cruises API, Alamo Renter Car API Online Travel API)를
 - 관리자 cms 구현
 등의 개발환경, 개발기술들을 사용
 
-사이트 주소 : https://rccl.kr ( https://www.royalcaribbean.com와 연동된 국내사이트)
+사이트 주소 : https://rccl.kr ( https://www.royalcaribbean.com 와 연동된 국내사이트)
 
-사이트 주소 : https://alamo.kr ( https://www.alamo.com와 연동된 국내사이트)
+사이트 주소 : https://alamo.kr ( https://www.alamo.com 와 연동된 국내사이트)
 
 ### 개발 
 [네오베이]
