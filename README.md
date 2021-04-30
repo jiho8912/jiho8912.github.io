@@ -1,7 +1,5 @@
 # 소개
 
-<img alt="깃헙 프로필 사진" src="https://scontent-ssn1-1.cdninstagram.com/v/t51.2885-15/sh0.08/e35/p640x640/76994115_512496802718088_3662212403532706616_n.jpg?_nc_ht=scontent-ssn1-1.cdninstagram.com&_nc_cat=100&_nc_ohc=8vJNk3V87zwAX8X1iLg&oh=e248627a0d61158115da4ec9fec976bc&oe=5F4B78C9" width="200">
-
 * 임지호
 * Email : jiho8912@naver.com
 * Github : https://github.com/jiho8912/jiho8912.github.io
