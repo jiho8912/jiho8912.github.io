@@ -72,8 +72,7 @@ class Board extends CI_Controller {
 		$paging['off_set'] = $paging['per_page'] * ($paging['page']-1);//페이징 offset 가져오기
 		unset($urlArray['page']);
 		$paging['addLink'] = "";
-
-		if(sizeof($urlArray)){
+		if(is_array($urlArray)){
 			foreach(array_filter($urlArray) as $key=> $value){
 				$paging['addLink'] .= "&".$key."=".$value;
 			}

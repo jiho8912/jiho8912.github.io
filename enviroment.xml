@@ -1,13 +1,13 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <config>
-<tab1>16</tab1>
-<tab2>16</tab2>
-<tab3>16</tab3>
-<tab4>16</tab4>
-<tab5>20</tab5>
+<tab1>2</tab1>
+<tab2>2</tab2>
+<tab3>2</tab3>
+<tab4>2</tab4>
+<tab5>5</tab5>
 <tab_limit>3</tab_limit>
 <google_apikey>AIzaSyBH4i1P4uai9OxOch72519vhlW2Bg_dg4I</google_apikey>
-<tokenvalue>624545223.320e45f.099fc1f6f29e42b9a7a05fdf3d48a515</tokenvalue>
+<tokenvalue>IGQVJYNEV1RlhNM3RLM2JLa0YxRTBoNU43eXNHUkxkam85ZAnU1MzA0djdwYkhBNlJLQnRXUmlHWDdTcDNxdWV6X3NYYnBfRXo0Rmx2OFB5dmNKbWRNVUFOMlF2NUp0dHVCNmVIWWZAYLVpGekVWa1UwSgZDZD</tokenvalue>
 <listcount>9</listcount>
 <rowcount>3</rowcount>
 <image_space>5</image_space>
