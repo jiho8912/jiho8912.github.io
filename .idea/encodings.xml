@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="Encoding">
-    <file url="file://$PROJECT_DIR$/html/application/views/plugin/shop/stdpay/INIStdPaySample/INIRecancel.php" charset="UTF-8" />
-    <file url="file://$PROJECT_DIR$/html/application/views/plugin/shop/stdpay/INIStdPaySample/INIpayMobile_Sample.php" charset="EUC-KR" />
-    <file url="file://$PROJECT_DIR$/html/application/views/plugin/shop/stdpay/INIStdPaySample/INIrepay.php" charset="UTF-8" />
-    <file url="file://$PROJECT_DIR$/html/application/views/plugin/shop/stdpay/key/INIpayTest/readme.txt" charset="x-windows-949" />
+    <file url="file://$PROJECT_DIR$/application/views/plugin/shop/stdpay/INIStdPaySample/INIRecancel.php" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/application/views/plugin/shop/stdpay/INIStdPaySample/INIpayMobile_Sample.php" charset="EUC-KR" />
+    <file url="file://$PROJECT_DIR$/application/views/plugin/shop/stdpay/INIStdPaySample/INIrepay.php" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/application/views/plugin/shop/stdpay/key/INIpayTest/readme.txt" charset="x-windows-949" />
   </component>
 </project>
