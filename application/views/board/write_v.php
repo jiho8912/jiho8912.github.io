@@ -6,7 +6,7 @@
 	<div class="form-group">
 		<label class="col-md-3 control-label" for="mb_name"><span class="glyphicon glyphicon-exclamation-sign"></span> 이름</label>
 		<div class="col-md-4">
-			<input type="text" id="mb_name" name="mb_name" class="form-control" maxlength="20" value="<?=$mb_detail['mb_name']?>">
+			<input type="text" id="mb_name" name="mb_name" class="form-control" value="<?=$mb_detail['mb_name']?>">
 		</div>
 	</div>
 	<div class="form-group">
