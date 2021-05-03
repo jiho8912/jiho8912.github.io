@@ -19,7 +19,7 @@
     <select />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="ff5fcec0-56b4-4d8e-b19c-d2f884e4fd61" name="Default Changelist" comment="아니었네?&#10;https://stackoverflow.com/questions/27162037/codeigniter-url-not-found-when-https">
+    <list default="true" id="ff5fcec0-56b4-4d8e-b19c-d2f884e4fd61" name="Default Changelist" comment="왜 20글자 제한을 걸어놨을까?">
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/application/views/board/write_v.php" afterPath="$PROJECT_DIR$/application/views/board/write_v.php" />
     </list>
@@ -76,7 +76,7 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="NH_escro_mark1.png" pinned="false" current-in-tab="false">
+      <file leaf-file-name="NH_escro_mark1.png" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/upload/main/NH_escro_mark1.png">
           <provider selected="true" editor-type-id="images">
             <state />
@@ -131,11 +131,11 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="write_v.php" pinned="false" current-in-tab="true">
+      <file leaf-file-name="write_v.php" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/application/views/board/write_v.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="264">
-              <caret line="12" column="80" lean-forward="true" selection-start-line="12" selection-start-column="80" selection-end-line="12" selection-end-column="80" />
+            <state relative-caret-position="470">
+              <caret line="23" column="79" lean-forward="false" selection-start-line="23" selection-start-column="79" selection-end-line="23" selection-end-column="79" />
               <folding />
             </state>
           </provider>
@@ -152,7 +152,6 @@
   </component>
   <component name="FindInProjectRecents">
     <findStrings>
-      <find>항해 목록 검색</find>
       <find>request_data_str</find>
       <find>fail</find>
       <find>res_header</find>
@@ -182,6 +181,7 @@
       <find>플러그인 token값이 올바르지 않습</find>
       <find>ENVIRONMENT</find>
       <find>maxlength</find>
+      <find>제목</find>
     </findStrings>
     <replaceStrings>
       <replace>visitor_m</replace>
@@ -289,6 +289,17 @@
               <item name="application" type="2a2b976b:PhpTreeStructureProvider$1" />
               <item name="views" type="2a2b976b:PhpTreeStructureProvider$1" />
               <item name="board" type="2a2b976b:PhpTreeStructureProvider$1" />
+            </path>
+            <path>
+              <item name="jiho8912.github.io" type="b2602c69:ProjectViewProjectNode" />
+              <item name="jiho8912.github.io" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="upload" type="2a2b976b:PhpTreeStructureProvider$1" />
+            </path>
+            <path>
+              <item name="jiho8912.github.io" type="b2602c69:ProjectViewProjectNode" />
+              <item name="jiho8912.github.io" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="upload" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="main" type="2a2b976b:PhpTreeStructureProvider$1" />
             </path>
           </expand>
           <select />
@@ -450,14 +461,7 @@
       <workItem from="1619874402354" duration="1682000" />
       <workItem from="1619882895478" duration="1254000" />
       <workItem from="1619885907415" duration="1151000" />
-      <workItem from="1620009193407" duration="9598000" />
-    </task>
-    <task id="LOCAL-00013" summary="업데이트">
-      <created>1538619409893</created>
-      <option name="number" value="00013" />
-      <option name="presentableId" value="LOCAL-00013" />
-      <option name="project" value="LOCAL" />
-      <updated>1538619409893</updated>
+      <workItem from="1620009193407" duration="9683000" />
     </task>
     <task id="LOCAL-00014" summary="업데이트">
       <created>1540454275555</created>
@@ -795,11 +799,18 @@
       <option name="project" value="LOCAL" />
       <updated>1620050384714</updated>
     </task>
-    <option name="localTasksCounter" value="62" />
+    <task id="LOCAL-00062" summary="왜 20글자 제한을 걸어놨을까?">
+      <created>1620050532024</created>
+      <option name="number" value="00062" />
+      <option name="presentableId" value="LOCAL-00062" />
+      <option name="project" value="LOCAL" />
+      <updated>1620050532024</updated>
+    </task>
+    <option name="localTasksCounter" value="63" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="15228000" />
+    <option name="totallyTimeSpent" value="15313000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -901,7 +912,8 @@
     <MESSAGE value="파일위치 이동" />
     <MESSAGE value="https 변경후 파일 대소문자 오류?" />
     <MESSAGE value="아니었네?&#10;https://stackoverflow.com/questions/27162037/codeigniter-url-not-found-when-https" />
-    <option name="LAST_COMMIT_MESSAGE" value="아니었네?&#10;https://stackoverflow.com/questions/27162037/codeigniter-url-not-found-when-https" />
+    <MESSAGE value="왜 20글자 제한을 걸어놨을까?" />
+    <option name="LAST_COMMIT_MESSAGE" value="왜 20글자 제한을 걸어놨을까?" />
   </component>
   <component name="WindowStateProjectService">
     <state x="2440" y="66" key="CommitChangelistDialog2" timestamp="1595996668707">
@@ -1258,11 +1270,6 @@
         <state />
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/upload/main/NH_escro_mark1.png">
-      <provider selected="true" editor-type-id="images">
-        <state />
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/upload/main/t1.jpg">
       <provider selected="true" editor-type-id="images">
         <state />
@@ -1301,10 +1308,15 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/application/views/board/write_v.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="264">
-          <caret line="12" column="80" lean-forward="true" selection-start-line="12" selection-start-column="80" selection-end-line="12" selection-end-column="80" />
+        <state relative-caret-position="470">
+          <caret line="23" column="79" lean-forward="false" selection-start-line="23" selection-start-column="79" selection-end-line="23" selection-end-column="79" />
           <folding />
         </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/upload/main/NH_escro_mark1.png">
+      <provider selected="true" editor-type-id="images">
+        <state />
       </provider>
     </entry>
   </component>

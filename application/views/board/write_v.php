@@ -21,7 +21,7 @@
 	<div class="form-group">
 		<label class="col-md-3 control-label" for="subject"><span class="glyphicon glyphicon-exclamation-sign"></span> 제목</label>
 		<div class="col-md-7">
-			<input type="text" id="subject" name="subject" class="form-control" maxlength="20" value="">
+			<input type="text" id="subject" name="subject" class="form-control" value="">
 		</div>
 	</div>
 
